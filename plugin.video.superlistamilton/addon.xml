@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addons>
 <addon id="plugin.video.superlistamilton"
        name="Super Lista Milton"
        version="1.0.0"
@@ -16,7 +15,7 @@
     <import addon="script.module.youtube.dl" optional="true"/>
     <import addon="plugin.video.youtube" version="3.0.0"/>
     <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
+    <import addon="script.module.simplejson" /> 
     <import addon="script.common.plugin.cache" version="2.5.2"/>
     <import addon="script.module.metahandler" version="2.5.1"/>
 
@@ -26,31 +25,16 @@
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">ADD-ON da Lista de canais do Milton Guedes</summary>
-    <description lang="en">ADD-ON da Lista de canais do Milton Guedes,
-	                       com vÃ¡rios canais de TV Brasileira e internacionais
-						   sempre atualizados.Addon com varios tipo de videos,
-						   shows, clips, Filmes, Desenhos, Canais Youtubes.
+    <description lang="en">ADD-ON da Lista de canais do Milton Guedes, 
+	                       com vários canais de TV Brasileira e internacionais
+						   sempre atualizados.Addon com varios tipo de videos, 
+						   shows, clips, Filmes, Desenhos, Canais Youtubes. 
 						   Twitter --         https://twitter.com/listamilton
 						   Canal Facebook --- https://www.facebook.com/canalmiltonguedes/
 						   Grupo Facebook --- https://www.facebook.com/groups/568745316624875
 						   Canal Youtube  --- https://www.youtube.com/channel/UC55I5rSsJdEX8jptFDZTHuw
-						   Se vocÃª gostou do meu trabalho e quiser fazer uma doaÃ§Ã£o, aqui estÃ¡ o link
+						   Se você gostou do meu trabalho e quiser fazer uma doação, aqui está o link
 						   PayPal --- http://bit.ly/doacao-milton</description>
 	<platform>all</platform>
   </extension>
 </addon>
-
-<addon id="supermilton.repository" name="Super Milton Add-on Repository" version="0.0.1" provider-name="Milton Guedes">
-	<extension point="xbmc.addon.repository" name="Super Milton Add-on Repository">
-		<info compressed="false">http://raw.github.com/listamilton/supermilton.repository/master/addons.xml</info>
-		<checksum>http://raw.github.com/listamilton/supermilton.repository/master/addons.xml.md5</checksum>
-		<datadir zip="true">http://raw.github.com/listamilton/supermilton.repository/master/repo/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Super Milton Add-on Repository</summary>
-		<description>Repositorio de Addons do Milton Guedes - Me segue no Twitter https://twitter.com/listamilton</description>
-		<disclaimer></disclaimer>
-		<platform>all</platform>
-	</extension>
-</addon>
-</addons>
