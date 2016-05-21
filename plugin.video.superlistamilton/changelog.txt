@@ -1,2 +1,2 @@
-V1.0
-Initial Release
+V1.0 
+Initial Release - 14/05/20116 - versao inical criada do Addon Super Lista Milton
