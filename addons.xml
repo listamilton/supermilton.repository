@@ -1,4 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.video.superlistamilton"
+       name="Super Lista Milton"
+       version="1.0.1"
+       provider-name="Milton Guedes">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.t0mm0.common" version="2.1.1"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="1.9.5"/>
+    <import addon="script.module.beautifulsoup4" version="4.3.2"/>
+    <import addon="script.module.requests" version="2.9.1"/>
+    <import addon="script.module.httplib2" version="0.8.0"/>
+    <import addon="script.module.youtube.dl" version="16.327.0"/>
+    <import addon="plugin.video.youtube" version="5.1.20.4"/>
+    <import addon="script.module.urlresolver" version="3.0.5"/>
+    <import addon="script.module.simplejson" version="3.3.0"/>
+    <import addon="script.common.plugin.cache" version="2.5.8"/>
+    <import addon="script.module.metahandler" version="2.9.1"/>
+
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">ADD-ON da Lista de canais do Milton Guedes</summary>
+    <description lang="en">ADD-ON da Lista de canais do Milton Guedes, com vÃ¡rios canais de TV Brasileira e internacionais sempre atualizados.Addon com varios tipo de videos , shows, clips, Filmes, Desenhos, Canais Youtubes. EndereÃ§o do grupo no facebook --- https://www.facebook.com/groups/568745316624875 --- Se vocÃª gostou do meu trabalho e quiser fazer uma doaÃ§Ã£o, aqui estÃ¡ o link para pagamento PayPal --- http://bit.ly/doacao-milton</description>
+	<platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="supermilton.repository" name="Super Milton repository" version="0.0.1" provider-name="Milton Guedes">
 	<extension point="xbmc.addon.repository" name="Super Milton Add-on Repository">
 		<info compressed="false">http://raw.github.com/listamilton/supermilton.repository/master/addons.xml</info>
@@ -12,3 +43,4 @@
 		<platform>all</platform>
 	</extension>
 </addon>
+</addons>
