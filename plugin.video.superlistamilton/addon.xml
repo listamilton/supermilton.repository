@@ -26,15 +26,15 @@
   <extension point="xbmc.addon.metadata">
     <summary lang="en">ADD-ON da Lista de canais do Milton Guedes</summary>
     <description lang="en">ADD-ON da Lista de canais do Milton Guedes, 
-	                       com vários canais de TV Brasileira e internacionais
-						   sempre atualizados.Addon com varios tipo de videos, 
-						   shows, clips, Filmes, Desenhos, Canais Youtubes. 
-						   Twitter --         https://twitter.com/listamilton
-						   Canal Facebook --- https://www.facebook.com/canalmiltonguedes/
-						   Grupo Facebook --- https://www.facebook.com/groups/568745316624875
-						   Canal Youtube  --- https://www.youtube.com/channel/UC55I5rSsJdEX8jptFDZTHuw
-						   Se você gostou do meu trabalho e quiser fazer uma doação, aqui está o link
-						   PayPal --- http://bit.ly/doacao-milton</description>
+	com vários canais de TV Brasileira e internacionais
+	sempre atualizados.Addon com varios tipo de videos, 
+	shows, clips, Filmes, Desenhos, Canais Youtubes. 
+	Twitter -          https://twitter.com/listamilton
+	Canal Facebook --- https://www.facebook.com/canalmiltonguedes/
+	Grupo Facebook --- https://www.facebook.com/groups/568745316624875
+	Canal Youtube  --- https://www.youtube.com/channel/UC55I5rSsJdEX8jptFDZTHuw
+	Se você gostou do meu trabalho e quiser fazer uma doação, aqui está o link
+	PayPal --- http://bit.ly/doacao-milton</description>
 	<platform>all</platform>
   </extension>
 </addon>
