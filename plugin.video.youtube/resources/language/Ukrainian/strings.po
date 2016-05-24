@@ -1,4 +1,4 @@
-# XBMC Media Center language file
+# Kodi Media Center language file
 # Addon Name: YouTube
 # Addon id: plugin.video.youtube
 # Addon version: 5.1.9~beta1
@@ -446,3 +446,7 @@ msgstr "Ще..."
 msgctxt "#30549"
 msgid "No videos streams found"
 msgstr "Відеопотоки не знайдені"
+
+msgctxt "#30550"
+msgid "Region"
+msgstr "регіон"

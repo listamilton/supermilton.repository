@@ -1,4 +1,4 @@
-# XBMC Media Center language file
+# Kodi Media Center language file
 # Addon Name: YouTube
 # Addon id: plugin.video.youtube
 # Addon version: 5.1.9~beta1
@@ -39,7 +39,7 @@ msgstr "Password"
 
 msgctxt "#30009"
 msgid "Always ask for the video quality"
-msgstr ""
+msgstr "Chiedi sempre qualità del video"
 
 msgctxt "#30010"
 msgid "Video Quality"
@@ -413,11 +413,11 @@ msgstr ""
 
 msgctxt "#30541"
 msgid "Show channel name in description"
-msgstr ""
+msgstr "Mostra nome canale in desrizione"
 
 msgctxt "#30542"
 msgid "rtmpe streams are not supported"
-msgstr ""
+msgstr "Streaming RTMP/RTMPE non supportati"
 
 msgctxt "#30543"
 msgid "Refresh"
@@ -425,15 +425,15 @@ msgstr ""
 
 msgctxt "#30544"
 msgid "More Links from the description"
-msgstr ""
+msgstr "Trova link nella descrizione"
 
 msgctxt "#30545"
 msgid "No further links found."
-msgstr ""
+msgstr "Nessun link trovato."
 
 msgctxt "#30546"
 msgid "Please log in twice!"
-msgstr ""
+msgstr "Per favore fare 2 volte il Log In!"
 
 msgctxt "#30547"
 msgid "You must enable two applications so that YouTube is functioning properly."
@@ -445,4 +445,8 @@ msgstr ""
 
 msgctxt "#30549"
 msgid "No videos streams found"
-msgstr ""
+msgstr "Nessun Stream Video trovato"
+
+msgctxt "#30550"
+msgid "Region"
+msgstr "Regione"
