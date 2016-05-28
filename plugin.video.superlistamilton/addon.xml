@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.superlistamilton"
        name="Super Lista Milton"
-       version="1.0.1"
+       version="1.0.2"
        provider-name="Milton Guedes">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -18,6 +18,7 @@
     <import addon="script.module.simplejson" /> 
     <import addon="script.common.plugin.cache" version="2.5.2"/>
     <import addon="script.module.metahandler" version="2.5.1"/>
+	<import addon="script.module.livestreamer" optional="true"/>
 
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
@@ -26,7 +27,7 @@
   <extension point="xbmc.addon.metadata">
     <summary lang="en">ADD-ON da Lista de canais do Milton Guedes</summary>
     <description lang="en">ADD-ON da Lista de canais do Milton Guedes,com varios canais de TV Brasileira e internacionais
-sempre atualizados.Addon com varios tipo de videos, shows, clips, Filmes,
+sempre atualizados.Addon com varios tipo de videos, shows, clips, Filmes em Torrents Dublados e Legendados,
 Desenhos, Canais Youtubes.
 Twitter - https://twitter.com/listamilton
 Canal Facebook - https://www.facebook.com/canalmiltonguedes/
