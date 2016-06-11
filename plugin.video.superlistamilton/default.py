@@ -11,6 +11,14 @@ import xbmcaddon
 import xbmcvfs
 import traceback
 import cookielib
+#mensagem LISTA MILTON
+__addon__ = xbmcaddon.Addon()
+__addonname__ = __addon__.getAddonInfo('name')
+__icon__ = __addon__.getAddonInfo('icon')
+ 
+line1 = "  -- BEM-VINDOS AO [COLOR red]ADDON SUPER LISTA MILTON...[/COLOR]ESTE ADDON É GRATIS E ESTÁ PROIBIDA SUA VENDA...PARA ASSISTIR FILMES TORRENTS PRECISA INSTALAR O [COLOR yellow]PULSAR[/COLOR]...[COLOR orangered][B]--SUPER LISTA MILTON--[/B][/COLOR]"
+time = 50000 #in miliseconds
+xbmc.executebuiltin('Notification(%s, %s, %d, %s)'%(__addonname__,line1, time, __icon__))
 from BeautifulSoup import BeautifulStoneSoup, BeautifulSoup, BeautifulSOAP
 try:
     import json
@@ -24,6 +32,7 @@ import _Edit
 	
 resolve_url=['180upload.com', 'allmyvideos.net', 'bestreams.net', 'clicknupload.com', 'cloudzilla.to', 'movshare.net', 'novamov.com', 'nowvideo.sx', 'videoweed.es', 'daclips.in', 'datemule.com', 'fastvideo.in', 'faststream.in', 'filehoot.com', 'filenuke.com', 'sharesix.com', 'docs.google.com', 'plus.google.com', 'picasaweb.google.com', 'gorillavid.com', 'gorillavid.in', 'grifthost.com', 'hugefiles.net', 'ipithos.to', 'ishared.eu', 'kingfiles.net', 'mail.ru', 'my.mail.ru', 'videoapi.my.mail.ru', 'mightyupload.com', 'mooshare.biz', 'movdivx.com', 'movpod.net', 'movpod.in', 'movreel.com', 'mrfile.me', 'nosvideo.com', 'openload.io', 'played.to', 'bitshare.com', 'filefactory.com', 'k2s.cc', 'oboom.com', 'rapidgator.net', 'uploaded.net', 'primeshare.tv', 'bitshare.com', 'filefactory.com', 'k2s.cc', 'oboom.com', 'rapidgator.net', 'uploaded.net', 'sharerepo.com', 'stagevu.com', 'streamcloud.eu', 'streamin.to', 'thefile.me', 'thevideo.me', 'tusfiles.net', 'uploadc.com', 'zalaa.com', 'uploadrocket.net', 'uptobox.com', 'v-vids.com', 'veehd.com', 'vidbull.com', 'videomega.tv', 'vidplay.net', 'vidspot.net', 'vidto.me', 'vidzi.tv', 'vimeo.com', 'vk.com', 'vodlocker.com', 'xfileload.com', 'xvidstage.com', 'zettahost.tv']
 g_ignoreSetResolved=['plugin.video.dramasonline','plugin.video.f4mTester','plugin.video.shahidmbcnet','plugin.video.SportsDevil','plugin.stream.vaughnlive.tv','plugin.video.ZemTV-shani']
+start_pulsar = xbmc.translatePath(os.path.join('special://home/addons/plugin.video.pulsar/resources/bin/windows_x86/pulsar.exe')) 
 
 class NoRedirection(urllib2.HTTPErrorProcessor):
    def http_response(self, request, response):
@@ -52,6 +61,16 @@ if os.path.exists(source_file)==True:
     SOURCES = open(source_file).read()
 else: SOURCES = []
 
+def startpulsar():
+    try:
+	    subprocess.call([start_pulsar])
+	    sys.exit(0)
+	    return SKindex		
+    except:
+        pass
+        subprocess.call([start_quasar])
+        sys.exit(0)
+        return SKindex	
 
 def addon_log(string):
     if debug == 'true':
@@ -80,10 +99,30 @@ def makeRequest(url, headers=None):
 				
 def SKindex():
     addon_log("SKindex")
-    addDir('Favorites','Favorites',4,'http://iconizer.net/files/Human_o2/orig/orange-address-book-new.png' ,  FANART,'','','','')
+    addDir('Favorites','Favorites',20,'http://iconizer.net/files/Human_o2/orig/orange-address-book-new.png' ,  FANART,'','','','')
     getData(_Edit.MainBase,'')
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
 		
+def player_torrent(name,url,iconimage):
+    magnet = url
+    print magnet
+    if setting("plugin") == 'Pulsar':
+        link = ('plugin://plugin.video.pulsar/play?uri=' + magnet)	
+    elif setting("plugin") == 'Quasar':
+        link = ('plugin://plugin.video.quasar/play?uri=' + magnet)		
+    elif setting("plugin") == 'Acestream':
+        link = subprocess.call([acestream, '-f', '%s' %magnet]) ==0
+        sys.exit(0)
+    elif setting("plugin") == 'KmediaTorrent':
+        link = ('plugin://plugin.video.kmediatorrent/play/' + magnet)
+    elif setting("plugin") == "Torrenter":
+        link = ('plugin://plugin.video.torrenter/?action=playTorrent&url=' + magnet)		
+    elif setting("plugin") == "YATP":
+        link = ('plugin://plugin.video.yatp/?action=play&torrent=' + magnet)
+    else:
+        link = ('plugin://plugin.video.xbmctorrent/play/' + magnet)	
+    setting("PlayMedia(%s)" % link)
+    xbmc.executebuiltin("PlayMedia(%s)" % link)
 	
 def getSources():
         if os.path.exists(favorites) == True:
@@ -2537,7 +2576,11 @@ elif mode==18:
     playsetresolved(stream_url,name,iconimage)
 elif mode==19:
 	addon_log("Genesiscommonresolvers")
-	playsetresolved (urlsolver(url),name,iconimage,True)	
+	playsetresolved (urlsolver(url),name,iconimage,True)
+
+elif mode ==20:
+    print ""
+    startpulsar()	
 
 elif mode==21:
     addon_log("download current file using youtube-dl service")
