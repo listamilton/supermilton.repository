@@ -1,16 +1,9 @@
 V1.0.0
-Initial Release - 14/05/20116
-- versao inical criada do Addon Super Lista Milton
+Initial Release - 14/05/20116 - versao inical criada do Addon Super Lista Milton
 
 V1.0.1
-Release - 21/05/20116 
-- atualizado Addon sem erros de scripts
+Release - 21/05/20116 - atualizado Addon sem erros de scripts
 
 V1.0.2
-Release - 28/05/20116 
-- atualizado Addon para utilizar torrents - F4m - P2P
-
-V1.0.3
-Release - 11/06/20116
-- Adicionado mensagem de alerta na entrada do Addon
+Release - 28/05/20116 - atualizado Addon para utilizar torrents - F4m - P2P
 

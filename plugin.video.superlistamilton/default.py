@@ -11,14 +11,6 @@ import xbmcaddon
 import xbmcvfs
 import traceback
 import cookielib
-#mensagem LISTA MILTON
-__addon__ = xbmcaddon.Addon()
-__addonname__ = __addon__.getAddonInfo('name')
-__icon__ = __addon__.getAddonInfo('icon')
- 
-line1 = "  -- BEM-VINDOS AO [COLOR red]ADDON SUPER LISTA MILTON...[/COLOR]ESTE ADDON É GRATIS E ESTÁ PROIBIDA SUA VENDA...PARA ASSISTIR FILMES TORRENTS PRECISA INSTALAR O [COLOR yellow]PULSAR[/COLOR]...[COLOR orangered][B]--SUPER LISTA MILTON--[/B][/COLOR]"
-time = 50000 #in miliseconds
-xbmc.executebuiltin('Notification(%s, %s, %d, %s)'%(__addonname__,line1, time, __icon__))
 from BeautifulSoup import BeautifulStoneSoup, BeautifulSoup, BeautifulSOAP
 try:
     import json
