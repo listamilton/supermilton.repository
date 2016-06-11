@@ -133,7 +133,7 @@ http://www.hometheater.co.il</description>
 
 <addon id="plugin.video.superlistamilton"
        name="Super Lista Milton"
-       version="1.0.2"
+       version="1.0.1"
        provider-name="Milton Guedes">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -150,7 +150,6 @@ http://www.hometheater.co.il</description>
     <import addon="script.module.simplejson" />
     <import addon="script.common.plugin.cache" version="2.5.2"/>
     <import addon="script.module.metahandler" version="2.5.1"/>
-	<import addon="script.module.livestreamer" optional="true"/>
 
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
@@ -159,7 +158,7 @@ http://www.hometheater.co.il</description>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">ADD-ON da Lista de canais do Milton Guedes</summary>
     <description lang="en">ADD-ON da Lista de canais do Milton Guedes,com varios canais de TV Brasileira e internacionais
-sempre atualizados.Addon com varios tipo de videos, shows, clips, Filmes em Torrents Dublados e Legendados,
+sempre atualizados.Addon com varios tipo de videos, shows, clips, Filmes,
 Desenhos, Canais Youtubes.
 Twitter - https://twitter.com/listamilton
 Canal Facebook - https://www.facebook.com/canalmiltonguedes/
