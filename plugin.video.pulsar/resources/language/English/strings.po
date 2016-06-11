@@ -1,0 +1,223 @@
+# Kodi Media Center language file
+# Addon Name: Pulsar
+# Addon id: plugin.video.pulsar
+# Addon Provider: steeve
+msgid ""
+msgstr ""
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# Settings
+
+msgctxt "#30000"
+msgid "General"
+""
+
+msgctxt "#30001"
+msgid "Download Path (NOT FAT32)"
+""
+
+msgctxt "#30002"
+msgid "Keep files after playback/download stops)"
+""
+
+msgctxt "#30003"
+msgid "Buffer Size (MB)"
+""
+
+msgctxt "#30004"
+msgid "Max Upload Rate (kB/s)"
+""
+
+msgctxt "#30005"
+msgid "Max Download Rate (kB/s)"
+""
+
+msgctxt "#30006"
+msgid "Listen Port Min"
+""
+
+msgctxt "#30007"
+msgid "Listen Port Max"
+""
+
+msgctxt "#30008"
+msgid "Proxy"
+""
+
+msgctxt "#30009"
+msgid "SOCKS v5 Configuration"
+""
+
+msgctxt "#30010"
+msgid "Enabled"
+""
+
+msgctxt "#30011"
+msgid "Host"
+""
+
+msgctxt "#30012"
+msgid "Port"
+""
+
+msgctxt "#30013"
+msgid "Login"
+""
+
+msgctxt "#30014"
+msgid "Password"
+""
+
+msgctxt "#30015"
+msgid "Advanced"
+""
+
+msgctxt "#30016"
+msgid "Custom Provider Timeout"
+""
+
+msgctxt "#30017"
+msgid "Enabled (use at your own risk)"
+""
+
+msgctxt "#30018"
+msgid "Timeout in seconds"
+""
+
+msgctxt "#30019"
+msgid "Maintenance"
+""
+
+msgctxt "#30020"
+msgid "Clear cache"
+""
+
+msgctxt "#30021"
+msgid "Enable Paging"
+""
+
+msgctxt "#30022"
+msgid "Enable Overlay Status Bar"
+""
+
+msgctxt "#30023"
+msgid "Choose Stream Automatically"
+""
+
+msgctxt "#30024"
+msgid "Library Path"
+""
+
+# Interface
+
+msgctxt "#30100"
+msgid "Pulsar has crashed, restarting..."
+""
+
+msgctxt "#30101"
+msgid "You must restart XBMC before using Pulsar"
+""
+
+msgctxt "#30102"
+msgid "This addon can only be run from within Pulsar"
+""
+
+# Pulsar daemon
+
+msgctxt "#30200"
+msgid "Cache cleared"
+""
+
+msgctxt "#30201"
+msgid "Search TV Shows"
+""
+
+msgctxt "#30202"
+msgid "Choose Stream..."
+""
+
+msgctxt "#30203"
+msgid "Movie Information"
+""
+
+msgctxt "#30204"
+msgid "Unable to find any providers"
+""
+
+msgctxt "#30205"
+msgid "No links were found"
+""
+
+msgctxt "#30206"
+msgid "Search Movies"
+""
+
+msgctxt "#30207"
+msgid "Not enough space available on the download path."
+""
+
+msgctxt "#30208"
+msgid "Pulsar daemon has started"
+""
+
+msgctxt "#30209"
+msgid "Search"
+""
+
+msgctxt "#30210"
+msgid "Most Popular"
+""
+
+msgctxt "#30211"
+msgid "Top Rated"
+""
+
+msgctxt "#30212"
+msgid "Most Voted"
+""
+
+msgctxt "#30213"
+msgid "IMDB Top 250"
+""
+
+msgctxt "#30214"
+msgid "Movies"
+""
+
+msgctxt "#30215"
+msgid "TV Shows"
+""
+
+msgctxt "#30216"
+msgid "Paste URL"
+""
+
+msgctxt "#30217"
+msgid "Paste Magnet or URL"
+""
+
+msgctxt "#30218"
+msgid "Next Page"
+""
+
+msgctxt "#30219"
+msgid "Add/Remove from Library"
+""
+
+msgctxt "#30220"
+msgid "Library Path not set"
+""
+
+msgctxt "#30221"
+msgid "Item successfully added to Library"
+""
+
+msgctxt "#30222"
+msgid "Item removed from Library"
+""
