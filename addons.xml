@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+<addon id="plugin.image.pdfreader" name="PDF Reader" version="1.0.2" provider-name="Anonymous">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>image</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <language>en</language>
+    <platform>all</platform>
+    <summary lang="en">PDF Reader</summary>
+    <description lang="en">Read your pdf's.</description>
+    <platform>all</platform>
+	<license>GPL 2.0</license>
+  </extension>
+</addon>
+
     <addon id="plugin.program.addoninstaller" version="1.2.6"
     	name="Addon Installer" provider-name="tvaddons.ag, Blazetamer">
     <requires>
@@ -97,6 +114,32 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.Catoal"
+       name="Catoal[COLOR blue] 5[/COLOR].[COLOR yellow]2[/COLOR].[COLOR red]5a[/COLOR]"
+       version="5.2.5a"
+       provider-name="Catoal">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>basedo en livestreamspro 2.0.1</summary>
+    <description>Lista de canales de catoal.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.freshstart" name="Fresh Start"
 	version="1.0.5" provider-name="tvaddons.ag">
   <requires>
@@ -112,6 +155,39 @@
     <forum>http://forums.tvaddons.ag/forums/141-FRESH-START</forum>
     <website>http://www.tvaddons.ag/</website>
   </extension>
+</addon>
+
+<addon id="plugin.video.gdrive" version="0.7.17" name="gdrive" provider-name="ddurdle">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video audio image programs</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Listen to music, watch videos and view photos from your Google Drive account</summary>
+        <description>Plays music and video from your Google Drive account.  Not affiliated with Google.</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+
+<addon id="plugin.video.kmediatorrent" name="KMediaTorrent" version="2.3.7" provider-name="jmarth">
+    <requires>
+        <import addon="xbmc.python" version="2.14.0"/>
+        <import addon="script.module.requests" version="2.3.5"/>
+        <import addon="script.module.html5lib" version="0.999.0" optional="false"/>
+        <import addon="script.module.beautifulsoup4" version="4.3.2"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary><![CDATA[Torrent streaming
+        for KODI/XBMC.]]></summary>
+        <description><![CDATA[Watch torrents directly from KODI/XBMC, without waiting.]]></description>
+    </extension>
 </addon>
 
 <addon id="plugin.video.playlistLoader" name="Playlist Loader" version="1.0.9" provider-name="Avigdor">
@@ -131,9 +207,32 @@ http://www.hometheater.co.il</description>
   </extension>
 </addon>
 
+<addon id="plugin.video.pulsar" name="Pulsar" version="0.7.0" provider-name="steeve, i96751414">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="navigation.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup"/>
+    <extension point="xbmc.python.module" library="resources/site-packages" />
+    <extension point="xbmc.subtitle.module" library="navigation.py" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <language>en</language>
+        <website><![CDATA[https://github.com/i96751414/plugin.video.pulsar]]></website>
+        <forum><![CDATA[http://forum.xbmc.org/showthread.php?tid=200957]]></forum>
+        <source><![CDATA[https://github.com/i96751414/plugin.video.pulsar]]></source>
+        <language>en</language>
+        <license><![CDATA[Non commercial. See https://github.com/i96751414/plugin.video.pulsar/blob/master/LICENSE]]></license>
+        <summary><![CDATA[Pulsar: Universal streaming]]></summary>
+        <description><![CDATA[Follow @pulsarhq on Twitter]]></description>
+    </extension>
+</addon>
+
 <addon id="plugin.video.superlistamilton"
        name="Super Lista Milton"
-       version="1.0.2"
+       version="1.0.3"
        provider-name="Milton Guedes">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -184,6 +283,30 @@ Se voce gostou do meu trabalho e quiser fazer uma doacao,aqui esta o link PayPal
   </extension>
 </addon>
 
+<addon id="program.plexus"
+       name="Plexus"
+       version="0.1.4"
+       provider-name="enen92, TV ADDONS">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.requests" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>executable</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary>SopCast and AceStream for Kodi</summary>
+    <description lang="en">Plexus - Any complex structure containing an intricate network of parts. Plexus brings native peer-to-peer support (AceStream and SopCast) for Kodi Entertainment Center for several platforms.[CR][CR]Documentation: (missing)</description>
+    <description lang="pt">Plexus - Uma estrutura complexa constituÃ­da por uma rede de partes. O Plexus adiciona suporte peer-to-peer nativo (AceStream e Sopcast) ao Kodi Entertainment Center para vÃ¡rias plataformas.[CR][CR]DocumentaÃ§Ã£o: (em falta)</description>
+    <disclaimer lang="en">The author does not host nor distribute any of the content you may watch using this addon. The author has no part in the development of any included technologies. When seeking help in Kodi's forum please respect rules (http://kodi.wiki/view/Forum_rules).</disclaimer>
+    <disclaimer lang="pt">Os autores nÃ£o alojam nem distribuem nenhum do conteÃºdo que poderÃ¡ ser reproduzido a partir deste addon. Os autores nÃ£o tÃªm qualquer parte no desenvolvimento de qualquer uma das tecnologias. Se procurar ajuda no fÃ³rum oficial do Kodi por favor respeite as regras do fÃ³rum (http://kodi.wiki/view/Forum_rules).</disclaimer>
+    <forum>http://forums.tvaddons.ag</forum>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="script.chatsupermilton"
        name="Chat Super Milton"
        version="1.0.0"
@@ -201,213 +324,6 @@ Se voce gostou do meu trabalho e quiser fazer uma doacao,aqui esta o link PayPal
     <language></language>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
     </extension>
-</addon>
-
-<addon id="script.common.plugin.cache" name="Common plugin cache" provider-name="TheCollective" version="2.5.8">
-  <requires>
-    <import addon="xbmc.python" version="2.24.0" />
-  </requires>
-  <extension library="default.py" point="xbmc.service" start="startup">
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Common caching api for xbmc plugins.</summary>
-  </extension>
-  <extension library="lib" point="xbmc.python.module" />
-</addon>
-
-<addon id="script.module.addon.common"
-	     name="Common addon methods"
-	     version="2.0.0"
-	     provider-name="Eldorado (original: t0mm0)">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-  </requires>
-  <extension point="xbmc.python.module" library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Collection of commonly used addon routines</summary>
-    <description lang="en">Collection of commonly used addon routines to simplify addon development.</description>
-    <disclaimer lang="en"></disclaimer>
-    <language></language>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <forum></forum>
-    <website></website>
-    <email></email>
-    <source></source>
-  </extension>
-</addon>
-
-<addon id="script.module.beautifulsoup"
-       name="BeautifulSoup"
-       version="3.2.1"
-       provider-name="Leonard Richardson (leonardr@segfault.org)">
-  <requires>
-    <import addon="xbmc.python"
-    		version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.module"
-             library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <summary>HTML/XML parser for quick-turnaround applications like screen-scraping</summary>
-    <description>Beautiful Soup parses arbitrarily invalid SGML and provides a variety of methods and Pythonic idioms for iterating and searching the parse tree.</description>
-    <license>BSD</license>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="script.module.beautifulsoup4"
-       name="BeautifulSoup4"
-       version="4.3.2"
-       provider-name="Leonard Richardson (leonardr@segfault.org)">
-  <requires>
-    <import addon="xbmc.python"
-    		version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.module"
-             library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <summary>HTML/XML parser for quick-turnaround applications like screen-scraping</summary>
-    <description>Beautiful Soup parses arbitrarily invalid SGML and provides a variety of methods and Pythonic idioms for iterating and searching the parse tree.</description>
-    <license>BSD</license>
-    <platform>all</platform>
-    <website>http://www.crummy.com/software/BeautifulSoup/</website>
-  </extension>
-</addon>
-
-<addon id="script.module.httplib2" name="httplib2" provider-name=" Joe Gregorio" version="0.8.0">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-  </requires>
-  <extension library="lib" point="xbmc.python.module" />
-  <extension point="xbmc.addon.metadata">
-        <description lan="en">httplib2 module</description>
-        <summary lang="en">httplib2 module</summary>
-        <disclaimer lang="en">Visit https://pypi.python.org/pypi/httplib2</disclaimer>
-        <license>MIT</license>
-        <platform>all</platform>
-        <email></email>
-        <website>https://pypi.python.org/pypi/httplib2</website>
-        <forum></forum>
-        <source>https://pypi.python.org/pypi/httplib2</source>
-        <language></language>
-   </extension>
-</addon>
-
-<addon id="script.module.metahandler"
-     name="metahandler"
-     version="2.9.1"
-     provider-name="Eldorado">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.simplejson" version="3.3.0"/>
-    <import addon="script.module.addon.common" version="2.0.0"/>
-    <import addon="script.module.myconnpy" version="1.1.6"/>
-  </requires>
-  <extension point="xbmc.python.module" library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Downloads Artwork for TV shows, Movies and Music videos for addons and stores them in a local SQLITE database</summary>
-    <description lang="en">Queries, stores, and returns metadata for TV shows, Movies and Musicvideos. [CR]Sources:[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]www.imdb.com</description>
-    <disclaimer lang="en"></disclaimer>
-    <language></language>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <forum></forum>
-    <website></website>
-    <email></email>
-    <source></source>
-  </extension>
-</addon>
-
-<addon id="script.module.myconnpy"
-       name="MySQL Connector/Python"
-       version="1.1.7"
-       provider-name="MySQL">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-    </requires>
-    <extension point="xbmc.python.module" library="lib"/>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">MySQL Connector/Python</summary>
-        <description lang="en">MySQL Connector/Python is implementing the MySQL Client/Server protocol completely in Python. This means you don't have to compile anything or MySQL (client library) doesn't even have to be installed on the machine.</description>
-        <license>GPLv2</license>
-        <platform>all</platform>
-        <website>http://dev.mysql.com/doc/connector-python/en/index.html</website>
-        <source>http://dev.mysql.com/downloads/connector/python/</source>
-    </extension>
-</addon>
-
-<addon id="script.module.requests"
-       name="requests"
-       version="2.9.1"
-       provider-name="kennethreitz, beenje">
-  <requires>
-    <import addon="xbmc.python" version="2.14.0"/>
-  </requires>
-  <extension point="xbmc.python.module"
-             library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <summary>Python HTTP for Humans</summary>
-    <description>Packed for KODI from https://github.com/kennethreitz/requests</description>
-    <platform>all</platform>
-    <language></language>
-    <license>Apache2</license>
-    <forum></forum>
-    <website>http://python-requests.org</website>
-    <source>https://github.com/beenje/script.module.requests</source>
-    <email>beenje AT gmail.com</email>
-  </extension>
-</addon>
-
-<addon id="script.module.simple.downloader" name="Simple Downloader for xbmc plugins" provider-name="TheCollective" version="1.9.5">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.common.plugin.cache" version="2.5.0" />
-    <import addon="script.module.parsedom" version="2.5.1" />
-  </requires>
-  <extension library="default.py" point="xbmc.service" />
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Simple downloader for xbmc plugins.</summary>
-  </extension>
-  <extension library="lib" point="xbmc.python.module" />
-</addon>
-
-<addon id="script.module.simplejson"
-       name="simplejson"
-       version="3.3.0"
-       provider-name="Martijn">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.module"
-             library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <language></language>
-    <summary lang="en">Simple, fast, extensible JSON encoder/decoder for Python</summary>
-    <description lang="en">Simple, fast, extensible JSON encoder/decoder for Python</description>
-    <disclaimer lang="en">Code taken from https://pypi.python.org/pypi/simplejson/</disclaimer>
-    <license>MIT License, Academic Free License v. 2.1</license>
-    <website>https://pypi.python.org/pypi/simplejson/</website>
-    <source>https://pypi.python.org/pypi/simplejson/</source>
-  </extension>
-</addon>
-
-<addon id="script.module.t0mm0.common"
-	     name="t0mm0's common stuff"
-	     version="2.1.1"
-	     provider-name="t0mm0">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-  </requires>
-  <extension point="xbmc.python.module" library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Collection of commonly used addon routines</summary>
-    <description lang="en">Collection of commonly used addon routines to simplify addon development.</description>
-  </extension>
 </addon>
 
 <addon id="script.module.urlresolver" name="URLResolver" version="3.0.5" provider-name="Eldorado">
