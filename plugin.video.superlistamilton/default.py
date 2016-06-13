@@ -16,8 +16,9 @@ __addon__ = xbmcaddon.Addon()
 __addonname__ = __addon__.getAddonInfo('name')
 __icon__ = __addon__.getAddonInfo('icon')
  
-line1 = "  -- BEM-VINDOS AO [COLOR red]ADDON SUPER LISTA MILTON...[/COLOR]ESTE ADDON É GRATIS E ESTÁ PROIBIDA SUA VENDA...PARA ASSISTIR FILMES TORRENTS PRECISA INSTALAR O [COLOR yellow]PULSAR[/COLOR]...[COLOR orangered][B]--SUPER LISTA MILTON--[/B][/COLOR]"
-time = 50000 #in miliseconds
+msg = ("http://lista-milton.esy.es/alertas/msg.txt") 
+line1 = urllib2.urlopen(msg).read()
+time = 39000 #in miliseconds
 xbmc.executebuiltin('Notification(%s, %s, %d, %s)'%(__addonname__,line1, time, __icon__))
 from BeautifulSoup import BeautifulStoneSoup, BeautifulSoup, BeautifulSOAP
 try:
@@ -40,6 +41,7 @@ class NoRedirection(urllib2.HTTPErrorProcessor):
    https_response = http_response
        
 addon = _Edit.addon
+addonname = 'Super Listas Milton'
 addon_version = addon.getAddonInfo('version')
 profile = xbmc.translatePath(addon.getAddonInfo('profile').decode('utf-8'))
 home = xbmc.translatePath(addon.getAddonInfo('path').decode('utf-8'))
@@ -99,6 +101,8 @@ def makeRequest(url, headers=None):
 				
 def SKindex():
     addon_log("SKindex")
+    dialog = xbmcgui.Dialog()
+    ok = dialog.ok('Bem-vindo ao '+addonname,'ESTE ADDON É GRATIS E ESTÁ PROIBIDA SUA VENDA...','NECESSITA ESTAR INSTALADOS O [COLOR yellow]PULSAR[/COLOR] , [COLOR red]F4M[/COLOR] , [COLOR orange]PLEXUS[/COLOR] , [COLOR cyan]ACESTREAM[/COLOR] E O [COLOR green]GDRIVE[/COLOR] NO KODI.')
     addDir('Favorites','Favorites',20,'http://iconizer.net/files/Human_o2/orig/orange-address-book-new.png' ,  FANART,'','','','')
     getData(_Edit.MainBase,'')
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
