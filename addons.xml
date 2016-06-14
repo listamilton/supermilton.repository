@@ -232,7 +232,7 @@ http://www.hometheater.co.il</description>
 
 <addon id="plugin.video.superlistamilton"
        name="Super Lista Milton"
-       version="1.0.4"
+       version="1.0.5"
        provider-name="Milton Guedes">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>

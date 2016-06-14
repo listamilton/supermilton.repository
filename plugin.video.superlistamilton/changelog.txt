@@ -12,3 +12,6 @@ Release - 11/06/20116 - atualizado Addon para utilizar mensagens de entrada
 
 V1.0.4
 Release - 13/06/20116 - atualizado Addon que foi alterado modo de mensagens.
+
+V1.0.5
+Release - 14/06/20116 - arrumado erros de mensagens

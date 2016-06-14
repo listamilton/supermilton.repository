@@ -16,7 +16,7 @@ __addon__ = xbmcaddon.Addon()
 __addonname__ = __addon__.getAddonInfo('name')
 __icon__ = __addon__.getAddonInfo('icon')
  
-msg = ("http://lista-milton.esy.es/alertas/msg.txt") 
+msg = ("http://pastebin.com/raw/4BxYE44f") 
 line1 = urllib2.urlopen(msg).read()
 time = 39000 #in miliseconds
 xbmc.executebuiltin('Notification(%s, %s, %d, %s)'%(__addonname__,line1, time, __icon__))
