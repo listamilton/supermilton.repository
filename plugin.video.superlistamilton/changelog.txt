@@ -1,0 +1,17 @@
+V1.0.0
+Initial Release - 14/05/20116 - versao inical criada do Addon Super Lista Milton
+
+V1.0.1
+Release - 21/05/20116 - atualizado Addon sem erros de scripts
+
+V1.0.2
+Release - 28/05/20116 - atualizado Addon para utilizar torrents - F4m - P2P
+
+V1.0.3
+Release - 11/06/20116 - atualizado Addon para utilizar mensagens de entrada
+
+V1.0.4
+Release - 13/06/20116 - atualizado Addon que foi alterado modo de mensagens.
+
+V1.0.5
+Release - 14/06/20116 - arrumado erros de mensagens

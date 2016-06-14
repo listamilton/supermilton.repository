@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.superlistamilton"
+       name="Super Lista Milton"
+       version="1.0.5"
+       provider-name="Milton Guedes">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" /> 
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+	<import addon="script.module.livestreamer" optional="true"/>
+
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">ADD-ON da Lista de canais do Milton Guedes</summary>
+    <description lang="en">ADD-ON da Lista de canais do Milton Guedes,com varios canais de TV Brasileira e internacionais
+sempre atualizados.Addon com varios tipo de videos, shows, clips, Filmes em Torrents Dublados e Legendados,
+Desenhos, Canais Youtubes.
+Twitter - https://twitter.com/listamilton
+Canal Facebook - https://www.facebook.com/canalmiltonguedes/
+Grupo Facebook - https://www.facebook.com/groups/568745316624875
+Canal Youtube  - https://www.youtube.com/channel/UC55I5rSsJdEX8jptFDZTHuw
+Se voce gostou do meu trabalho e quiser fazer uma doacao,aqui esta o link PayPal --- http://bit.ly/doacao-milton</description>
+<disclaimer lang="en">Todos os links encontrados neste Addon são fruto de uma pesquisa na net, todos eles encontram-se em qualquer site de iptv. Eu simplesmente utilizei esses links e os adicionei em um só local, sendo assim não me responsabilizo por esse conteudo compartilhado.</disclaimer>
+	<platform>all</platform>
+  </extension>
+</addon>
