@@ -1,0 +1,325 @@
+﻿# Kodi Media Center language file
+# Addon Name: Flix2Kodi
+# Addon id: plugin.video.flix2kodi
+# Addon Provider: zero
+msgid ""
+msgstr ""
+"Project-Id-Version: Kodi-Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: 2015-11-04 18:30+0100\n"
+"PO-Revision-Date: 2015-11-04 18:30+0100\n"
+"Last-Translator: logi85\n"
+"Language-Team: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+msgctxt "#11000"
+msgid "General"
+msgstr ""
+
+msgctxt "#11001"
+msgid "Username"
+msgstr ""
+
+msgctxt "#11002"
+msgid "Password"
+msgstr ""
+
+msgctxt "#11100"
+msgid "General"
+msgstr ""
+
+msgctxt "#11101"
+msgid "Browser"
+msgstr ""
+
+msgctxt "#111011"
+msgid "Chrome"
+msgstr ""
+
+msgctxt "#111012"
+msgid "Chromelauncher"
+msgstr ""
+
+msgctxt "#111013"
+msgid "Internet Explorer"
+msgstr ""
+
+msgctxt "#111014"
+msgid "Edge"
+msgstr ""
+
+msgctxt "#111015"
+msgid "Safari"
+msgstr ""
+
+msgctxt "#111016"
+msgid "Chromium"
+msgstr ""
+
+msgctxt "#111017"
+msgid "Android"
+msgstr ""
+
+msgctxt "#11102"
+msgid "Update library after adding"
+msgstr ""
+
+msgctxt "#11200"
+msgid "Profile settings"
+msgstr ""
+
+msgctxt "#11201"
+msgid "Single-user account"
+msgstr ""
+
+msgctxt "#11202"
+msgid "Show profile selection on each start"
+msgstr ""
+
+msgctxt "#12000"
+msgid "Advanced"
+msgstr ""
+
+msgctxt "#12001"
+msgid "Debug logging"
+msgstr ""
+
+msgctxt "#12002"
+msgid "Library path"
+msgstr ""
+
+msgctxt "#12101"
+msgid "Disable lirc on playback"
+msgstr ""
+
+msgctxt "#13000"
+msgid "Views"
+msgstr ""
+
+msgctxt "#13001"
+msgid "Get covers & fanart images from TMDb"
+msgstr ""
+
+msgctxt "#13002"
+msgid "Browse TV-Shows instead of autoplaying"
+msgstr ""
+
+msgctxt "#13003"
+msgid "Items per page"
+msgstr ""
+
+msgctxt "#13004"
+msgid "Sync viewstate with netflix"
+msgstr ""
+
+msgctxt "#13100"
+msgid "Appearance"
+msgstr ""
+
+msgctxt "#13101"
+msgid "Force view"
+msgstr ""
+
+msgctxt "#13102"
+msgid "View ID - videos"
+msgstr ""
+
+msgctxt "#13103"
+msgid "View ID - episodes"
+msgstr ""
+
+msgctxt "#13104"
+msgid "View ID - viewing activity"
+msgstr ""
+
+msgctxt "#14000"
+msgid "User data"
+msgstr ""
+
+msgctxt "#14001"
+msgid "Delete cache"
+msgstr ""
+
+msgctxt "#14002"
+msgid "Delete cookies / session"
+msgstr ""
+
+msgctxt "#14003"
+msgid "Reset Addon"
+msgstr ""
+
+msgctxt "#30100"
+msgid "Movies"
+msgstr ""
+
+msgctxt "#30101"
+msgid "TV shows"
+msgstr ""
+
+msgctxt "#30102"
+msgid "Suggestions"
+msgstr ""
+
+msgctxt "#30103"
+msgid "Who's watching?"
+msgstr ""
+
+msgctxt "#30104"
+msgid "My list"
+msgstr ""
+
+msgctxt "#30105"
+msgid "Viewing activity"
+msgstr ""
+
+msgctxt "#30106"
+msgid "Latest"
+msgstr ""
+
+msgctxt "#30107"
+msgid "All shows"
+msgstr ""
+
+msgctxt "#30108"
+msgid "Genres"
+msgstr ""
+
+msgctxt "#30109"
+msgid "Search"
+msgstr ""
+
+msgctxt "#30110"
+msgid "Next page"
+msgstr ""
+
+msgctxt "#30111"
+msgid "Search"
+msgstr ""
+
+msgctxt "#30112"
+msgid "Super browse"
+msgstr ""
+
+msgctxt "#30150"
+msgid "Add to library"
+msgstr ""
+
+msgctxt "#301501"
+msgid "Remove from library"
+msgstr ""
+
+msgctxt "#30151"
+msgid "Continue watching"
+msgstr ""
+
+msgctxt "#30152"
+msgid "Show seasons"
+msgstr ""
+
+msgctxt "#30154"
+msgid "Remove from my list"
+msgstr ""
+
+msgctxt "#30155"
+msgid "Add to my list"
+msgstr ""
+
+msgctxt "#30156"
+msgid "Similar Movies"
+msgstr ""
+
+msgctxt "#30157"
+msgid "Similar TV Shows"
+msgstr ""
+
+msgctxt "#30200"
+msgid "Connecting Netflix"
+msgstr ""
+
+msgctxt "#30201"
+msgid "Preparing login"
+msgstr ""
+
+msgctxt "#30202"
+msgid "Sending login details"
+msgstr ""
+
+msgctxt "#30203"
+msgid "Loading profile"
+msgstr ""
+
+msgctxt "#30204"
+msgid "Complete"
+msgstr ""
+
+msgctxt "#30205"
+msgid "Loading metadata"
+msgstr ""
+
+msgctxt "#30300"
+msgid "Sorry! Netflix is not available in your country yet."
+msgstr ""
+
+msgctxt "#30301"
+msgid "Cookies have been deleted."
+msgstr ""
+
+msgctxt "#30302"
+msgid "Session has been deleted."
+msgstr ""
+
+msgctxt "#30303"
+msgid "You are not logged in. Check your credentials and/or restart the addon!"
+msgstr ""
+
+msgctxt "#30304"
+msgid "Multiple profiles found. Choose your profile!"
+msgstr ""
+
+msgctxt "#30306"
+msgid "No results found!"
+msgstr ""
+
+msgctxt "#30307"
+msgid "Really reset the addon?"
+msgstr ""
+
+msgctxt "#30308"
+msgid "Addon has been reset!"
+msgstr ""
+
+msgctxt "#30309"
+msgid "Cache has been deleted!"
+msgstr ""
+
+msgctxt "#50001"
+msgid "No browser selected in settings!"
+msgstr ""
+
+msgctxt "#50002"
+msgid "Sorry!"
+msgstr ""
+
+msgctxt "#50003"
+msgid "Flix2Kodi crashed."
+msgstr ""
+
+msgctxt "#50004"
+msgid "Try to refresh your login?"
+msgstr ""
+
+msgctxt "#50005"
+msgid "If your browser does not launch, something went wrong. Push BACK to leave this dialog."
+msgstr ""
+
+msgctxt "#50006"
+msgid "Login refreshed. please try again."
+msgstr ""
+
+msgctxt "#99999"
+msgid ""
+msgstr ""

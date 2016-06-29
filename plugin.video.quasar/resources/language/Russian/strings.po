@@ -1,0 +1,481 @@
+# Kodi Media Center language file
+# Addon Name: Quasar
+# Addon id: plugin.video.quasar
+# Addon Provider: scakemyer
+#
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2016-02-07 12:27+03:00\n"
+"PO-Revision-Date: 2016-02-14 17:13+03:00\n"
+"Last-Translator: razer1s <ymychka@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# Settings
+
+msgctxt "#30000"
+msgid "General"
+msgstr "Общие"
+
+msgctxt "#30001"
+msgid "Download path (not FAT32)"
+msgstr "Путь для загрузок (кроме FAT32)"
+
+msgctxt "#30002"
+msgid "Keep files after playback/download stops"
+msgstr "Сохранять файлы после просмотра"
+
+msgctxt "#30003"
+msgid "Buffer size (MB)"
+msgstr "Размер буфера (МБ)"
+
+msgctxt "#30004"
+msgid "Max upload rate (kB/s)"
+msgstr "Максимальная скорость отдачи (кБ/с)"
+
+msgctxt "#30005"
+msgid "Max download rate (kB/s)"
+msgstr "Максимальная скорость скачивания (кБ/с)"
+
+msgctxt "#30006"
+msgid "Listen port min"
+msgstr "Порт (минимальный)"
+
+msgctxt "#30007"
+msgid "Listen port max"
+msgstr "Порт (максимальный)"
+
+msgctxt "#30008"
+msgid "Proxy"
+msgstr "Прокси"
+
+msgctxt "#30009"
+msgid "SOCKS v5 Configuration"
+msgstr "SOCKS v5"
+
+msgctxt "#30010"
+msgid "Enabled"
+msgstr "Включить"
+
+msgctxt "#30011"
+msgid "Host"
+msgstr "Хост"
+
+msgctxt "#30012"
+msgid "Port"
+msgstr "Порт"
+
+msgctxt "#30013"
+msgid "Login"
+msgstr "Логин"
+
+msgctxt "#30014"
+msgid "Password"
+msgstr "Пароль"
+
+msgctxt "#30015"
+msgid "Advanced"
+msgstr "Дополнительно"
+
+msgctxt "#30016"
+msgid "Custom provider timeout"
+msgstr "Пользовательский тайм-аут провайдера"
+
+msgctxt "#30017"
+msgid "Enabled (use at your own risk)"
+msgstr "Включить (используйте на ваш риск)"
+
+msgctxt "#30018"
+msgid "Timeout in seconds"
+msgstr "Тайм-аут в секундах"
+
+msgctxt "#30019"
+msgid "Maintenance"
+msgstr "Обслуживание"
+
+msgctxt "#30020"
+msgid "Clear cache"
+msgstr "Очистить кеш"
+
+msgctxt "#30021"
+msgid "Enable pagination"
+msgstr "Выводить фильмы и сериалы постранично"
+
+msgctxt "#30022"
+msgid "Enable overlay status"
+msgstr "Показывать статус загрузки"
+
+msgctxt "#30023"
+msgid "Choose stream automatically"
+msgstr "Выбрать случайный стрим"
+
+msgctxt "#30024"
+msgid "Get updates for pre-releases"
+msgstr "Получать обновления для пре-релизов"
+
+msgctxt "#30025"
+msgid "Limit rates after buffering only"
+msgstr "Ограничить скорость только после буферизации"
+
+msgctxt "#30026"
+msgid "Library path"
+msgstr "Папка для библиотеки"
+
+msgctxt "#30027"
+msgid "Connections limit"
+msgstr "Лимит подключений"
+
+msgctxt "#30028"
+msgid "Background handling of torrents"
+msgstr "Фоновая обработка торрентов"
+
+msgctxt "#30029"
+msgid "Session saving frequency (seconds)"
+msgstr "Частота сохранений в сессии (секунд)"
+
+msgctxt "#30030"
+msgid "Overlay status vertical offset"
+msgstr "Позиция статуса загрузки по вертикали"
+
+msgctxt "#30031"
+msgid "Disable providers failing health check"
+msgstr "Отключать провайдеров не прошедших проверку"
+
+msgctxt "#30032"
+msgid "Allowed failures before provider is disabled"
+msgstr "Допустимое число сбоев провайдера:"
+
+msgctxt "#30033"
+msgid "Appearance"
+msgstr "Внешний вид"
+
+msgctxt "#30034"
+msgid "Default view for Movies"
+msgstr "Вид по умолчанию для фильмов"
+
+msgctxt "#30035"
+msgid "Default view for TV Shows"
+msgstr "Вид по умолчанию для сериалов"
+
+msgctxt "#30036"
+msgid "Default view for Seasons"
+msgstr "Вид по умолчанию для сезонов"
+
+msgctxt "#30037"
+msgid "Default view for Episodes"
+msgstr "Вид по умолчанию для эпизодов"
+
+msgctxt "#30038"
+msgid "Prefer use of original title"
+msgstr "Только оригинальные названия"
+
+msgctxt "#30039"
+msgid "TheMovieDB"
+msgstr "TheMovieDB"
+
+msgctxt "#30040"
+msgid "API key"
+msgstr "ключ API"
+
+msgctxt "#30041"
+msgid "Stream sorting"
+msgstr "Сортировка стримов"
+
+msgctxt "#30042"
+msgid "Sorting mode for Movies"
+msgstr "Сортировка фильмов"
+
+msgctxt "#30043"
+msgid "Sorting mode for TV Shows"
+msgstr "Сортировка сериалов"
+
+msgctxt "#30044"
+msgid "By seeders"
+msgstr "за колич. содов"
+
+msgctxt "#30045"
+msgid "By resolution"
+msgstr "pа резрешением"
+
+msgctxt "#30046"
+msgid "Balanced"
+msgstr "баланс"
+
+msgctxt "#30047"
+msgid "Resolution preference for Movies"
+msgstr "Предпочтительное разрешением для фильмов"
+
+msgctxt "#30048"
+msgid "Resolution preference for TV Shows"
+msgstr "Предпочтительное резрешением для сериалов"
+
+msgctxt "#30049"
+msgid "Percentage of additional seeders required before choosing next resolution"
+msgstr "Процент дополнительных сидов перед выбором следуещего разрешения"
+
+# Interface
+
+msgctxt "#30100"
+msgid "Quasar has crashed, restarting..."
+msgstr "Упс, перезапуск..."
+
+msgctxt "#30101"
+msgid "You must restart Kodi before using Quasar"
+msgstr "Перезапустите Kodi"
+
+msgctxt "#30102"
+msgid "This add-on can only be run from within Quasar"
+msgstr "Это дополниние можно запустить только через Quasar"
+
+msgctxt "#30103"
+msgid "Unable to find Quasar binary"
+msgstr "Quasar binary не найден"
+
+msgctxt "#30104"
+msgid "Insert file or URL"
+msgstr "Вставить файл или URL"
+
+msgctxt "#30105"
+msgid "URL"
+msgstr "URL"
+
+msgctxt "#30106"
+msgid "File"
+msgstr "Файл"
+
+msgctxt "#30107"
+msgid "Insert URL"
+msgstr "Вставить URL"
+
+msgctxt "#30108"
+msgid "File path"
+msgstr "Путь к файлу"
+
+msgctxt "#30109"
+msgid "OK"
+msgstr "ОК"
+
+msgctxt "#30110"
+msgid "Crashed too many times, aborting..."
+msgstr "Много ошибок, отказ..."
+
+msgctxt "#30111"
+msgid "Provider failed too many times, disabling..."
+msgstr "Слишком много сбоев провайдера, отключение..."
+
+msgctxt "#30112"
+msgid "Unable to disable provider"
+msgstr "Невозможно отключить провайдера"
+
+# Quasar daemon
+
+msgctxt "#30200"
+msgid "Cache cleared"
+msgstr "Кеш очищен!"
+
+msgctxt "#30201"
+msgid "Search TV Shows"
+msgstr "Искать сериал"
+
+msgctxt "#30202"
+msgid "Choose stream..."
+msgstr "Выбрать стрим..."
+
+msgctxt "#30203"
+msgid "Show information"
+msgstr "Информация"
+
+msgctxt "#30204"
+msgid "Unable to find any providers"
+msgstr "Нет провайдеров"
+
+msgctxt "#30205"
+msgid "No links were found"
+msgstr "Стримы не найдены"
+
+msgctxt "#30206"
+msgid "Search Movies"
+msgstr "Искать фильм"
+
+msgctxt "#30207"
+msgid "Not enough space available on the download path."
+msgstr "Недостаточно места в папке для скачивания."
+
+msgctxt "#30208"
+msgid "Quasar daemon has started"
+msgstr "Quasar запустился"
+
+msgctxt "#30209"
+msgid "Search"
+msgstr "Поиск"
+
+msgctxt "#30210"
+msgid "Most Popular"
+msgstr "Самые популярные"
+
+msgctxt "#30211"
+msgid "Top Rated"
+msgstr "С лучшим рейтингом"
+
+msgctxt "#30212"
+msgid "Most Voted"
+msgstr "Самые оцениваемые"
+
+msgctxt "#30213"
+msgid "IMDB Top 250"
+msgstr "IMDB Топ 250"
+
+msgctxt "#30214"
+msgid "Movies"
+msgstr "Фильмы"
+
+msgctxt "#30215"
+msgid "TV Shows"
+msgstr "Сериалы"
+
+msgctxt "#30216"
+msgid "Add Torrent"
+msgstr "Добавить торрент"
+
+msgctxt "#30217"
+msgid "Paste Magnet or URL"
+msgstr "Вставить Magnet или URL"
+
+msgctxt "#30218"
+msgid "Next page"
+msgstr "Следующая страница"
+
+msgctxt "#30219"
+msgid "Add/Remove from library"
+msgstr "Добавить/удалить с библиотеки"
+
+msgctxt "#30220"
+msgid "Library path not set"
+msgstr "Путь к библиотеке не назначен"
+
+msgctxt "#30221"
+msgid "Item successfully added to library"
+msgstr "Обьект успешно добавлен в библиотеку"
+
+msgctxt "#30222"
+msgid "Item removed from library"
+msgstr "Обьект удален с библиотеки"
+
+msgctxt "#30223"
+msgid "Files"
+msgstr "Файлы"
+
+msgctxt "#30224"
+msgid "Provider error"
+msgstr "Ошибка провайдера"
+
+msgctxt "#30225"
+msgid "Navigation error"
+msgstr "Ошибка навигации"
+
+msgctxt "#30226"
+msgid "Daemon error"
+msgstr "Ошибка Quasar daemon"
+
+msgctxt "#30227"
+msgid "Error updating Quasar daemon"
+msgstr "Ошибка обновления Quasar daemon"
+
+msgctxt "#30228"
+msgid "Available streams for"
+msgstr "Стримы |"
+
+msgctxt "#30229"
+msgid "Torrents"
+msgstr "Торренты"
+
+msgctxt "#30230"
+msgid "Play/resume torrent"
+msgstr "Играть/возобновить торрент"
+
+msgctxt "#30231"
+msgid "Pause torrent"
+msgstr "Остановить торрент"
+
+msgctxt "#30232"
+msgid "Delete torrent"
+msgstr "Удалить торрент"
+
+msgctxt "#30233"
+msgid "Pause session"
+msgstr "Остановить загрузку"
+
+msgctxt "#30234"
+msgid "Resume session"
+msgstr "Возобновить загрузку"
+
+msgctxt "#30235"
+msgid "Resume torrent"
+msgstr "Возобновить проигрывание"
+
+msgctxt "#30236"
+msgid "Recently Released"
+msgstr "Новинки"
+
+msgctxt "#30237"
+msgid "Recent Shows"
+msgstr "Новинки"
+
+msgctxt "#30238"
+msgid "Recent Episodes"
+msgstr "Новые эпизоды"
+
+msgctxt "#30239"
+msgid "Providers"
+msgstr "Провайдеры"
+
+msgctxt "#30240"
+msgid "Enable"
+msgstr "Включить"
+
+msgctxt "#30241"
+msgid "Disable"
+msgstr "Отключить"
+
+msgctxt "#30242"
+msgid "Check"
+msgstr "Проверить"
+
+msgctxt "#30243"
+msgid "Provider failures"
+msgstr "Сбоев"
+
+msgctxt "#30244"
+msgid "Provider settings"
+msgstr "Настройки провайдера"
+
+msgctxt "#30245"
+msgid "Popular on Trakt"
+msgstr "Популярное"
+
+msgctxt "#30246"
+msgid "Trending"
+msgstr "В тренде"
+
+msgctxt "#30247"
+msgid "Most Played"
+msgstr "В топе"
+
+msgctxt "#30248"
+msgid "Most Watched"
+msgstr "Самые просматриваемые"
+
+msgctxt "#30249"
+msgid "Most Collected"
+msgstr "В избранном"
+
+msgctxt "#30250"
+msgid "Most Anticipated"
+msgstr "Самые ожидаемые"
+
+msgctxt "#30251"
+msgid "Box Office"
+msgstr "В прокате"

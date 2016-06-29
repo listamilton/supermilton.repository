@@ -1,0 +1,569 @@
+# Kodi Media Center language file
+# Addon Name: Quasar
+# Addon id: plugin.video.quasar
+# Addon Provider: scakemyer
+#
+msgid ""
+msgstr ""
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2016-04-15 13:34+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Project-Id-Version: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.8.7\n"
+
+# Settings
+msgctxt "#30000"
+msgid "General"
+msgstr "Général"
+
+msgctxt "#30001"
+msgid "Download path (not FAT32)"
+msgstr "Chemin de téléchargement (pas de FAT32)"
+
+msgctxt "#30002"
+msgid "Keep files after playback/download stops"
+msgstr "Conserver les fichiers après la fin de la lecture ou du téléchargement"
+
+msgctxt "#30003"
+msgid "Buffer size (MB)"
+msgstr "Taille du tampon (Mo)"
+
+msgctxt "#30004"
+msgid "Max upload rate (kB/s)"
+msgstr "Débit montant max (ko/s)"
+
+msgctxt "#30005"
+msgid "Max download rate (kB/s)"
+msgstr "Débit descendant max (ko/s)"
+
+msgctxt "#30006"
+msgid "Listen port min"
+msgstr "Port d'écoute min"
+
+msgctxt "#30007"
+msgid "Listen port max"
+msgstr "Port d'écoute max"
+
+msgctxt "#30008"
+msgid "Proxy"
+msgstr "Proxy"
+
+msgctxt "#30009"
+msgid "SOCKS v5 Configuration"
+msgstr "Configuration SOCKS v5"
+
+msgctxt "#30010"
+msgid "Enabled"
+msgstr "Activé"
+
+msgctxt "#30011"
+msgid "Host"
+msgstr "Hôte"
+
+msgctxt "#30012"
+msgid "Port"
+msgstr "Port"
+
+msgctxt "#30013"
+msgid "Login"
+msgstr "Identifiant"
+
+msgctxt "#30014"
+msgid "Password"
+msgstr "Mot de passe"
+
+msgctxt "#30015"
+msgid "Advanced"
+msgstr "Avancé"
+
+msgctxt "#30016"
+msgid "Custom provider timeout"
+msgstr "Délai d’attente maximum du Provider personnalisé"
+
+msgctxt "#30017"
+msgid "Enabled (use at your own risk)"
+msgstr "Activé (risqué)"
+
+msgctxt "#30018"
+msgid "Timeout in seconds"
+msgstr "Délai d’attente max (secondes)"
+
+msgctxt "#30019"
+msgid "Maintenance"
+msgstr "Maintenance"
+
+msgctxt "#30020"
+msgid "Clear cache"
+msgstr "Vider le cache"
+
+msgctxt "#30021"
+msgid "Enable pagination"
+msgstr "Activer la pagination"
+
+msgctxt "#30022"
+msgid "Enable overlay status"
+msgstr "Activer la barre d'information en surimpression"
+
+msgctxt "#30023"
+msgid "Choose stream automatically"
+msgstr "Choisir un flux automatiquement"
+
+msgctxt "#30024"
+msgid "Get updates for pre-releases"
+msgstr "Autoriser les versions beta"
+
+msgctxt "#30025"
+msgid "Limit rates after buffering only"
+msgstr "Limiter le débit seulement après le chargement du tampon"
+
+msgctxt "#30026"
+msgid "Library path"
+msgstr "Chemin vers la médiathèque"
+
+msgctxt "#30027"
+msgid "Connections limit"
+msgstr "Nombre de connexions max"
+
+msgctxt "#30028"
+msgid "Background handling of torrents"
+msgstr "Prise en charge des torrents en arrière plan"
+
+msgctxt "#30029"
+msgid "Session saving frequency (seconds)"
+msgstr "Fréquence de sauvegarde de la session (secondes)"
+
+msgctxt "#30030"
+msgid "Overlay status vertical offset"
+msgstr "Décalage vertical du statut en surimpression"
+
+msgctxt "#30031"
+msgid "Disable providers failing health check"
+msgstr "Désactiver la détection des Providers en échec"
+
+msgctxt "#30032"
+msgid "Allowed failures before provider is disabled"
+msgstr "Nombre d'erreurs avant désactivation d'un Provider"
+
+msgctxt "#30033"
+msgid "Appearance"
+msgstr "Apparence"
+
+msgctxt "#30034"
+msgid "Default view for Movies"
+msgstr "Vue par défaut pour les films"
+
+msgctxt "#30035"
+msgid "Default view for TV Shows"
+msgstr "Vue par défaut pour les séries"
+
+msgctxt "#30036"
+msgid "Default view for Seasons"
+msgstr "Vue par défaut pour les saisons"
+
+msgctxt "#30037"
+msgid "Default view for Episodes"
+msgstr "Vue par défaut pour les épisodes"
+
+msgctxt "#30038"
+msgid "Prefer use of original title"
+msgstr "Utiliser de préférence le titre original"
+
+msgctxt "#30039"
+msgid "TheMovieDB"
+msgstr "TheMovieDB"
+
+msgctxt "#30040"
+msgid "API key"
+msgstr "Clé d'API"
+
+msgctxt "#30041"
+msgid "Stream sorting"
+msgstr "Tri des flux"
+
+msgctxt "#30042"
+msgid "Sorting mode for Movies"
+msgstr "Tri des Films"
+
+msgctxt "#30043"
+msgid "Sorting mode for TV Shows"
+msgstr "Tri des Séries"
+
+msgctxt "#30044"
+msgid "By seeders"
+msgstr "Par seeders"
+
+msgctxt "#30045"
+msgid "By resolution"
+msgstr "Par résolution"
+
+msgctxt "#30046"
+msgid "Balanced"
+msgstr "Equilibré"
+
+msgctxt "#30047"
+msgid "Resolution preference for Movies"
+msgstr "Préférence de définition pour les Films"
+
+msgctxt "#30048"
+msgid "Resolution preference for TV Shows"
+msgstr "Préférence de définition pour les Séries"
+
+msgctxt "#30049"
+msgid "Percentage of additional seeders required before choosing next resolution"
+msgstr "Pourcentage de seeders additionels avant de choisir la définition suivante"
+
+msgctxt "#30050"
+msgid "Disable DHT"
+msgstr "Désactiver DHT"
+
+msgctxt "#30051"
+msgid "Share ratio limit (percent)"
+msgstr "Taux de partage des torrents (pourcent)"
+
+msgctxt "#30052"
+msgid "Seed time ratio limit (percent)"
+msgstr "Ratio temps seed / téléchargement (pourcent)"
+
+msgctxt "#30053"
+msgid "Seed time limit (hours)"
+msgstr "Temps de partage des torrents (heures)"
+
+msgctxt "#30054"
+msgid "Update library"
+msgstr "Mettre à jour la médiathèque"
+
+msgctxt "#30055"
+msgid "Add Specials to library"
+msgstr "Ajouter les épisodes spéciaux (pilotes, ...) à la médiathèque"
+
+msgctxt "#30056"
+msgid "Trakt"
+msgstr "Trakt"
+
+msgctxt "#30057"
+msgid "Username"
+msgstr "Identifiant"
+
+msgctxt "#30058"
+msgid "Authorize Quasar"
+msgstr "Autoriser Quasar"
+
+msgctxt "#30059"
+msgid "Library update delay on startup (seconds)"
+msgstr "Différé de mise à jour de la médiathèque au démarrage (secondes)"
+
+# Interface
+msgctxt "#30100"
+msgid "Quasar has crashed, restarting..."
+msgstr "Plantage de Quasar, redémarrage..."
+
+msgctxt "#30101"
+msgid "You must restart Kodi before using Quasar"
+msgstr "Vous devez redémarrer Kodi avant de pouvoir utiliser Quasar"
+
+msgctxt "#30102"
+msgid "This add-on can only be run from within Quasar"
+msgstr "Cet add-on ne peut être utilisé que depuis Quasar"
+
+msgctxt "#30103"
+msgid "Unable to find Quasar binary"
+msgstr "Impossible de trouver le fichier exécutable Quasar"
+
+msgctxt "#30104"
+msgid "Insert file or URL"
+msgstr "Saisir un fichier ou une URL"
+
+msgctxt "#30105"
+msgid "URL"
+msgstr "URL"
+
+msgctxt "#30106"
+msgid "File"
+msgstr "Fichier"
+
+msgctxt "#30107"
+msgid "Insert URL"
+msgstr "Saisir une URL"
+
+msgctxt "#30108"
+msgid "File path"
+msgstr "Chemin vers le fichier"
+
+msgctxt "#30109"
+msgid "OK"
+msgstr "OK"
+
+msgctxt "#30110"
+msgid "Crashed too many times, aborting..."
+msgstr "Trop de plantages, abandon..."
+
+msgctxt "#30111"
+msgid "Provider failed too many times, disabling..."
+msgstr "Trop d'erreurs du Provider, désactivation..."
+
+msgctxt "#30112"
+msgid "Unable to disable provider"
+msgstr "Impossible de désactiver le Provider"
+
+msgctxt "#30113"
+msgid "Download path not set, check your settings"
+msgstr "Chemin de téléchargement non spécifié, vérifiez votre configuration"
+
+# Quasar daemon
+msgctxt "#30200"
+msgid "Cache cleared"
+msgstr "Cache nettoyé"
+
+msgctxt "#30201"
+msgid "Search TV Shows"
+msgstr "Rechercher des Séries"
+
+msgctxt "#30202"
+msgid "Choose stream..."
+msgstr "Choisir un flux"
+
+msgctxt "#30203"
+msgid "Show information"
+msgstr "Afficher les informations"
+
+msgctxt "#30204"
+msgid "Unable to find any providers"
+msgstr "Aucun Provider trouvé"
+
+msgctxt "#30205"
+msgid "No links were found"
+msgstr "Aucun lien trouvé"
+
+msgctxt "#30206"
+msgid "Search Movies"
+msgstr "Rechercher des Films"
+
+msgctxt "#30207"
+msgid "Not enough space available on the download path."
+msgstr "Pas assez d'espace disponible dans le répertoire de téléchargement"
+
+msgctxt "#30208"
+msgid "Quasar daemon has started"
+msgstr "Le processus Quasar a démarré"
+
+msgctxt "#30209"
+msgid "Search"
+msgstr "Rechercher"
+
+msgctxt "#30210"
+msgid "Most Popular"
+msgstr "Les plus populaires"
+
+msgctxt "#30211"
+msgid "Top Rated"
+msgstr "Les mieux classés"
+
+msgctxt "#30212"
+msgid "Most Voted"
+msgstr "Les plus notés"
+
+msgctxt "#30213"
+msgid "IMDB Top 250"
+msgstr "Top 250 IMDB"
+
+msgctxt "#30214"
+msgid "Movies"
+msgstr "Films"
+
+msgctxt "#30215"
+msgid "TV Shows"
+msgstr "Séries"
+
+msgctxt "#30216"
+msgid "Add Torrent"
+msgstr "Ajouter un Torrent"
+
+msgctxt "#30217"
+msgid "Paste Magnet or URL"
+msgstr "Coller un Magnet ou une URL"
+
+msgctxt "#30218"
+msgid "Next page"
+msgstr "Page suivante"
+
+msgctxt "#30219"
+msgid "Add / Remove from library"
+msgstr "Ajouter / Supprimer de la médiathèque"
+
+msgctxt "#30220"
+msgid "Library path not set"
+msgstr "Chemin vers la médiathèque non spécifié"
+
+msgctxt "#30221"
+msgid "Item successfully added to library"
+msgstr "Elément ajouté à la médiathèque"
+
+msgctxt "#30222"
+msgid "Item removed from library"
+msgstr "Elément supprimé de la médiathèque"
+
+msgctxt "#30223"
+msgid "Files"
+msgstr "Fichiers"
+
+msgctxt "#30224"
+msgid "Provider error"
+msgstr "Erreur du Provider"
+
+msgctxt "#30225"
+msgid "Navigation error"
+msgstr "Erreur de navigation"
+
+msgctxt "#30226"
+msgid "Daemon error"
+msgstr "Erreur du processus Quasar"
+
+msgctxt "#30227"
+msgid "Error updating Quasar daemon"
+msgstr "Erreur lors de la mise à jour du processus Quasar"
+
+msgctxt "#30228"
+msgid "Available streams for"
+msgstr "Flux disponibles pour"
+
+msgctxt "#30229"
+msgid "Torrents"
+msgstr "Torrents"
+
+msgctxt "#30230"
+msgid "Play / resume torrent"
+msgstr "Lire / Reprendre le torrent"
+
+msgctxt "#30231"
+msgid "Pause torrent"
+msgstr "Mettre en pause le torrent"
+
+msgctxt "#30232"
+msgid "Delete torrent"
+msgstr "Supprimer le torrent"
+
+msgctxt "#30233"
+msgid "Pause session"
+msgstr "Mettre en pause la session"
+
+msgctxt "#30234"
+msgid "Resume session"
+msgstr "Reprendre la lecture de la session"
+
+msgctxt "#30235"
+msgid "Resume torrent"
+msgstr "Reprendre la lecture du torrent"
+
+msgctxt "#30236"
+msgid "Recently Released"
+msgstr "Sorties récentes"
+
+msgctxt "#30237"
+msgid "Recent Shows"
+msgstr "Séries récentes"
+
+msgctxt "#30238"
+msgid "Recent Episodes"
+msgstr "Episodes récents"
+
+msgctxt "#30239"
+msgid "Providers"
+msgstr "Providers"
+
+msgctxt "#30240"
+msgid "Enable"
+msgstr "Activer"
+
+msgctxt "#30241"
+msgid "Disable"
+msgstr "Désactiver"
+
+msgctxt "#30242"
+msgid "Check"
+msgstr "Vérifier"
+
+msgctxt "#30243"
+msgid "Provider failures"
+msgstr "Erreurs du Provider"
+
+msgctxt "#30244"
+msgid "Provider settings"
+msgstr "Paramètres du Provider"
+
+msgctxt "#30245"
+msgid "Popular on Trakt"
+msgstr "Les plus populaires"
+
+msgctxt "#30246"
+msgid "Trending"
+msgstr "Les plus tendances (en ce moment)"
+
+msgctxt "#30247"
+msgid "Most Played"
+msgstr "Les plus joués (dans l'absolu)"
+
+msgctxt "#30248"
+msgid "Most Watched"
+msgstr "Les plus regardés (visiteurs uniques)"
+
+msgctxt "#30249"
+msgid "Most Collected"
+msgstr "Les plus ajoutés aux collections"
+
+msgctxt "#30250"
+msgid "Most Anticipated"
+msgstr "Les plus attendus"
+
+msgctxt "#30251"
+msgid "Box Office"
+msgstr "Trakt: Box Office"
+
+msgctxt "#30252"
+msgid "Add to library"
+msgstr "Ajouter à la médiathèque"
+
+msgctxt "#30253"
+msgid "Remove from library"
+msgstr "Supprimer de la médiathèque"
+
+msgctxt "#30254"
+msgid "Watchlist"
+msgstr "Liste à regarder"
+
+msgctxt "#30255"
+msgid "Add to watchlist"
+msgstr "Ajouter à la liste à regarder"
+
+msgctxt "#30256"
+msgid "Remove from watchlist"
+msgstr "Supprimer de la liste à regarder"
+
+msgctxt "#30257"
+msgid "Collection"
+msgstr "Collection Trakt"
+
+msgctxt "#30258"
+msgid "Add to collection"
+msgstr "Ajouter à la collection"
+
+msgctxt "#30259"
+msgid "Remove from collection"
+msgstr "Supprimer de la collection"
+
+msgctxt "#30260"
+msgid "A torrent was previously chosen, use it?"
+msgstr "Un torrent a été choisi précédemment, l'utiliser ?"
+
+msgctxt "#30261"
+msgid "Search history"
+msgstr "Historique de recherche"
+
+msgctxt "#30262"
+msgid "Use search history?"
+msgstr "Utiliser l'historique de recherche ?"

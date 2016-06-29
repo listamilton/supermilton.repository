@@ -1,0 +1,133 @@
+Quasar changelog
+======
+
+[B]v0.6.1[/B] - Jun 15 2015
+- Android <5.0 support
+- SOCKS proxy support
+- Add custom provider timeout support
+- Ensure we try IPv4 AND IPv6 when connecting to Kodi
+- Rework configuration interface and enable proxy support
+- Force closing of all dialogs on start, to prevent stalled dialogs
+- bittorrent: Use alternate sources in magnet from torcache or original location
+- Fix a startup issue on windows (DO NOT USE 0.6.0)
+
+[B]v0.5.0[/B] - Mar 30 2015
+- Trailer support
+- Boost magnets with default trackers
+- Multi-lang support for metadata
+- Add icons in menus
+- Added new default trackers
+- Update to go 1.4.2
+- Update to OpenSSL 1.0.2a
+- Update to libtorrent 1.0.4
+
+[B]v0.4.7[/B] - Feb 21 2015
+- Fix stalled buffering
+- Fix issue where Pulsar would enter a restart loop when cancelling a buffering
+- Handle Unicode paths
+- Switch to simplejson, as it is ~30% faster at loading JSON
+
+[B]v0.4.6[/B] - Feb 13 2015
+- Much better bandwidth allocation at the cost of slightly longer buffer times
+
+[B]v0.4.5[/B] - Jan 24 2015
+- Fix memory leak in bjsonrpc
+- Fix leaking goroutine during buffering
+
+[B]v0.4.4[/B] - Jan 22 2015
+- Fix a closure leak when the JSONRPC asks wether to serve or not
+- Set piece deadlines, and also when seeking
+- Limit DHT memory
+- Change settings regarding disk cache, atime, free hashes and ip overhead
+
+
+[B]v0.4.3[/B] - Jan 9 2015
+- Fix stalled buffering
+
+[B]v0.4.2[/B] - Dec 31 2014
+- Force downloading of pieces, even if dupes, should prevent the stalled buffering
+- Only match on %02d for absolute numbers episode filters
+- Display when we are unable to resolve a .torrent file
+- Fix episode filtering for "1x02" episode numbering
+
+[B]v0.4.1[/B] - Dec 28 2014
+- Update to libtorrent 1.0.3 (should fix speed issues)
+- New buffering method (slower, but more reliable)
+- Filter irrevelant items for episode search
+- Better support for anime detection
+- Make normalization better
+- Filter irrelevant links when searching for episodes
+
+
+[B]v0.4.0[/B] - Nov 23 2014
+- Subtitles support via OpenSubtitles
+- [fix] Better BitTorrent performances (upgrade to libtorrent pre-1.0.3)
+- [fix] Prevent empty movies from showing/crashing
+
+[B]v0.3.2[/B] - Nov 18 2014
+- Fix issue with TV Shows with wrong TVDB/IMDB Id for episodes
+
+[B]v0.3.1[/B] - Nov 17 2014
+v0.3.1:
+- Fix a bug on first start in Windows in first install
+- Properly check for unsupported platforms
+
+[B]v0.3.0[/B] - Nov 17 2014
+v0.3.0
+======
+
+Enhancements:
+* Auto updates with auto repository
+* Add Most Voted movies
+* Add IMDB Top 250
+* Add TV Shows Genres
+* Migrate TV Shows from Trakt.tv to TMDB and TVDB
+* Notify when no providers are installed
+* Add clear cache command
+* Faster displaying of results
+* Massive performance improvements
+* Check for sufficient space before starting the download
+* Use GZIP for cache storage
+* Enable TVDB caching
+
+Providers:
+* Enable Absolute Numbering for TV Shows
+* Use TMDB's Serie's name when searching for an episode
+* Fix (get/set)_setting
+* Fix raw search to a string, not an object
+* Explicitely accept GZIP payloads when performing HTTP requests
+
+Fixes:
+* Change pulsard and jsonrpc host to 65251 and 65252
+* Ensure we don't hang XBMC when closing
+* Unlock files on BSD/Darwin systems (could prevent playback of OSX)
+* Change provider timeout to 30s on single core linux arm (Raspberry Pi)
+
+[B]v0.2.0[/B] - Oct 20 2014
+v0.2.0:
+* Add Linux x86/x64/arm support
+* Increase movie fectching to 400
+* Add Top Rated movies
+* Display file size when known
+* Properly delete after media is done playing
+* Huge performance improvments in the bittorrent streaming engine
+* Movie and view caching
+* Better libtorrent Go bindings
+* Better libtorrent speeds using TeX, PeX and uT metadata
+* Faster buffering and media startup speed
+* Fanarts are fetched at 720p to increase speed
+* Properly set movie year, rating and cast/roles
+* Only call enabled providers
+* Provider SDK
+* Provider: debug endpoint
+* Provider: .torrent support
+* Provider: custom headers support (like XBMC)
+* Provider: timeout is now 4s, 30s on linux-arm
+* Provider: payload is now an object
+* Provider: international titles (by countries)
+* Provider: title normalization
+
+[B]v0.1.0[/B] - Sep 14 2014
+Initial release.
+
+

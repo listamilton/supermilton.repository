@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="30000">
+        <!-- General -->
+        <setting label="30000" type="lsep" />
+        <setting id="download_path" type="folder" label="30001" source="auto" option="writeable" />
+        <setting id="library_path" type="folder" label="30026" source="auto" option="writeable" />
+        <setting id="background_handling" type="bool" label="30028" default="false" />
+        <setting id="keep_files" type="bool" label="30002" default="false" />
+        <setting id="results_per_page" type="number" label="30021" default="20" />
+        <setting id="enable_overlay_status" type="bool" label="30022" default="true" />
+        <setting id="overlay_status_offset" type="number" label="30030" default="150" visible="eq(-1,true)" />
+        <setting id="choose_stream_auto" type="bool" label="30023" default="true" />
+        <setting id="use_original_title" type="bool" label="30038" default="false" />
+        <setting id="add_specials" type="bool" label="30055" default="false" />
+        <setting id="pre_release_updates" type="bool" label="30024" default="false" />
+    </category>
+    <category label="30033">
+        <!-- Appearance -->
+        <setting label="30033" type="lsep" />
+        <setting id="viewmode_movies" label="30034" type="number" default="" />
+        <setting id="viewmode_tvshows" label="30035" type="number" default="" />
+        <setting id="viewmode_seasons" label="30036" type="number" default="" />
+        <setting id="viewmode_episodes" label="30037" type="number" default="" />
+    </category>
+    <category label="BitTorrent">
+        <!-- BitTorrent -->
+        <setting label="BitTorrent" type="lsep" />
+        <setting id="buffer_size" label="30003" type="number" default="20" />
+        <setting id="max_upload_rate" label="30004" type="number" default="" />
+        <setting id="max_download_rate" label="30005" type="number" default="" />
+        <setting id="limit_after_buffering" label="30025" type="bool" default="false" />
+        <setting id="connections_limit" label="30027" type="number" default="" />
+        <setting id="session_save" label="30029" type="number" default="15" />
+        <setting id="share_ratio_limit" label="30051" type="number" default="" />
+        <setting id="seed_time_ratio_limit" label="30052" type="number" default="" />
+        <setting id="seed_time_limit" label="30053" type="number" default="" />
+        <setting id="disable_dht" label="30050" type="bool" default="false" />
+        <setting id="listen_port_min" label="30006" type="number" default="6889" />
+        <setting id="listen_port_max" label="30007" type="number" default="7000" />
+    </category>
+    <category label="30239">
+        <!-- Sorting -->
+        <setting label="30041" type="lsep" />
+        <setting id="sorting_mode_movies" label="30042" type="enum" lvalues="30044|30045|30046" />
+        <setting id="sorting_mode_shows" label="30043" type="enum" lvalues="30044|30045|30046" />
+        <setting id="resolution_preference_movies" label="30047" type="enum" values="1080p / 720p / 480p|720p / 1080p / 480p|720p / 480p / 1080p|480p / 720p / 1080p" />
+        <setting id="resolution_preference_shows" label="30048" type="enum" values="1080p / 720p / 480p|720p / 1080p / 480p|720p / 480p / 1080p|480p / 720p / 1080p" />
+        <setting id="percentage_additional_seeders" label="30049" type="number" default="25" />
+        <!-- Providers -->
+        <setting label="30239" type="lsep" />
+        <setting id="provider_disable_failing" label="30031" type="bool" default="true" />
+        <setting id="provider_allowed_failures" label="30032" type="number" default="3" />
+        <setting label="30016" type="lsep" />
+        <setting id="custom_provider_timeout_enabled" label="30017" type="bool" default="false" />
+        <setting id="custom_provider_timeout" label="30018" type="number" default="4" visible="eq(-1,true)" />
+    </category>
+    <category label="30008">
+        <!-- Proxy -->
+        <setting label="30009" type="lsep" />
+        <setting id="socks_enabled" label="30010" type="bool" default="false" />
+        <setting id="socks_host" label="30011" type="text" default="" subsetting="true" visible="eq(-1,true)" />
+        <setting id="socks_port" label="30012" type="number" default="1080" subsetting="true" visible="eq(-2,true)" />
+        <setting id="socks_login" label="30013" type="text" default="" subsetting="true" visible="eq(-3,true)" />
+        <setting id="socks_password" label="30014" type="text" default="" option="hidden" subsetting="true" visible="eq(-4,true)" />
+    </category>
+    <category label="30015">
+        <!-- Advanced -->
+        <setting label="30019" type="lsep" />
+        <setting type="action" label="30020" action="RunPlugin(plugin://plugin.video.quasar/cmd/clear_cache)" />
+        <setting type="action" label="30054" action="RunPlugin(plugin://plugin.video.quasar/library/update)" />
+        <setting id="library_update_delay" type="number" label="30059" default="300" />
+        <setting label="30056" type="lsep" />
+        <setting id="trakt_username" type="text" label="30057" default="" />
+        <setting id="trakt_token" type="text" label="Trakt token" default="" visible="false" />
+        <setting id="trakt_refresh_token" type="text" label="Trakt refresh token" default="" visible="false" />
+        <setting id="trakt_scrobble" type="bool" label="Scrobble" default="false" />
+        <setting type="action" label="30058" action="RunPlugin(plugin://plugin.video.quasar/trakt/authorize)" />
+        <setting label="CloudHole" type="lsep" />
+        <setting id="cloudhole_key" type="text" label="30040" default="" />
+        <setting label="30039" type="lsep" />
+        <setting id="tmdb_api_key" label="30040" type="text" default="" />
+    </category>
+</settings>

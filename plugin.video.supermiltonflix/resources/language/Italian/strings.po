@@ -1,0 +1,314 @@
+# Kodi Media Center language file
+# Addon Name: Flix2Kodi
+# Addon id: plugin.video.flix2kodi
+# Addon Provider: zero
+msgid ""
+msgstr ""
+"Project-Id-Version: Kodi-Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: 2015-11-04 18:30+0100\n"
+"PO-Revision-Date: 2015-11-04 18:30+0100\n"
+"Last-Translator: logi85\n"
+"Language-Team: German\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+msgctxt "#11000"
+msgid "General"
+msgstr "Generale"
+
+msgctxt "#11001"
+msgid "Username"
+msgstr "Nome Utente"
+
+msgctxt "#11002"
+msgid "Password"
+msgstr "Password"
+
+msgctxt "#11100"
+msgid "General"
+msgstr "Generale"
+
+msgctxt "#11101"
+msgid "Browser"
+msgstr ""
+
+msgctxt "#111011"
+msgid "Chrome"
+msgstr ""
+
+msgctxt "#111012"
+msgid "Chromelauncher"
+msgstr ""
+
+msgctxt "#111013"
+msgid "Internet Explorer"
+msgstr ""
+
+msgctxt "#111014"
+msgid "Edge"
+msgstr ""
+
+msgctxt "#111015"
+msgid "Safari"
+msgstr ""
+
+msgctxt "#11102"
+msgid "Update library after adding"
+msgstr "Aggiorna la libreria dopo l'aggiunta"
+
+msgctxt "#11200"
+msgid "Profil settings"
+msgstr "Impostazioni profilo"
+
+msgctxt "#11201"
+msgid "Single-user account"
+msgstr "Account utente singolo"
+
+msgctxt "#11202"
+msgid "Show profile selection on each start"
+msgstr "Mosta la selezione del profilo ad ogni avvio"
+
+msgctxt "#12000"
+msgid "Advanced"
+msgstr "Avanzate"
+
+msgctxt "#12001"
+msgid "Debug logging"
+msgstr "Debug logging"
+
+msgctxt "#12002"
+msgid "Library path"
+msgstr "Percorso libretia"
+
+msgctxt "#12101"
+msgid "Disable lirc on playback"
+msgstr "Disabilita lirc durante la riproduzione"
+
+msgctxt "#13000"
+msgid "Views"
+msgstr "Viste"
+
+msgctxt "#13001"
+msgid "Get covers & fanart images from TMDb"
+msgstr "Ottieni le immagini di cover & fanart da TMDb"
+
+msgctxt "#13002"
+msgid "Browse TV-Shows instead of autoplaying"
+msgstr "Sfoglia le serie tv invece di iniziare la riproduzione"
+
+msgctxt "#13003"
+msgid "Items per page"
+msgstr "Elementi per pagina"
+
+msgctxt "#13004"
+msgid "Sync viewstate with netflix"
+msgstr "Sincronizza lo stato delle visualizzazioni con netflix"
+
+msgctxt "#13100"
+msgid "Appearance"
+msgstr "Aspetto"
+
+msgctxt "#13101"
+msgid "Force view"
+msgstr "Forza visualizzazione"
+
+msgctxt "#13102"
+msgid "View ID - videos"
+msgstr "View ID - Video"
+
+msgctxt "#13103"
+msgid "View ID - episodes"
+msgstr "View ID - Episodi"
+
+msgctxt "#13104"
+msgid "View ID - viewing activity"
+msgstr "View ID - Cosa guardi"
+
+msgctxt "#14000"
+msgid "User data"
+msgstr "Dati utente"
+
+msgctxt "#14001"
+msgid "Delete cache"
+msgstr "Cancella cache"
+
+msgctxt "#14002"
+msgid "Delete cookies / session"
+msgstr "Cancella cookies / sessione"
+
+msgctxt "#14003"
+msgid "Reset Addon"
+msgstr "Resetta Addon"
+
+msgctxt "#30100"
+msgid "Movies"
+msgstr "Film"
+
+msgctxt "#30101"
+msgid "TV shows"
+msgstr "Serie Tv"
+
+msgctxt "#30102"
+msgid "Suggestions"
+msgstr "Suggerimenti"
+
+msgctxt "#30103"
+msgid "Who's watching?"
+msgstr "Chi sta guardando?"
+
+msgctxt "#30104"
+msgid "My list"
+msgstr "La mia lista"
+
+msgctxt "#30105"
+msgid "Viewing activity"
+msgstr "Cosa guardi"
+
+msgctxt "#30106"
+msgid "Latest"
+msgstr "Ultimi aggiunti"
+
+msgctxt "#30107"
+msgid "All shows"
+msgstr "Tutti gli show"
+
+msgctxt "#30108"
+msgid "Genres"
+msgstr "Generi"
+
+msgctxt "#30109"
+msgid "Search"
+msgstr "Cerca"
+
+msgctxt "#30110"
+msgid "Next page"
+msgstr "Prossima pagina"
+
+msgctxt "#30111"
+msgid "Search"
+msgstr "Cerca"
+
+msgctxt "#30150"
+msgid "Add to library"
+msgstr "Aggiungi alla libreira"
+
+msgctxt "#301501"
+msgid "Remove from library"
+msgstr "Rimuovi dalla libreria"
+
+msgctxt "#30151"
+msgid "Continue watching"
+msgstr "Continua a guardare"
+
+msgctxt "#30152"
+msgid "Show seasons"
+msgstr "Mostra le stagioni"
+
+msgctxt "#30154"
+msgid "Remove from my list"
+msgstr "Rimuovi dalla mia lista"
+
+msgctxt "#30155"
+msgid "Add to my list"
+msgstr "Aggiungi alla mia lista"
+
+msgctxt "#30156"
+msgid "Similar Movies"
+msgstr "Film simili"
+
+msgctxt "#30157"
+msgid "Similar TV Shows"
+msgstr "Serie Tv simili"
+
+msgctxt "#30200"
+msgid "Connecting Netflix"
+msgstr "Connesisone a Netflix"
+
+msgctxt "#30201"
+msgid "Preparing login"
+msgstr "Preparazione al login"
+
+msgctxt "#30202"
+msgid "Sending login details"
+msgstr "Invio dettagli login"
+
+msgctxt "#30203"
+msgid "Loading profile"
+msgstr "Caricamento profilo"
+
+msgctxt "#30204"
+msgid "Complete"
+msgstr "Completo"
+
+msgctxt "#30205"
+msgid "Loading metadata"
+msgstr "Caricamento metadata"
+
+msgctxt "#30300"
+msgid "Sorry! Netflix is not available in your country yet."
+msgstr "Mi dispiace! Netflix non e' ancora disponibile nella tua nazione."
+
+msgctxt "#30301"
+msgid "Cookies have been deleted."
+msgstr "I cookie sono stati cancellati."
+
+msgctxt "#30302"
+msgid "Session has been deleted."
+msgstr "La sessione e' stata cancellata."
+
+msgctxt "#30303"
+msgid "You are not logged in. Check your credentials and/or restart the addon!"
+msgstr "Non sei loggato. Verifica le tue credenziali e/o riavvia l'addon!"
+
+msgctxt "#30304"
+msgid "Multiple profiles found. Choose your profile!"
+msgstr "Trovati profili multipli. Scegli il tuo!"
+
+msgctxt "#30306"
+msgid "No results found!"
+msgstr "Nessun risultato trovato!"
+
+msgctxt "#30307"
+msgid "Really reset the addon?"
+msgstr "Vuoi realmente ressettare l'addon?"
+
+msgctxt "#30308"
+msgid "Addon has been reset!"
+msgstr "L'addon e' stato resettato!"
+
+msgctxt "#30309"
+msgid "Cache has been deleted!"
+msgstr "La cache e' stata cancellata!"
+
+msgctxt "#50001"
+msgid "No browser selected in settings!"
+msgstr "Nessun browser selezionato nelle impostazioni!"
+
+msgctxt "#50002"
+msgid "Sorry!"
+msgstr "Scusa!"
+
+msgctxt "#50003"
+msgid "Flix2Kodi crashed."
+msgstr "Flix2Kodi e' andato in crash"
+
+msgctxt "#50004"
+msgid "Try to refresh your login?"
+msgstr "Prova ad aggiornare il tuo login"
+
+msgctxt "#50006"
+msgid "Login refreshed. please try again."
+msgstr "Login aggiornato. Riprova"
+
+
+msgctxt "#50005"
+msgid "If your browser does not launch, something went wrong. Push BACK to leave this dialog."
+msgstr "Se il tuo browser non e' partito, qualcosa e' andata storta. Premi INDIETRO per chiudere questo messaggio."
+
+msgctxt "#99999"
+msgid ""
+msgstr ""

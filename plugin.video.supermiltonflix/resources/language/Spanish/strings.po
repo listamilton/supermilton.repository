@@ -1,0 +1,290 @@
+﻿# Kodi Media Center language file
+# Addon Name: Flix2Kodi
+# Addon id: plugin.video.flix2kodi
+# Addon Provider: zero
+msgid ""
+msgstr ""
+"Project-Id-Version: Kodi-Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: 2015-11-04 18:30+0100\n"
+"PO-Revision-Date: 2015-11-04 18:30+0100\n"
+"Last-Translator: logi85\n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+
+msgctxt "#11000"
+msgid "General"
+msgstr "General"
+
+msgctxt "#11001"
+msgid "Username"
+msgstr "Usuario"
+
+msgctxt "#11002"
+msgid "Password"
+msgstr "Contraseña"
+
+msgctxt "#11100"
+msgid "General"
+msgstr "General"
+
+msgctxt "#11101"
+msgid "Browser"
+msgstr "Buscar"
+
+msgctxt "#111011"
+msgid "Chrome"
+msgstr ""
+
+msgctxt "#111012"
+msgid "Chromelauncher"
+msgstr ""
+
+msgctxt "#111013"
+msgid "Internet Explorer"
+msgstr ""
+
+msgctxt "#111014"
+msgid "Edge"
+msgstr ""
+
+msgctxt "#111015"
+msgid "Safari"
+msgstr ""
+
+msgctxt "#11102"
+msgid "Update library after adding"
+msgstr "Actualizar librería después de añadir"
+
+msgctxt "#11200"
+msgid "Profil settings"
+msgstr "Opciones de perfil"
+
+msgctxt "#11201"
+msgid "Single-user account"
+msgstr "Cuenta individual"
+
+msgctxt "#11202"
+msgid "Show profile selection on each start"
+msgstr "Mostrar pantalla de perfil al inciar"
+
+msgctxt "#12000"
+msgid "Advanced"
+msgstr "Avanzado"
+
+msgctxt "#12001"
+msgid "Debug logging"
+msgstr "Habilitar debug"
+
+msgctxt "#12002"
+msgid "Library path"
+msgstr "Ruta de la librería"
+
+msgctxt "#12101"
+msgid "Disable lirc on playback"
+msgstr "Desactivar lirc durante la reproducción"
+
+msgctxt "#13000"
+msgid "Views"
+msgstr "Vistas"
+
+msgctxt "#13001"
+msgid "Get covers & fanart images from TMDb"
+msgstr "Obtener carátulas y fanarts de TMDb"
+
+msgctxt "#13002"
+msgid "Browse TV-Shows instead of autoplaying"
+msgstr "Buscar en Series en lugar de reproducirlas automáticamente"
+
+msgctxt "#13003"
+msgid "Items per page"
+msgstr "Items por página"
+
+msgctxt "#13100"
+msgid "Appearance"
+msgstr "Apariencia"
+
+msgctxt "#13101"
+msgid "Force view"
+msgstr "Forzar vista"
+
+msgctxt "#13102"
+msgid "View ID - videos"
+msgstr "View ID - videos"
+
+msgctxt "#13103"
+msgid "View ID - episodes"
+msgstr "View ID - episodios"
+
+msgctxt "#13104"
+msgid "View ID - viewing activity"
+msgstr "View ID - Tu actividad"
+
+msgctxt "#14000"
+msgid "User data"
+msgstr "Opciones de usuario"
+
+msgctxt "#14001"
+msgid "Delete cache"
+msgstr "Borrar caché"
+
+msgctxt "#14002"
+msgid "Delete cookies / session"
+msgstr "Borrar cookies / sesión"
+
+msgctxt "#14003"
+msgid "Reset Addon"
+msgstr "Reinciar Addon"
+
+msgctxt "#30100"
+msgid "Movies"
+msgstr "Películas"
+
+msgctxt "#30101"
+msgid "TV shows"
+msgstr "Series"
+
+msgctxt "#30102"
+msgid "Suggestions"
+msgstr "Recomendaciones"
+
+msgctxt "#30103"
+msgid "Who's watching?"
+msgstr "¿Quién está conectado?"
+
+msgctxt "#30104"
+msgid "My list"
+msgstr "Mi Lista"
+
+msgctxt "#30105"
+msgid "Viewing activity"
+msgstr "Mi Actividad"
+
+msgctxt "#30106"
+msgid "Latest"
+msgstr "Últimos"
+
+msgctxt "#30107"
+msgid "All shows"
+msgstr "Todas las series"
+
+msgctxt "#30108"
+msgid "Genres"
+msgstr "Género"
+
+msgctxt "#30109"
+msgid "Search"
+msgstr "Buscar"
+
+msgctxt "#30110"
+msgid "Next page"
+msgstr "Página siguiente"
+
+msgctxt "#30111"
+msgid "Search"
+msgstr "Buscar"
+
+msgctxt "#30112"
+msgid "Super browse"
+msgstr "Super navegación"
+
+msgctxt "#30150"
+msgid "Add to library"
+msgstr "Añadir a la librería"
+
+msgctxt "#301501"
+msgid "Remove from library"
+msgstr "Eliminar de la librería"
+
+msgctxt "#30151"
+msgid "Continue watching"
+msgstr "Seguir viendo"
+
+msgctxt "#30152"
+msgid "Show seasons"
+msgstr "Ver Temporadas"
+
+msgctxt "#30154"
+msgid "Remove from my list"
+msgstr "Eliminar de mi lista"
+
+msgctxt "#30155"
+msgid "Add to my list"
+msgstr "Añadir a mi lista"
+
+msgctxt "#30156"
+msgid "Similar Movies"
+msgstr "Películas similares"
+
+msgctxt "#30157"
+msgid "Similar TV Shows"
+msgstr "Series similares"
+
+msgctxt "#30200"
+msgid "Connecting Netflix"
+msgstr "Conectando a Netflix"
+
+msgctxt "#30201"
+msgid "Preparing login"
+msgstr "Iniciando sesión"
+
+msgctxt "#30202"
+msgid "Sending login details"
+msgstr "Enviando detalles de la sesión"
+
+msgctxt "#30203"
+msgid "Loading profile"
+msgstr "Cargando perfil"
+
+msgctxt "#30204"
+msgid "Complete"
+msgstr "Finalizado"
+
+msgctxt "#30205"
+msgid "Loading metadata"
+msgstr "Cargando metadatos"
+
+msgctxt "#30300"
+msgid "Sorry! Netflix is not available in your country yet."
+msgstr "¡Lo sentimos! Netflix tovadía no está disponible en su país."
+
+msgctxt "#30301"
+msgid "Cookies have been deleted."
+msgstr "Cookies borradas."
+
+msgctxt "#30302"
+msgid "Session has been deleted."
+msgstr "Sesión eliminada."
+
+msgctxt "#30303"
+msgid "You are not logged in. Check your credentials and/or restart the addon!"
+msgstr "No has iniciado sesión. ¡Comprueba tus credenciales o reinicia el addon!"
+
+msgctxt "#30304"
+msgid "Multiple profiles found. Choose your profile!"
+msgstr "Detectados múltiples perfiles. ¡Elija uno!"
+
+msgctxt "#30306"
+msgid "No results found!"
+msgstr "No se encontraron resultados"
+
+msgctxt "#30307"
+msgid "Really reset the addon?"
+msgstr "¿De verdad quiere restaurar el addon a opciones de fábrica?"
+
+msgctxt "#30308"
+msgid "Addon has been reset!"
+msgstr "¡Addon restaurado!"
+
+msgctxt "#30309"
+msgid "Cache has been deleted!"
+msgstr "¡Caché eliminada!"
+
+msgctxt "#50001"
+msgid "No browser selected in settings!"
+msgstr "No ha elegido ningún lanzador, vaya a las opciones del addon"

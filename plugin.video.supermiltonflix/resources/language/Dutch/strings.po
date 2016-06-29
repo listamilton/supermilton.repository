@@ -1,0 +1,318 @@
+# Kodi Media Center language file
+# Addon Name: Flix2Kodi
+# Addon id: plugin.video.flix2kodi
+# Addon Provider: zero
+msgid ""
+msgstr ""
+"Project-Id-Version: Kodi-Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: 2015-11-04 18:30+0100\n"
+"PO-Revision-Date: 2015-11-04 18:30+0100\n"
+"Last-Translator: logi85\n"
+"Language-Team: Dutch\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+msgctxt "#11000"
+msgid "General"
+msgstr "Algemeen"
+
+msgctxt "#11001"
+msgid "Username"
+msgstr "Gebruikersnaam"
+
+msgctxt "#11002"
+msgid "Password"
+msgstr "Wachtwoord"
+
+msgctxt "#11100"
+msgid "General"
+msgstr "Algemeen"
+
+msgctxt "#11101"
+msgid "Browser"
+msgstr ""
+
+msgctxt "#111011"
+msgid "Chrome"
+msgstr ""
+
+msgctxt "#111012"
+msgid "Chromelauncher"
+msgstr ""
+
+msgctxt "#111013"
+msgid "Internet Explorer"
+msgstr ""
+
+msgctxt "#111014"
+msgid "Edge"
+msgstr ""
+
+msgctxt "#111015"
+msgid "Safari"
+msgstr ""
+
+msgctxt "#11102"
+msgid "Update library after adding"
+msgstr "Bibliotheken bijwerken na toevoegen"
+
+msgctxt "#11200"
+msgid "Profil settings"
+msgstr "Profiel instellingen"
+
+msgctxt "#11201"
+msgid "Single-user account"
+msgstr "Account met één gebruiker"
+
+msgctxt "#11202"
+msgid "Show profile selection on each start"
+msgstr "Laat de profiel selectie zien bij elke start"
+
+msgctxt "#12000"
+msgid "Advanced"
+msgstr "Geavanceerd"
+
+msgctxt "#12001"
+msgid "Debug logging"
+msgstr ""
+
+msgctxt "#12002"
+msgid "Library path"
+msgstr "Bibliotheek pad"
+
+msgctxt "#12101"
+msgid "Disable lirc on playback"
+msgstr "Lirc uitschakelen bij start afspelen"
+
+msgctxt "#13000"
+msgid "Views"
+msgstr ""
+
+msgctxt "#13001"
+msgid "Get covers & fanart images from TMDb"
+msgstr "Haal de hoezen en fanart van TMDb"
+
+msgctxt "#13002"
+msgid "Browse TV-Shows instead of autoplaying"
+msgstr "Bladeren door series in plaats van automatisch afspelen"
+
+msgctxt "#13003"
+msgid "Items per page"
+msgstr "Items per pagina"
+
+msgctxt "#13100"
+msgid "Appearance"
+msgstr "Uiterlijk"
+
+msgctxt "#13101"
+msgid "Force view"
+msgstr "Forceer view"
+
+msgctxt "#13102"
+msgid "View ID - videos"
+msgstr ""
+
+msgctxt "#13103"
+msgid "View ID - episodes"
+msgstr "View ID - afleveringen"
+
+msgctxt "#13104"
+msgid "View ID - viewing activity"
+msgstr "View ID - kijk activiteit"
+
+msgctxt "#14000"
+msgid "User data"
+msgstr "Gebruikers gegevens"
+
+msgctxt "#14001"
+msgid "Delete cache"
+msgstr "Verwijder cache"
+
+msgctxt "#14002"
+msgid "Delete cookies / session"
+msgstr "Verwijder cookies / sessie"
+
+msgctxt "#14003"
+msgid "Reset Addon"
+msgstr "Herstel Addon"
+
+msgctxt "#30100"
+msgid "Movies"
+msgstr "Films"
+
+msgctxt "#30101"
+msgid "TV shows"
+msgstr "Series"
+
+msgctxt "#30102"
+msgid "Suggestions"
+msgstr "Aanbevelingen"
+
+msgctxt "#30103"
+msgid "Who's watching?"
+msgstr "Wie kijkt?"
+
+msgctxt "#30104"
+msgid "My list"
+msgstr "Mijn lijst"
+
+msgctxt "#30105"
+msgid "Viewing activity"
+msgstr "Recent gekeken"
+
+msgctxt "#30106"
+msgid "Latest"
+msgstr "Recentste"
+
+msgctxt "#30107"
+msgid "All shows"
+msgstr "Alle series"
+
+msgctxt "#30108"
+msgid "Genres"
+msgstr ""
+
+msgctxt "#30109"
+msgid "Search"
+msgstr "Zoeken"
+
+msgctxt "#30110"
+msgid "Next page"
+msgstr "Volgende pagina"
+
+msgctxt "#30111"
+msgid "Search"
+msgstr "Zoeken"
+
+msgctxt "#30150"
+msgid "Add to library"
+msgstr "Voeg toe aan bibliotheek"
+
+msgctxt "#301501"
+msgid "Remove from library"
+msgstr "Verwijder uit bibliotheek"
+
+msgctxt "#30151"
+msgid "Continue watching"
+msgstr "Verder kijken"
+
+msgctxt "#30152"
+msgid "Show seasons"
+msgstr "Laat seizoenen zien"
+
+msgctxt "#30153"
+msgid "Play trailer"
+msgstr "Trailer afspelen"
+
+msgctxt "#30154"
+msgid "Remove from my list"
+msgstr "Verwijder van Mijn lijst"
+
+msgctxt "#30155"
+msgid "Add to my list"
+msgstr "Voeg toe aan Mijn lijst"
+
+msgctxt "#30156"
+msgid "Similar Movies"
+msgstr "Vergelijkbare films"
+
+msgctxt "#30157"
+msgid "Similar TV Shows"
+msgstr "Vergelijkbare series"
+
+msgctxt "#30200"
+msgid "Connecting Netflix"
+msgstr "Verbinden met Netflix"
+
+msgctxt "#30201"
+msgid "Preparing login"
+msgstr "Voorbereiden inloggen"
+
+msgctxt "#30202"
+msgid "Sending login details"
+msgstr "Versturen van inlog gegevens"
+
+msgctxt "#30203"
+msgid "Loading profile"
+msgstr "Profiel laden"
+
+msgctxt "#30204"
+msgid "Complete"
+msgstr "Afgerond"
+
+msgctxt "#30205"
+msgid "Loading metadata"
+msgstr "Metadata laden"
+
+msgctxt "#30300"
+msgid "Sorry! Netflix is not available in your country yet."
+msgstr "Helaas, Netflix is nog niet beschikbaar in jouw land."
+
+msgctxt "#30301"
+msgid "Cookies have been deleted."
+msgstr "Cookies zijn verwijderd."
+
+msgctxt "#30302"
+msgid "Session has been deleted."
+msgstr "Sessie is verwijderd."
+
+msgctxt "#30303"
+msgid "You are not logged in. Check your credentials and/or restart the addon!"
+msgstr "Je bent niet ingelogd. Controleer je gegevens en/of herstart de addon!"
+
+msgctxt "#30304"
+msgid "Multiple profiles found. Choose your profile!"
+msgstr "Meerdere profielen gevonden, kies je profiel!"
+
+msgctxt "#30305"
+msgid "No trailer available!"
+msgstr "Geen trailer beschikbaar!"
+
+msgctxt "#30306"
+msgid "No results found!"
+msgstr "Geen resultaten gevonden!"
+
+msgctxt "#30307"
+msgid "Really reset the addon?"
+msgstr "De addon werkelijk herstellen?"
+
+msgctxt "#30308"
+msgid "Addon has been reset!"
+msgstr "Addon is hersteld!"
+
+msgctxt "#30309"
+msgid "Cache has been deleted!"
+msgstr "Cache is verwijderd!"
+
+msgctxt "#50001"
+msgid "No browser selected in settings!"
+msgstr "Er is geen browser geselecteerd in de instellingen!"
+
+msgctxt "#50002"
+msgid "Sorry!"
+msgstr ""
+
+msgctxt "#50003"
+msgid "Flix2Kodi crashed."
+msgstr "Flix2Kodi is vastgelopen."
+
+msgctxt "#50004"
+msgid "Try to refresh your login?"
+msgstr "Proberen om opnieuw in te loggen?"
+
+msgctxt "#50006"
+msgid "Login refreshed. please try again."
+msgstr "We zijn opnieuw ingelogd. Probeer opnieuw."
+
+
+msgctxt "#50005"
+msgid "If your browser does not launch, something went wrong. Push BACK to leave this dialog."
+msgstr "Wanneer je browser niet start is er iets mis gegaan. Druk op BACK om dit venster te verlaten."
+
+msgctxt "#99999"
+msgid ""
+msgstr ""

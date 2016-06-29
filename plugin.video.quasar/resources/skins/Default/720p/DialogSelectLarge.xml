@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog">
+	<!-- 1280 x 720 -->
+	<defaultcontrol always="true">32503</defaultcontrol>
+	<include>dialogeffect</include>
+	<depth>DepthDialog+</depth>
+  <controls>
+		<control type="group">
+			<control type="image">
+				<!-- Background -->
+				<posx>190</posx>
+				<posy>60</posy>
+				<width>900</width>
+				<height>600</height>
+				<texture>AddonWindow/dialog_back.png</texture>
+			</control>
+			<control type="button" id="32500">
+				<!-- Close button -->
+				<posx>1028</posx>
+				<posy>82</posy>
+				<width>32</width>
+				<height>32</height>
+				<texturefocus>AddonWindow/dialog_close_focus.png</texturefocus>
+				<texturenofocus>AddonWindow/dialog_close_nofocus.png</texturenofocus>
+				<onup>32508</onup>
+				<ondown>32503</ondown>
+			</control>
+			<control type="label" id="32501">
+				<!-- Window title -->
+				<posx>290</posx>
+				<posy>107</posy>
+				<width>700</width>
+				<height>30</height>
+				<font>font14</font>
+				<align>center</align>
+				<aligny>center</aligny>
+				<textcolor>silver</textcolor>
+				<shadowcolor>AA000000</shadowcolor>
+			</control>
+			<control type="scrollbar" id="32502">
+				<!-- Scrollbar -->
+				<posx>1052</posx>
+				<posy>142</posy>
+				<width>10</width>
+				<height>470</height>
+				<onleft>32503</onleft>
+				<onup>32500</onup>
+				<texturesliderbackground border="0,14,0,14">Scrollbar/scrollbar.png</texturesliderbackground>
+				<texturesliderbar border="2,16,2,16">Scrollbar/scrollbarv_bar.png</texturesliderbar>
+				<texturesliderbarfocus border="2,16,2,16">Scrollbar/scrollbarv_bar_focus.png</texturesliderbarfocus>
+				<showonepage>false</showonepage>
+				<orientation>vertical</orientation>
+			</control>
+
+			<control type="panel" id="32503">
+				<!-- Panel -->
+				<posx>235</posx>
+				<posy>150</posy>
+				<width>800</width>
+				<height>455</height>
+				<onleft>2</onleft>
+				<onright>32502</onright>
+				<onup>32500</onup>
+				<align>center</align>
+				<viewtype>list</viewtype>
+				<focusposition>0</focusposition>
+				<pagecontrol>32502</pagecontrol>
+				<scrolltime>200</scrolltime>
+				<preloaditems>2</preloaditems>
+				<itemlayout height="65" width="790">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>790</width>
+						<height>60</height>
+						<texture border="5">Button/button-nofocus.png</texture>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>50</width>
+						<height>50</height>
+						<texture>$INFO[ListItem.Icon]</texture>
+					</control>
+					<control type="label">
+						<posx>70</posx>
+						<posy>2</posy>
+						<width>707</width>
+						<height>30</height>
+						<font>font13</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>silver</textcolor>
+						<shadowcolor>AA000000</shadowcolor>
+						<info>ListItem.Label</info>
+					</control>
+					<control type="label">
+						<posx>70</posx>
+						<posy>28</posy>
+						<width>707</width>
+						<height>30</height>
+						<font>font13</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>silver</textcolor>
+						<shadowcolor>AA000000</shadowcolor>
+						<info>ListItem.Label2</info>
+					</control>
+				</itemlayout>
+
+				<focusedlayout height="65" width="790">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>790</width>
+						<height>60</height>
+						<texture border="5">Button/button-focus.png</texture>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>50</width>
+						<height>50</height>
+						<texture>$INFO[ListItem.Icon]</texture>
+					</control>
+					<control type="label">
+						<posx>70</posx>
+						<posy>2</posy>
+						<width>707</width>
+						<height>30</height>
+						<font>font13</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>white</textcolor>
+						<shadowcolor>AA000000</shadowcolor>
+						<info>ListItem.Label</info>
+					</control>
+					<control type="label">
+						<posx>70</posx>
+						<posy>28</posy>
+						<width>707</width>
+						<height>30</height>
+						<font>font13</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>white</textcolor>
+						<shadowcolor>AA000000</shadowcolor>
+						<info>ListItem.Label2</info>
+					</control>
+				</focusedlayout>
+			</control>
+		</control>
+  </controls>
+</window>

@@ -1,0 +1,575 @@
+# Kodi Media Center language file
+# Addon Name: Quasar
+# Addon id: plugin.video.quasar
+# Addon Provider: scakemyer
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-01-27 19:53+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+
+# Settings
+
+msgctxt "#30000"
+msgid "General"
+msgstr "General"
+
+msgctxt "#30001"
+msgid "Download path (not FAT32)"
+msgstr "Download path (not FAT32)"
+
+msgctxt "#30002"
+msgid "Keep files after playback/download stops"
+msgstr "Keep files after playback/download stops"
+
+msgctxt "#30003"
+msgid "Buffer size (MB)"
+msgstr "Buffer size (MB)"
+
+msgctxt "#30004"
+msgid "Max upload rate (kB/s)"
+msgstr "Max upload rate (kB/s)"
+
+msgctxt "#30005"
+msgid "Max download rate (kB/s)"
+msgstr "Max download rate (kB/s)"
+
+msgctxt "#30006"
+msgid "Listen port min"
+msgstr "Listen port min"
+
+msgctxt "#30007"
+msgid "Listen port max"
+msgstr "Listen port max"
+
+msgctxt "#30008"
+msgid "Proxy"
+msgstr "Proxy"
+
+msgctxt "#30009"
+msgid "SOCKS v5 Configuration"
+msgstr "SOCKS v5 Configuration"
+
+msgctxt "#30010"
+msgid "Enabled"
+msgstr "Enabled"
+
+msgctxt "#30011"
+msgid "Host"
+msgstr "Host"
+
+msgctxt "#30012"
+msgid "Port"
+msgstr "Port"
+
+msgctxt "#30013"
+msgid "Login"
+msgstr "Login"
+
+msgctxt "#30014"
+msgid "Password"
+msgstr "Password"
+
+msgctxt "#30015"
+msgid "Advanced"
+msgstr "Advanced"
+
+msgctxt "#30016"
+msgid "Custom provider timeout"
+msgstr "Custom provider timeout"
+
+msgctxt "#30017"
+msgid "Enabled (use at your own risk)"
+msgstr "Enabled (use at your own risk)"
+
+msgctxt "#30018"
+msgid "Timeout in seconds"
+msgstr "Timeout in seconds"
+
+msgctxt "#30019"
+msgid "Maintenance"
+msgstr "Maintenance"
+
+msgctxt "#30020"
+msgid "Clear cache"
+msgstr "Clear cache"
+
+msgctxt "#30021"
+msgid "Results per page"
+msgstr "Results per page"
+
+msgctxt "#30022"
+msgid "Enable overlay status"
+msgstr "Enable overlay status"
+
+msgctxt "#30023"
+msgid "Choose stream automatically"
+msgstr "Choose stream automatically"
+
+msgctxt "#30024"
+msgid "Get updates for pre-releases"
+msgstr "Get updates for pre-releases"
+
+msgctxt "#30025"
+msgid "Limit rates after buffering only"
+msgstr "Limit rates after buffering only"
+
+msgctxt "#30026"
+msgid "Library path"
+msgstr "Library path"
+
+msgctxt "#30027"
+msgid "Connections limit"
+msgstr "Connections limit"
+
+msgctxt "#30028"
+msgid "Background handling of torrents"
+msgstr "Background handling of torrents"
+
+msgctxt "#30029"
+msgid "Session saving frequency (seconds)"
+msgstr "Session saving frequency (seconds)"
+
+msgctxt "#30030"
+msgid "Overlay status vertical offset"
+msgstr "Overlay status vertical offset"
+
+msgctxt "#30031"
+msgid "Disable providers failing health check"
+msgstr "Disable providers failing health check"
+
+msgctxt "#30032"
+msgid "Allowed failures before provider is disabled"
+msgstr "Allowed failures before provider is disabled"
+
+msgctxt "#30033"
+msgid "Appearance"
+msgstr "Appearance"
+
+msgctxt "#30034"
+msgid "Default view for Movies"
+msgstr "Default view for Movies"
+
+msgctxt "#30035"
+msgid "Default view for TV Shows"
+msgstr "Default view for TV Shows"
+
+msgctxt "#30036"
+msgid "Default view for Seasons"
+msgstr "Default view for Seasons"
+
+msgctxt "#30037"
+msgid "Default view for Episodes"
+msgstr "Default view for Episodes"
+
+msgctxt "#30038"
+msgid "Prefer use of original title"
+msgstr "Prefer use of original title"
+
+msgctxt "#30039"
+msgid "TheMovieDB"
+msgstr "TheMovieDB"
+
+msgctxt "#30040"
+msgid "API key"
+msgstr "API key"
+
+msgctxt "#30041"
+msgid "Stream sorting"
+msgstr "Stream sorting"
+
+msgctxt "#30042"
+msgid "Sorting mode for Movies"
+msgstr "Sorting mode for Movies"
+
+msgctxt "#30043"
+msgid "Sorting mode for TV Shows"
+msgstr "Sorting mode for TV Shows"
+
+msgctxt "#30044"
+msgid "By seeders"
+msgstr "By seeders"
+
+msgctxt "#30045"
+msgid "By resolution"
+msgstr "By resolution"
+
+msgctxt "#30046"
+msgid "Balanced"
+msgstr "Balanced"
+
+msgctxt "#30047"
+msgid "Resolution preference for Movies"
+msgstr "Resolution preference for Movies"
+
+msgctxt "#30048"
+msgid "Resolution preference for TV Shows"
+msgstr "Resolution preference for TV Shows"
+
+msgctxt "#30049"
+msgid "Percentage of additional seeders required before choosing next resolution"
+msgstr "Percentage of additional seeders required before choosing next resolution"
+
+msgctxt "#30050"
+msgid "Disable DHT"
+msgstr "Disable DHT"
+
+msgctxt "#30051"
+msgid "Share ratio limit (percent)"
+msgstr "Share ratio limit (percent)"
+
+msgctxt "#30052"
+msgid "Seed time ratio limit (percent)"
+msgstr "Seed time ratio limit (percent)"
+
+msgctxt "#30053"
+msgid "Seed time limit (hours)"
+msgstr "Seed time limit (hours)"
+
+msgctxt "#30054"
+msgid "Update library"
+msgstr "Update library"
+
+msgctxt "#30055"
+msgid "Add Specials to library"
+msgstr "Add Specials to library"
+
+msgctxt "#30056"
+msgid "Trakt"
+msgstr "Trakt"
+
+msgctxt "#30057"
+msgid "Username"
+msgstr "Username"
+
+msgctxt "#30058"
+msgid "Authorize Quasar"
+msgstr "Authorize Quasar"
+
+msgctxt "#30059"
+msgid "Library update delay on startup (seconds)"
+msgstr "Library update delay on startup (seconds)"
+
+
+# Interface
+
+msgctxt "#30100"
+msgid "Quasar has crashed, restarting..."
+msgstr "Quasar has crashed, restarting..."
+
+msgctxt "#30101"
+msgid "You must restart Kodi before using Quasar"
+msgstr "You must restart Kodi before using Quasar"
+
+msgctxt "#30102"
+msgid "This add-on can only be run from within Quasar"
+msgstr "This add-on can only be run from within Quasar"
+
+msgctxt "#30103"
+msgid "Unable to find Quasar binary"
+msgstr "Unable to find Quasar binary"
+
+msgctxt "#30104"
+msgid "Insert file or URL"
+msgstr "Insert file or URL"
+
+msgctxt "#30105"
+msgid "URL"
+msgstr "URL"
+
+msgctxt "#30106"
+msgid "File"
+msgstr "File"
+
+msgctxt "#30107"
+msgid "Insert URL"
+msgstr "Insert URL"
+
+msgctxt "#30108"
+msgid "File path"
+msgstr "File path"
+
+msgctxt "#30109"
+msgid "OK"
+msgstr "OK"
+
+msgctxt "#30110"
+msgid "Crashed too many times, aborting..."
+msgstr "Crashed too many times, aborting..."
+
+msgctxt "#30111"
+msgid "Provider failed too many times, disabling..."
+msgstr "Provider failed too many times, disabling..."
+
+msgctxt "#30112"
+msgid "Unable to disable provider"
+msgstr "Unable to disable provider"
+
+msgctxt "#30113"
+msgid "Download path not set, check your settings"
+msgstr "Download path not set, check your settings"
+
+
+# Quasar daemon
+
+msgctxt "#30200"
+msgid "Cache cleared"
+msgstr "Cache cleared"
+
+msgctxt "#30201"
+msgid "Search TV Shows"
+msgstr "Search TV Shows"
+
+msgctxt "#30202"
+msgid "Choose stream..."
+msgstr "Choose stream..."
+
+msgctxt "#30203"
+msgid "Show information"
+msgstr "Show information"
+
+msgctxt "#30204"
+msgid "Unable to find any providers"
+msgstr "Unable to find any providers"
+
+msgctxt "#30205"
+msgid "No links were found"
+msgstr "No links were found"
+
+msgctxt "#30206"
+msgid "Search Movies"
+msgstr "Search Movies"
+
+msgctxt "#30207"
+msgid "Not enough space available on the download path."
+msgstr "Not enough space available on the download path."
+
+msgctxt "#30208"
+msgid "Quasar daemon has started"
+msgstr "Quasar daemon has started"
+
+msgctxt "#30209"
+msgid "Search"
+msgstr "Search"
+
+msgctxt "#30210"
+msgid "Most Popular"
+msgstr "Most Popular"
+
+msgctxt "#30211"
+msgid "Top Rated"
+msgstr "Top Rated"
+
+msgctxt "#30212"
+msgid "Most Voted"
+msgstr "Most Voted"
+
+msgctxt "#30213"
+msgid "IMDB Top 250"
+msgstr "IMDB Top 250"
+
+msgctxt "#30214"
+msgid "Movies"
+msgstr "Movies"
+
+msgctxt "#30215"
+msgid "TV Shows"
+msgstr "TV Shows"
+
+msgctxt "#30216"
+msgid "Add Torrent"
+msgstr "Add Torrent"
+
+msgctxt "#30217"
+msgid "Paste Magnet or URL"
+msgstr "Paste Magnet or URL"
+
+msgctxt "#30218"
+msgid "Next page"
+msgstr "Next page"
+
+msgctxt "#30219"
+msgid "Add / Remove from library"
+msgstr "Add / Remove from library"
+
+msgctxt "#30220"
+msgid "Library path not set"
+msgstr "Library path not set"
+
+msgctxt "#30221"
+msgid "Item successfully added to library"
+msgstr "Item successfully added to library"
+
+msgctxt "#30222"
+msgid "Item removed from library"
+msgstr "Item removed from library"
+
+msgctxt "#30223"
+msgid "Files"
+msgstr "Files"
+
+msgctxt "#30224"
+msgid "Provider error"
+msgstr "Provider error"
+
+msgctxt "#30225"
+msgid "Navigation error"
+msgstr "Navigation error"
+
+msgctxt "#30226"
+msgid "Daemon error"
+msgstr "Daemon error"
+
+msgctxt "#30227"
+msgid "Error updating Quasar daemon"
+msgstr "Error updating Quasar daemon"
+
+msgctxt "#30228"
+msgid "Available streams for"
+msgstr "Available streams for"
+
+msgctxt "#30229"
+msgid "Torrents"
+msgstr "Torrents"
+
+msgctxt "#30230"
+msgid "Play / resume torrent"
+msgstr "Play / resume torrent"
+
+msgctxt "#30231"
+msgid "Pause torrent"
+msgstr "Pause torrent"
+
+msgctxt "#30232"
+msgid "Delete torrent"
+msgstr "Delete torrent"
+
+msgctxt "#30233"
+msgid "Pause session"
+msgstr "Pause session"
+
+msgctxt "#30234"
+msgid "Resume session"
+msgstr "Resume session"
+
+msgctxt "#30235"
+msgid "Resume torrent"
+msgstr "Resume torrent"
+
+msgctxt "#30236"
+msgid "Recently Released"
+msgstr "Recently Released"
+
+msgctxt "#30237"
+msgid "Recent Shows"
+msgstr "Recent Shows"
+
+msgctxt "#30238"
+msgid "Recent Episodes"
+msgstr "Recent Episodes"
+
+msgctxt "#30239"
+msgid "Providers"
+msgstr "Providers"
+
+msgctxt "#30240"
+msgid "Enable"
+msgstr "Enable"
+
+msgctxt "#30241"
+msgid "Disable"
+msgstr "Disable"
+
+msgctxt "#30242"
+msgid "Check"
+msgstr "Check"
+
+msgctxt "#30243"
+msgid "Provider failures"
+msgstr "Provider failures"
+
+msgctxt "#30244"
+msgid "Provider settings"
+msgstr "Provider settings"
+
+msgctxt "#30245"
+msgid "Popular on Trakt"
+msgstr "Popular on Trakt"
+
+msgctxt "#30246"
+msgid "Trending"
+msgstr "Trending"
+
+msgctxt "#30247"
+msgid "Most Played"
+msgstr "Most Played"
+
+msgctxt "#30248"
+msgid "Most Watched"
+msgstr "Most Watched"
+
+msgctxt "#30249"
+msgid "Most Collected"
+msgstr "Most Collected"
+
+msgctxt "#30250"
+msgid "Most Anticipated"
+msgstr "Most Anticipated"
+
+msgctxt "#30251"
+msgid "Box Office"
+msgstr "Box Office"
+
+msgctxt "#30252"
+msgid "Add to library"
+msgstr "Add to library"
+
+msgctxt "#30253"
+msgid "Remove from library"
+msgstr "Remove from library"
+
+msgctxt "#30254"
+msgid "Watchlist"
+msgstr "Watchlist"
+
+msgctxt "#30255"
+msgid "Add to watchlist"
+msgstr "Add to watchlist"
+
+msgctxt "#30256"
+msgid "Remove from watchlist"
+msgstr "Remove from watchlist"
+
+msgctxt "#30257"
+msgid "Collection"
+msgstr "Collection"
+
+msgctxt "#30258"
+msgid "Add to collection"
+msgstr "Add to collection"
+
+msgctxt "#30259"
+msgid "Remove from collection"
+msgstr "Remove from collection"
+
+msgctxt "#30260"
+msgid "A torrent was previously chosen, use it?"
+msgstr "A torrent was previously chosen, use it?"
+
+msgctxt "#30261"
+msgid "Search history"
+msgstr "Search history"
+
+msgctxt "#30262"
+msgid "Use search history?"
+msgstr "Use search history?"

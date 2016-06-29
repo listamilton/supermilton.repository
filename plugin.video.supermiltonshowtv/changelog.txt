@@ -1,0 +1,2 @@
+Versão 1.0.0
+Release incial do addon
