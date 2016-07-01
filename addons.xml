@@ -65,6 +65,38 @@
 
 </addon>
 
+<addon id="plugin.program.super.favourites" name="Super Favourites" version="1.0.43" provider-name="spoyser">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.metahandler" optional="true" />
+  </requires>
+
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video audio executable image</provides>
+  </extension>
+
+  <extension point="xbmc.service" library="service.py" start="startup" />
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Put all your favourites bits of all your favourites addons into one easy to use addon.</summary>
+    <description lang="en">Super Favourites is a better way of managing your Kodi Favourites.[CR][CR]Virtually any menu item within Kodi can be added to Super Favourites, even from addons that don't normally provide this feature.[CR][CR]Super Favourites allows you to better manage your Kodi favourites, including the creation of sub-folders, into which your Kodi favourites can then be copied or moved into.[CR][CR]This allows you to create you own custom addon with just the best bits of your favourite addons. Search your favourite addons, play your favourite music, read your favourite comic strips, select your favourite playlists, browse your favourite movies, listen to your favourite radio stations, watch your favourite cartoons, the possibilities are endless, all from within one easy to use addon.</description>
+    <platform>all</platform>
+    <language>en</language>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>http://forum.xbmc.org/showthread.php?tid=192662</forum>
+    <website></website>
+    <source>https://github.com/spoyser/spoyser-repo/tree/master/plugin.program.super.favourites</source>
+    <email>seanpoyser at gmail.com</email>
+  </extension>
+
+  <extension point="kodi.context.item" library="capture.py">
+      <item>
+        <label>30000</label>
+        <visible>true</visible>
+      </item>
+    </extension>
+</addon>
+
 <addon id="plugin.video.Catoal"
        name="Catoal[COLOR blue] 5[/COLOR].[COLOR yellow]2[/COLOR].[COLOR red]5a[/COLOR]"
        version="5.2.5a"
@@ -182,6 +214,30 @@ http://www.hometheater.co.il</description>
         <summary><![CDATA[Quasar: Torrent streaming]]></summary>
         <description><![CDATA[Stream torrent files]]></description>
     </extension>
+</addon>
+
+<addon
+  id="plugin.video.SportsDevil"
+  version="2016.04.20"
+  name="SportsDevil"
+  provider-name="SportsDevil">
+  <requires>
+   <import addon="xbmc.python" version="2.14.0"/>
+   <import addon="script.module.requests" />
+   <import addon="script.module.livestreamer" />
+   <import addon="script.module.pydevd" optional="true"/>
+  </requires>
+  <extension
+    point="xbmc.python.pluginsource"
+    library="default.py">
+   <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Play videos of different sports streaming sites</summary>
+    <description>Play videos of different sports streaming sites</description>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <platform>all</platform>
+  </extension>
 </addon>
 
 <addon id="plugin.video.superlistamilton"
@@ -309,6 +365,8 @@ Se voce gostou do meu trabalho e quiser fazer uma doacao,aqui esta o link PayPal
   </extension>
 </addon>
 
+<addon id="repository.quasar" name="Quasar Repository" version="0.9.34" provider-name="scakemyer"><requires></requires><extension point="xbmc.addon.repository" name="Quasar Repository"><info compressed="false">http://localhost:65251/repository/scakemyer/plugin.video.quasar/addons.xml</info><checksum>http://localhost:65251/repository/scakemyer/plugin.video.quasar/addons.xml.md5</checksum><datadir zip="true">http://localhost:65251/repository/scakemyer/</datadir></extension><extension point="xbmc.addon.metadata"><platform>all</platform><summary lang="en">GitHub repository for Quasar Updates</summary></extension></addon>
+
 <addon id="repository.unofficialquasar" name="[COLOR red]Unofficial[/COLOR] [COLOR FF005de5]Quasar[/COLOR] Repo" version="1.0.4" provider-name="iCanuck">
 	<extension point="xbmc.addon.repository" name="Unofficial Quasar Repository">
 		<info>https://offshoregit.com/pulsarunofficial/Unofficial-Quasar-Repo/addons.xml</info>
@@ -324,6 +382,25 @@ Se voce gostou do meu trabalho e quiser fazer uma doacao,aqui esta o link PayPal
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
 	</extension>
+</addon>
+
+<addon id="script.chatsupermilton"
+       name="[COLOR green][B]Chat Super Milton[/B][/COLOR]"
+       version="1.0.0"
+       provider-name="Milton Guedes">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>Chat em modo IRC Client no Kodi</summary>
+    <description>Este Addon Ã© baseado no IRC client do Kodi.Me segue no Twitter - https://twitter.com/listamilton</description>
+    <language></language>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    </extension>
 </addon>
 
 <addon id="script.module.urlresolver" name="URLResolver" version="3.0.14" provider-name="Eldorado">
