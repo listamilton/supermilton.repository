@@ -18,3 +18,6 @@ Release - 14/06/20116 - arrumado erros de mensagens
 
 V2.0.0
 Release - 28/06/20116 - migrado o addon para server novo, arrumado alguns links de menus,adicionado 2 novas categorias Super Milton Flix e Super Milton Show TV, alterado o torrent para Quasar e alterado o layout do addon.
+
+V2.0.1
+Release - 01/07/20116 - migrado de servidor e arrumados links dos menus.
