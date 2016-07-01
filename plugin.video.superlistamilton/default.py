@@ -102,7 +102,7 @@ def makeRequest(url, headers=None):
 def SKindex():
     addon_log("SKindex")
     dialog = xbmcgui.Dialog()
-    ok = dialog.ok('Bem-vindo ao '+addonname,'ESTE ADDON É GRATIS E ESTÁ PROIBIDA SUA VENDA...','NECESSITA ESTAR INSTALADOS O [COLOR yellow]PULSAR[/COLOR] , [COLOR red]F4M[/COLOR] , [COLOR orange]PLEXUS[/COLOR] , [COLOR cyan]ACESTREAM[/COLOR] E O [COLOR green]GDRIVE[/COLOR] NO KODI.')
+    ok = dialog.ok('Bem-vindo ao '+addonname,'ESTE ADDON É GRATIS E ESTÁ PROIBIDA SUA VENDA...','NECESSITA ESTAR INSTALADOS O [COLOR yellow]QUASAR[/COLOR] , [COLOR red]F4M[/COLOR] , [COLOR orange]PLEXUS[/COLOR] , [COLOR cyan]ACESTREAM[/COLOR] E O [COLOR green]GDRIVE[/COLOR] NO KODI.')
     addDir('Favorites','Favorites',20,'http://iconizer.net/files/Human_o2/orig/orange-address-book-new.png' ,  FANART,'','','','')
     getData(_Edit.MainBase,'')
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
