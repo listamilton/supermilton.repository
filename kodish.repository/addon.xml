@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="kodish.repository" name="Kodish MC Repo" version="1.0.2" provider-name="KodishMC">
+	<extension point="xbmc.addon.repository" name="Kodish Repository">
+		<info compressed="false">https://raw.githubusercontent.com/kodishmediacenter/kodish-repo/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/kodishmediacenter/kodish-repo/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/kodishmediacenter/kodish-repo/master/repo/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Kodish Repository</summary>
+		<description>Repositorio Oficial do Kodish Media Center</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>

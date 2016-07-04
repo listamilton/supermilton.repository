@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="igorrangel.repository" name="IgorLista repository" version="0.0.1" provider-name="igor-rangel7l">
+	<extension point="xbmc.addon.repository" name="IgorLista Add-on Repository">
+		<info compressed="false">http://raw.github.com/igor-rangel7l/igorrangel.repository/master/addons.xml</info>
+		<checksum>http://raw.github.com/igor-rangel7l/igorrangel.repository/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/igor-rangel7l/igorrangel.repository/master/repo/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>IgorLista Addon</summary>
+		<description>...</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
