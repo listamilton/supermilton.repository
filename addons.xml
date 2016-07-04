@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+<addon id="igorrangel.repository" name="IgorLista repository" version="0.0.1" provider-name="igor-rangel7l">
+	<extension point="xbmc.addon.repository" name="IgorLista Add-on Repository">
+		<info compressed="false">http://raw.github.com/igor-rangel7l/igorrangel.repository/master/addons.xml</info>
+		<checksum>http://raw.github.com/igor-rangel7l/igorrangel.repository/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/igor-rangel7l/igorrangel.repository/master/repo/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>IgorLista Addon</summary>
+		<description>...</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="kodish.repository" name="Kodish MC Repo" version="1.0.2" provider-name="KodishMC">
+	<extension point="xbmc.addon.repository" name="Kodish Repository">
+		<info compressed="false">https://raw.githubusercontent.com/kodishmediacenter/kodish-repo/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/kodishmediacenter/kodish-repo/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/kodishmediacenter/kodish-repo/master/repo/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Kodish Repository</summary>
+		<description>Repositorio Oficial do Kodish Media Center</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="plugin.image.pdfreader" name="PDF Reader" version="1.0.2" provider-name="Anonymous">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -297,6 +325,23 @@
 			Voce tambÃ©m pode ver as informacoes ou assistir ao trailer do filme no submenu do addon (BotÃ£o direito do mouse ou tecla "C").
 			Atencao: Este addon necessita do script URLRESOLVER na versÃ£o 2.10.8 ou superior
 		</description>
+  </extension>
+</addon>
+
+<addon id="plugin.video.igorlista" name="Igor Lista" version="0.0.2" provider-name="Igor Rangel e Cleiton Leonel Creton">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.urlresolver" version="2.10.8"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <language>en</language>
+    <platform>all</platform>
+    <summary lang="en">Curta a minha Lista agora em forma de Add On com mais canais. Os Canais da MASTER TV foram Desenvolvidos por Cleiton Leonel Creton e Rogger Henrique e Filipe Carvalho  </summary>
+    <description lang="en">Curta a minha Lista agora em forma de Add On com mais canais. Os Canais da MASTER TV foram Desenvolvidos por Cleiton Leonel Creton e Rogger Henrique e Filipe Carvalho </description>
+    <platform>all</platform>
   </extension>
 </addon>
 

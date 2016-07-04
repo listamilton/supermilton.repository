@@ -21,7 +21,7 @@ from BeautifulSoup import BeautifulSoup
 h = HTMLParser.HTMLParser()
 
 versao = '0.0.2'
-addon_id = 'IgorLista'
+addon_id = 'plugin.video.igorlista'
 selfAddon = xbmcaddon.Addon(id=addon_id)
 addonfolder = selfAddon.getAddonInfo('path')
 artfolder = addonfolder + '/resources/img/'
@@ -29,7 +29,9 @@ fanart = addonfolder + '/fanart.png'
 url_base = base64.b64decode('aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vdWM/ZXhwb3J0PWRvd25sb2FkJmlkPQ==')
 url_base2 = base64.b64decode('aHR0cDovL3R2LW1zbi5jb20vY2FuYWlzLmh0bWw=')
 url_base3 = base64.b64decode('aHR0cDovL3d3dy50di1tc24uY29tL3BsYXllci9wbGF5ZXIuc3dm')
-url_base4 = base64.b64decode('aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vdWM/ZXhwb3J0PWRvd25sb2FkJmlkPTBCeE4wRHpGakllQ2FlbGxZZFVKR05rZFlRV3M=')
+url_base4 = base64.b64decode('aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vdWM/ZXhwb3J0PWRvd25sb2FkJmlkPTBCeE4wRHpGakllQ2FhRWhRUmxKUk4yZElVWGM=')
+url_base5 = base64.b64decode('aHR0cDovL3BwY2FzdC5vcmcvZW1iZWRQL2p3cGxheWVyL2p3cGxheWVyLmZsYXNoLnN3Zg==')
+url_base6 = base64.b64decode('aHR0cDovL3BwY2FzdC5vcmcvZW1iZWRQLw==')
 url_base7 = base64.b64decode('aHR0cDovL3R2LW1zbi5jb20vbWVzdHJlLnBocA==')
 ###############################################################################################################
 #                                                   MENUS                                                     #
@@ -37,9 +39,8 @@ url_base7 = base64.b64decode('aHR0cDovL3R2LW1zbi5jb20vbWVzdHJlLnBocA==')
 
 
 def  categorias():
-	
-	addDir('CANAIS MASTER','-',7,'http://goo.gl/PumvSm')
-	addDir('CANAIS IPTV','-',3,'http://goo.gl/QR2upk')
+	abrir_url('http://j.mp/asessosaddonigor')
+	addDir('TV AO VIVO','-',7,'http://goo.gl/PumvSm')
 	addDir('FILMES ON DEMAND','-',12,'http://goo.gl/ZiWMZU')
         addDir('SERIES ON DEMAND','-',5,'http://goo.gl/KyoeaS')		
         addDir('FUTEBOL AO VIVO','-',13,'http://goo.gl/S4C9LD')
@@ -47,25 +48,13 @@ def  categorias():
         addDir('DESENHOS 24HRS',url_base+'0BxN0DzFjIeCaVldOcVpJaFp1SW8',4,'http://goo.gl/rBsS8A')
 	addDir('RADIOS',url_base+'0BxN0DzFjIeCaWkxvUS1ZeHh3OWc',4,'http://goo.gl/pMM1Bg')
        
-def  tv_ao_vivo():
-
-	addDir('TV ABERTA',url_base+'0BxN0DzFjIeCaZkJtd2lKWjhuVG8',4,'http://goo.gl/0rcmjD')
-	addDir('ESPORTES',url_base+'0BxN0DzFjIeCaQnpfWmZiZXFRSjA',4,'http://goo.gl/GM52wg')	
-	addDir('FUTEBOL AO VIVO',url_base+'0BxN0DzFjIeCaYXRYdlpsU1QydTQ',4,'http://goo.gl/OjmL80')
-	addDir('FILMES E SERIES',url_base+'0BxN0DzFjIeCaX194OS1KMlV4MVE',4,'http://goo.gl/GzzAV0')	
-	addDir('VARIEDADES',url_base+'0BxN0DzFjIeCaQ1BaczNrQW9XWkE',4,'http://goo.gl/Tqr4HQ')
-	addDir('INFANTIL',url_base+'0BxN0DzFjIeCaQUJKY0Z2dndMdG8',4,'http://goo.gl/NbL3Ul')
-	addDir('DOCUMENTARIOS',url_base+'0BxN0DzFjIeCaVkFzd281cGYtdlU',4,'http://goo.gl/cleIRq')	
-        addDir('JORNALISMO',url_base+'0BxN0DzFjIeCaazRGYnVMekhnV3M',4,'http://goo.gl/IKSlPv')	
 
 def  futebol_ao_vivo():
 
 	addDir('JOGOS DE HOJE','-',14,'http://goo.gl/Yn4NOh')
-	addDir('JOGOS MASTER','-',15,'http://goo.gl/9ttIS6')	
-        addDir('JOGOS TORCEDOR',url_base+'0BxN0DzFjIeCaYXRYdlpsU1QydTQ',4,'http://goo.gl/n2y8uU')
-	addDir('JOGOS ESPORTESTV',url_base+'0BxN0DzFjIeCaWjNqRXdtLWd0TjQ',4,'http://goo.gl/PdrtNv')
-        addDir('JOGOS',url_base+'0BxN0DzFjIeCaYTU2ZmcxUUMwSEk',4,'http://goo.gl/GjQoc5')
-
+	addDir('PFC DIA DE JOGOS','-',15,'http://goo.gl/9ttIS6')	
+        addDir('JOGOS TORCEDOR','-',9,'http://goo.gl/n2y8uU')
+	
 def listar_canais(url):
       for line in urllib2.urlopen(url).readlines():
             params = line.split(',')
@@ -125,21 +114,15 @@ def player_lista_series(url):
                 pass
 		xbmc.executebuiltin("Container.SetViewMode(500)")
 
-def futebol_ao_vivo_jogos(url):
-      for line in urllib2.urlopen(url_base+'0BxN0DzFjIeCaTUdfWFFGcTZHRlk').readlines():
-            params = line.split(',')
-            print params
-            try:
-                  nome = params[0]
-                  print 'Nome: ' + nome
-                  rtmp = params[1]
-                  print 'Link: ' + rtmp
-                  img = params[2].replace(' http','http').replace(' https','https')
-                  print 'Img: ' + img
-                  addDir(nome,rtmp,1,img)
-            except:
-                pass
-		xbmc.executebuiltin("Container.SetViewMode(500)")
+def futebol_ao_vivo_jogos(name,url,iconimage):
+	html = gethtml(base64.b64decode('aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vdWM/ZXhwb3J0PWRvd25sb2FkJmlkPTBCeE4wRHpGakllQ2FUVWRmV0ZGR2NUWkhSbGs='))
+	soup = html.find("div",{"class":"canais"})
+	canais = soup.findAll("li")
+	for canal in canais:
+		titulo = canal.a.text
+		url = canal.a["href"]
+		iconimage = canal.img["src"]
+		addDir("[B]"+titulo.encode('utf-8')+"[/B]",url,19,iconimage,False)
 
 def canais_master(name,url,iconimage):
 	html = gethtml(url)
@@ -152,42 +135,155 @@ def canais_master(name,url,iconimage):
 		addDir("[B]"+titulo.encode('utf-8')+"[/B]",url,10,iconimage,False)
         xbmcplugin.setContent(int(sys.argv[1]), 'episodies')
 	xbmc.executebuiltin('Container.SetViewMode(500)')
+
+def player_normal(name,url,iconimage):
+        pg = 0
+        caixastatus = xbmcgui.DialogProgress()
+	caixastatus.create('IGOR LISTA', 'Abrindo link...','Aguarde...')
+	caixastatus.update(pg)
+        playlist = xbmc.PlayList(1)
+        playlist.clear()
+	params = url.split(',')
+	pg +=30 
+	caixastatus.update(pg)
+        try:
+		rtmp = params[0]
+                pg +=30 
+		caixastatus.update(pg)		
+                link = ''+rtmp+''
+		pg +=30 
+		caixastatus.update(pg)		
+                listitem = xbmcgui.ListItem(name,thumbnailImage=iconimage)
+		listitem.setInfo("Video", {"Title":name})
+		listitem.setProperty('mimetype', 'video/mp4')
+		playlist.add(link,listitem)	
+		pg=100
+		caixastatus.update(pg)
+		caixastatus.close()
+                xbmcPlayer = xbmc.Player(xbmc.PLAYER_CORE_AUTO)
+		xbmcPlayer.play(playlist)	
+	except:
+		caixastatus.close()
+		xbmcgui.Dialog().ok('IGOR LISTA', 'Erro !!!.')	
+				
 		
 def player_master(name,url,iconimage):
-	status = xbmcgui.DialogProgress()
-	status.create('IGOR LISTA', 'Abrindo link...','Aguarde...')
-	playlist = xbmc.PlayList(1)
+	pg = 0
+        caixastatus = xbmcgui.DialogProgress()
+	caixastatus.create('IGOR LISTA', 'Abrindo link...','Aguarde...')
+	caixastatus.update(pg)
+        playlist = xbmc.PlayList(0)
 	playlist.clear()
 	params = url.split(',')
-	status.update(33)
+	pg +=30 
+	caixastatus.update(pg)
 	try:
 		ip = params[0]
 		playpath = params[1]
+                pg +=30 
+		caixastatus.update(pg)
 		link = 'rtmp://'+ip+'/live?wmsAuthSign='+get_wms() +' playpath='+playpath+' swfUrl='+url_base3+' live=1 pageUrl='+url_base7+' token='+gettoken() +' '
-		listitem = xbmcgui.ListItem(name,thumbnailImage=iconimage)
+		pg +=30 
+		caixastatus.update(pg)
+                listitem = xbmcgui.ListItem(name,thumbnailImage=iconimage)
 		listitem.setInfo("Video", {"Title":name})
-		status.update(66)
 		listitem.setProperty('mimetype', 'video/mp4')
 		playlist.add(link,listitem)	
-		xbmcPlayer = xbmc.Player(xbmc.PLAYER_CORE_AUTO)
+		pg=100
+		caixastatus.update(pg)
+		caixastatus.close()
+                xbmcPlayer = xbmc.Player(xbmc.PLAYER_CORE_AUTO)
 		xbmcPlayer.play(playlist)
-		status.update(100)
-		status.close()
 	except:	
-		xbmcgui.Dialog().ok('IGOR LISTA', 'Erro !!!.')
-	
-def player_futebol_ao_vivo_m():
-	html = gethtml(base64.b64decode('aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vdWM/ZXhwb3J0PWRvd25sb2FkJmlkPTBCeE4wRHpGakllQ2FiWEZ2VUY5RlgydFphMGs='))
+		caixastatus.close()
+		player_normal(name,url,iconimage)
+		
+def canais_futebol_ao_vivo_m(name,url,iconimage):
+	html = gethtml(base64.b64decode('aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vdWM/ZXhwb3J0PWRvd25sb2FkJmlkPTBCeE4wRHpGakllQ2FiRjlWVW0xWk5VUkxTMDA='))
 	soup = html.find("div",{"class":"canais"})
 	canais = soup.findAll("li")
 	for canal in canais:
 		titulo = canal.a.text
 		url = canal.a["href"]
 		iconimage = canal.img["src"]
-		addDir("[B]"+titulo.encode('utf-8')+"[/B]",url,8,iconimage)
-        xbmcplugin.setContent(int(sys.argv[1]), 'episodies')
-	xbmc.executebuiltin('Container.SetViewMode(500)')	
+		addDir("[B]"+titulo.encode('utf-8')+"[/B]",url,19,iconimage,False)
 
+		
+def	player_futebol_ao_vivo_m(name,url,iconimage):
+	pg = 0
+        caixastatus = xbmcgui.DialogProgress()
+	caixastatus.create('IGOR LISTA', 'Abrindo link...','Aguarde...')
+	caixastatus.update(pg)
+        playlist = xbmc.PlayList(0)
+	playlist.clear()
+	params = url.split(',')
+	pg +=30 
+	caixastatus.update(pg)
+	try:
+	        ip = params[0]
+		playpath = params[1]
+                pg +=30 
+		caixastatus.update(pg)
+		link = 'rtmp://'+ip+'/live?wmsAuthSign='+get_wms() +' playpath='+playpath+' swfUrl='+url_base3+' live=1 pageUrl='+url_base7+' token='+gettoken() +' '
+		pg +=30 
+		caixastatus.update(pg)
+                listitem = xbmcgui.ListItem(name,thumbnailImage=iconimage)
+		listitem.setInfo("Video", {"Title":name})
+		listitem.setProperty('mimetype', 'video/mp4')
+		playlist.add(link,listitem)	
+		pg=100
+		caixastatus.update(pg)
+		caixastatus.close()
+                xbmcPlayer = xbmc.Player(xbmc.PLAYER_CORE_AUTO)
+		xbmcPlayer.play(playlist)
+	except:	
+		caixastatus.close()
+		player_normal(name,url,iconimage)
+		
+def    torcedor_AuthSign(name,url,iconimage):
+	html = gethtml(base64.b64decode('aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vdWM/ZXhwb3J0PWRvd25sb2FkJmlkPTBCeE4wRHpGakllQ2FkRTAzUjA1WVJVZHZTekE='))
+	soup = html.find("div",{"class":"canais"})
+	canais = soup.findAll("li")
+	for canal in canais:
+		titulo = canal.a.text
+		url = canal.a["href"]
+		iconimage = canal.img["src"]
+		addDir("[B]"+titulo.encode('utf-8')+"[/B]",url,11,iconimage,False)
+        xbmcplugin.setContent(int(sys.argv[1]), 'episodies')
+	xbmc.executebuiltin('Container.SetViewMode(500)')
+		
+def	player_torcedor_AuthSign(name,url,iconimage):
+        pg = 0
+        caixastatus = xbmcgui.DialogProgress()
+	caixastatus.create('IGOR LISTA','Partice do grupo do Facebook','IGOR LISTA KODI/XBMC/IPTV','Abrindo link...')
+	caixastatus.update(pg)
+        playlist = xbmc.PlayList(0)
+	playlist.clear()
+	params = url.split(',')
+	pg +=30 
+	caixastatus.update(pg)
+	try:
+		ip = params[0]
+		playpath = params[1]
+                live = params[2]
+                pg +=30 
+		caixastatus.update(pg)
+		link = 'rtmp://'+ip+'/'+live+'?wmsAuthSign='+get_wms() +' playpath='+playpath+' swfUrl='+url_base5+' live=1 pageUrl='+url_base6+' '
+		pg +=30 
+		caixastatus.update(pg)
+                listitem = xbmcgui.ListItem(name,thumbnailImage=iconimage)
+		listitem.setInfo("Video", {"Title":name})
+		listitem.setProperty('mimetype', 'video/mp4')
+		playlist.add(link,listitem)	
+		xbmcPlayer = xbmc.Player(xbmc.PLAYER_CORE_AUTO)
+		xbmcPlayer.play(playlist)
+                pg=100
+                caixastatus.update(pg)
+		caixastatus.close()
+	except:	
+		caixastatus.close()
+		player_normal(name,url,iconimage)
+		
 ###############################################################################################################
 #                                                 FUNÇÕES                                                     #
 ###############################################################################################################
@@ -328,7 +424,7 @@ print "Iconimage: "+str(iconimage)
 ###############################################################################################################
 #                                                   MODOS                                                     #
 ###############################################################################################################
-abrir_url('http://j.mp/asesig')
+
 
 
 if mode==None or url==None or len(url)<1:
@@ -345,7 +441,7 @@ elif mode==2:
 
 elif mode==3:
 	print ""
-	tv_ao_vivo()	
+	
 	
 elif mode==4: 
 	print ""
@@ -367,7 +463,7 @@ elif mode==8:
 	
 elif mode==9:
     print ""
-    series_e_desenhos_24hrs()	
+    torcedor_AuthSign(name,url,iconimage)	
 	
 elif mode==10:
     print ""
@@ -375,7 +471,7 @@ elif mode==10:
 	
 elif mode==11:
     print ""
-    player_series_e_desenhos_24hrs(name,url,iconimage)	
+    player_torcedor_AuthSign(name,url,iconimage)	
 
 elif mode==12:
     print ""
@@ -387,10 +483,14 @@ elif mode==13:
 	
 elif mode==14:
     print ""
-    futebol_ao_vivo_jogos(url)
+    futebol_ao_vivo_jogos(name,url,iconimage)
     
 elif mode==15:
     print ""
-    player_futebol_ao_vivo_m()
+    canais_futebol_ao_vivo_m(name,url,iconimage)
+    
+elif mode==19:
+    print ""
+    player_futebol_ao_vivo_m(name,url,iconimage)
     
 xbmcplugin.endOfDirectory(int(sys.argv[1]))
