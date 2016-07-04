@@ -1,0 +1,12 @@
+12/11/2015 versão 0.3.0
+- animes!!!!
+
+
+29/09/2015 versão 0.2.9
+- arrumado o host dropvideo
+
+
+<13/03/2014>
+* legendas para os streams do gdrive
+* suporte ao picasa
+* suporte ao vk.com

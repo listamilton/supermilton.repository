@@ -1,0 +1,36 @@
+[B]Version 0.1[/B]
+  - repo version
+
+[B]Version 0.0.3fg6[/B]
+  - fix loading some movies
+
+[B]Version 0.0.3fg5[/B]
+  - Defaults to US content when country code not supported (second try)
+
+[B]Version 0.0.3fg4[/B]
+  - Defaults to US content when country code not supported
+  - Add fanart support
+
+[B]Version 0.0.3fg3[/B]
+  - Fix for playing search results.
+
+[B]Version 0.0.3fg2[/B]
+  - Add support for Crackle spanish latin america.
+
+[B]Version 0.0.3fg1[/B]
+  - Add support for subtitles.
+
+[B]Version 0.0.3fg[/B]
+  - Add support for Crackle Brazil.
+
+[B]Version 0.0.3[/B]
+  - Return country code as 'US' if crackle is not available in that country.
+
+[B]Version 0.0.2[/B]
+  - Get country code from api.
+  - Use Cachefunction
+  - Changed 480p to high bit rate 480p (1 mbps)
+  - Fixed where shows were only showing one season.
+
+[B]Version 0.0.1[/B]
+  - initial version
