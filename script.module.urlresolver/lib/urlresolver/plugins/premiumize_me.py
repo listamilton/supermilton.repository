@@ -16,21 +16,32 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 
+from urlresolver.plugnplay.interfaces import UrlResolver
+from urlresolver.plugnplay.interfaces import SiteAuth
+from urlresolver.plugnplay.interfaces import PluginSettings
+from urlresolver.plugnplay import Plugin
+from urlresolver import common
+from t0mm0.common.net import Net
+
 import re
 import urllib
-import json
-from urlresolver import common
-from urlresolver.resolver import UrlResolver, ResolverError
+try:
+    import simplejson as json
+except ImportError:
+    import json
 
-class PremiumizeMeResolver(UrlResolver):
+class PremiumizeMeResolver(Plugin, UrlResolver, SiteAuth, PluginSettings):
+    implements = [UrlResolver, PluginSettings]
     name = "Premiumize.me"
     domains = ["*"]
     media_url = None
 
     def __init__(self):
+        p = self.get_setting('priority') or 100
         self.hosts = []
         self.patterns = []
-        self.net = common.Net()
+        self.priority = int(p)
+        self.net = Net()
         self.scheme = 'https' if self.get_setting('use_https') == 'true' else 'http'
 
     def get_media_url(self, host, media_id):
@@ -45,11 +56,11 @@ class PremiumizeMeResolver(UrlResolver):
             if response['status'] == 200:
                 link = response['result']['location']
             else:
-                raise ResolverError('Link Not Found: Error Code: %s' % response['status'])
+                raise UrlResolver.ResolverError('Link Not Found: Error Code: %s' % response['status'])
         else:
-            raise ResolverError('Unexpected Response Received')
+            raise UrlResolver.ResolverError('Unexpected Response Received')
 
-        common.log_utils.log_debug('Premiumize.me: Resolved to %s' % link)
+        common.addon.log_debug('Premiumize.me: Resolved to %s' % link)
         return link
 
     def get_url(self, host, media_id):
@@ -58,9 +69,9 @@ class PremiumizeMeResolver(UrlResolver):
     def get_host_and_id(self, url):
         return 'premiumize.me', url
 
-    @common.cache.cache_method(cache_limit=8)
     def get_all_hosters(self):
         try:
+            if not self.patterns or not self.hosts:
                 username = self.get_setting('username')
                 password = self.get_setting('password')
                 url = '%s://api.premiumize.me/pm-api/v1.php?' % (self.scheme)
@@ -70,16 +81,17 @@ class PremiumizeMeResolver(UrlResolver):
                 response = json.loads(response)
                 result = response['result']
                 log_msg = 'Premiumize.me patterns: %s hosts: %s' % (result['regexlist'], result['tldlist'])
-                common.log_utils.log_debug(log_msg)
-                return result['tldlist'], [re.compile(regex) for regex in result['regexlist']]
+                common.addon.log_debug(log_msg)
+                self.hosts = result['tldlist']
+                self.patterns = [re.compile(regex) for regex in result['regexlist']]
         except Exception as e:
-            common.log_utils.log_error('Error getting Premiumize hosts: %s' % (e))
-        return [], []
+            common.addon.log_error('Error getting Premiumize hosts: %s' % (e))
 
     def valid_url(self, url, host):
-        if not self.patterns or not self.hosts:
-            self.hosts, self.patterns = self.get_all_hosters()
+        if self.get_setting('enabled') == 'false': return False
+        if self.get_setting('login') == 'false': return False
 
+        self.get_all_hosters()
         if url:
             if not url.endswith('/'): url += '/'
             for pattern in self.patterns:
@@ -92,15 +104,13 @@ class PremiumizeMeResolver(UrlResolver):
 
         return False
 
-    @classmethod
-    def get_settings_xml(cls):
-        xml = super(cls, cls).get_settings_xml()
-        xml.append('<setting id="%s_use_https" type="bool" label="Use HTTPS" default="false"/>' % (cls.__name__))
-        xml.append('<setting id="%s_login" type="bool" label="login" default="false"/>' % (cls.__name__))
-        xml.append('<setting id="%s_username" enable="eq(-1,true)" type="text" label="Customer ID" default=""/>' % (cls.__name__))
-        xml.append('<setting id="%s_password" enable="eq(-2,true)" type="text" label="PIN" option="hidden" default=""/>' % (cls.__name__))
+    def get_settings_xml(self):
+        xml = PluginSettings.get_settings_xml(self)
+        xml += '<setting id="%s_use_https" type="bool" label="Use HTTPS" default="false"/>\n' % (self.__class__.__name__)
+        xml += '<setting id="%s_login" type="bool" label="login" default="false"/>\n' % (self.__class__.__name__)
+        xml += '<setting id="%s_username" enable="eq(-1,true)" type="text" label="Customer ID" default=""/>\n' % (self.__class__.__name__)
+        xml += '<setting id="%s_password" enable="eq(-2,true)" type="text" label="PIN" option="hidden" default=""/>\n' % (self.__class__.__name__)
         return xml
 
-    @classmethod
     def isUniversal(self):
         return True

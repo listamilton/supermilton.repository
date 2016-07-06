@@ -88,7 +88,7 @@ class Unbaser(object):
         95: (' !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ'
              '[\]^_`abcdefghijklmnopqrstuvwxyz{|}~')
     }
-
+    
     def __init__(self, base):
         self.base = base
 

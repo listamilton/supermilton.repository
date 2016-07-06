@@ -16,45 +16,58 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 
-import re
-from urlresolver import common
-from urlresolver.resolver import UrlResolver, ResolverError
+"""
+RogerThis - 14/8/2011
+Site: http://www.movshare.net
+movshare hosts both avi and flv videos
+"""
 
-class MovshareResolver(UrlResolver):
+import re
+from t0mm0.common.net import Net
+from urlresolver.plugnplay.interfaces import UrlResolver
+from urlresolver.plugnplay.interfaces import PluginSettings
+from urlresolver.plugnplay import Plugin
+from urlresolver import common
+
+class MovshareResolver(Plugin, UrlResolver, PluginSettings):
+    implements = [UrlResolver, PluginSettings]
     name = "movshare"
-    domains = ["movshare.net", 'wholecloud.net']
-    pattern = '(?://|\.)(movshare.net|wholecloud.net)/(?:video/|embed(?:/|\.php)\?v=)([A-Za-z0-9]+)'
+    domains = ["movshare.net"]
+    pattern = '//((?:www\.|embed\.)?movshare\.net)/(?:mobile/video\.php\?id=|video/|embed\.php\?v=)([0-9a-z]+)'
 
     def __init__(self):
-        self.net = common.Net()
+        p = self.get_setting('priority') or 100
+        self.priority = int(p)
+        self.net = Net()
 
     def get_media_url(self, host, media_id):
         web_url = self.get_url(host, media_id)
-
+        self.net.http_HEAD(web_url)
         html = self.net.http_GET(web_url).content
-
-        r = re.search('flashvars.filekey=(.+?);', html)
+        """movshare can do both flv and avi. There is no way I know before hand
+        if the url going to be a flv or avi. So the first regex tries to find
+        the avi file, if nothing is present, it will check for the flv file.
+        "param name="src" is for avi
+        "flashvars.file=" is for flv
+        """
+        r = re.search('<param name="src" value="(.+?)"', html)
+        if not r:
+            match = re.search('flashvars.filekey="(.+?)";', html)
+            if match:
+                #get stream url from api
+                filekey = match.group(0)
+                api = 'http://www.movshare.net/api/player.api.php?key=%s&file=%s' % (filekey, media_id)
+                html = self.net.http_GET(api).content
+                r = re.search('url=(.+?)&title', html)
         if r:
-            r = r.group(1)
-
-            try: filekey = re.compile('\s+%s="(.+?)"' % r).findall(html)[-1]
-            except: filekey = r
-
-            player_url = 'http://www.wholecloud.net/api/player.api.php?key=%s&file=%s' % (filekey, media_id)
-
-            html = self.net.http_GET(player_url).content
-
-            r = re.search('url=(.+?)&', html)
-
-            if r:
-                stream_url = r.group(1)
-            else:
-                raise ResolverError('File Not Found or removed')
-
+            stream_url = r.group(1)
+        else:
+            raise UrlResolver.ResolverError('File Not Found or removed')
+        
         return stream_url
 
     def get_url(self, host, media_id):
-        return 'http://www.wholecloud.net/embed/?v=%s' % media_id
+        return 'http://www.movshare.net/video/%s' % media_id
 
     def get_host_and_id(self, url):
         r = re.search(self.pattern, url)
@@ -62,3 +75,7 @@ class MovshareResolver(UrlResolver):
             return r.groups()
         else:
             return False
+
+    def valid_url(self, url, host):
+        if self.get_setting('enabled') == 'false': return False
+        return re.search(self.pattern, url) or 'movshare' in host

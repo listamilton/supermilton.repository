@@ -16,18 +16,24 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 
-import re
-from lib import helpers
+from t0mm0.common.net import Net
+from urlresolver.plugnplay.interfaces import UrlResolver
+from urlresolver.plugnplay.interfaces import PluginSettings
+from urlresolver.plugnplay import Plugin
+import urllib2, re, os
 from urlresolver import common
-from urlresolver.resolver import UrlResolver, ResolverError
 
-class GorillavidResolver(UrlResolver):
+class GorillavidResolver(Plugin, UrlResolver, PluginSettings):
+    implements = [UrlResolver, PluginSettings]
     name = "gorillavid"
     domains = ["gorillavid.in", "gorillavid.com"]
-    pattern = '(?://|\.)(gorillavid\.(?:in|com))/(?:embed-)?([0-9a-zA-Z]+)'
 
     def __init__(self):
-        self.net = common.Net()
+        p = self.get_setting('priority') or 100
+        self.priority = int(p)
+        self.net = Net()
+        #e.g. http://gorillavid.com/vb80o1esx2eb
+        self.pattern = 'http://((?:www.)?gorillavid.(?:in|com))/(?:embed-)?([0-9a-zA-Z]+)'
 
     def get_media_url(self, host, media_id):
         web_url = self.get_url(host, media_id)
@@ -35,15 +41,18 @@ class GorillavidResolver(UrlResolver):
         html = resp.content
         r = re.findall(r"<title>404 - Not Found</title>", html)
         if r:
-            raise ResolverError('File Not Found or removed')
+            raise UrlResolver.ResolverError('File Not Found or removed')
         post_url = resp.get_url()
-        form_values = helpers.get_hidden(html)
+        form_values = {}
+        for i in re.finditer('<input type="hidden" name="(.+?)" value="(.+?)">', html):
+            form_values[i.group(1)] = i.group(2)
+            
         html = self.net.http_POST(post_url, form_data=form_values).content
         r = re.search('file: "(.+?)"', html)
         if r:
             return r.group(1)
         else:
-            raise ResolverError('Unable to resolve Gorillavid link')
+            raise UrlResolver.ResolverError('Unable to resolve Gorillavid link')
 
     def get_url(self, host, media_id):
         return 'http://gorillavid.in/%s' % (media_id)
@@ -54,3 +63,7 @@ class GorillavidResolver(UrlResolver):
             return r.groups()
         else:
             return False
+
+    def valid_url(self, url, host):
+        if self.get_setting('enabled') == 'false': return False
+        return re.match(self.pattern, url) or self.name in host

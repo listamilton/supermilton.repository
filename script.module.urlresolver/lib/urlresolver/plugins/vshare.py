@@ -17,35 +17,43 @@
 """
 
 import re
+from t0mm0.common.net import Net
+from urlresolver.plugnplay.interfaces import UrlResolver
+from urlresolver.plugnplay.interfaces import PluginSettings
+from urlresolver.plugnplay import Plugin
 from urlresolver import common
-from urlresolver.resolver import UrlResolver, ResolverError
 
-class VshareResolver(UrlResolver):
+class VshareResolver(Plugin, UrlResolver, PluginSettings):
+    implements = [UrlResolver, PluginSettings]
     name = "vshare"
     domains = ['vshare.io']
-    pattern = '(?://|\.)(vshare\.io)/\w?/(\w+)'
 
     def __init__(self):
-        self.net = common.Net()
+        p = self.get_setting('priority') or 100
+        self.priority = int(p)
+        self.net = Net()
+        self.pattern = 'http://((?:www.)?vshare.io)/\w?/(\w+)(?:\/width-\d+/height-\d+/)?'
+
+    def get_url(self, host, media_id):
+        return 'http://vshare.io/v/%s/width-620/height-280/' % (media_id)
+
+    def get_host_and_id(self, url):
+        r = re.search(self.pattern, url)
+        if r: return r.groups()
+        else: return False
+
+    def valid_url(self, url, host):
+        if self.get_setting('enabled') == 'false': return False
+        return re.match(self.pattern, url) or self.name in host
 
     def get_media_url(self, host, media_id):
         web_url = self.get_url(host, media_id)
         link = self.net.http_GET(web_url).content
         if link.find('404 - Error') >= 0:
-            raise ResolverError('The requested video was not found.')
+            raise UrlResolver.ResolverError('The requested video was not found.')
 
         video_link = str(re.compile("url[: ]*'(.+?)'").findall(link)[0])
         if len(video_link) > 0:
             return video_link
         else:
-            raise ResolverError('No playable video found.')
-
-    def get_url(self, host, media_id):
-        return 'http://vshare.io/v/%s/width-620/height-280/' % media_id
-
-    def get_host_and_id(self, url):
-        r = re.search(self.pattern, url)
-        if r:
-            return r.groups()
-        else:
-            return False
+            raise UrlResolver.ResolverError('No playable video found.')

@@ -16,50 +16,48 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 
-import re
-from lib import jsunpack
-from urlresolver import common
-from urlresolver.resolver import UrlResolver, ResolverError
 
-class AllVidResolver(UrlResolver):
+from t0mm0.common.net import Net
+from urlresolver.plugnplay.interfaces import UrlResolver
+from urlresolver.plugnplay.interfaces import PluginSettings
+from urlresolver.plugnplay import Plugin
+from urlresolver import common
+import urllib
+import re
+
+
+class AllVidResolver(Plugin, UrlResolver, PluginSettings):
+    implements = [UrlResolver, PluginSettings]
     name = "allvid"
     domains = ["allvid.ch"]
-    pattern = '(?://|\.)(allvid\.ch)/(?:embed-)?([0-9a-zA-Z]+)'
 
     def __init__(self):
-        self.net = common.Net()
+        p = self.get_setting('priority') or 100
+        self.priority = int(p)
+        self.net = Net()
+        self.pattern = 'http://(allvid\.ch)/(?:embed-)(.+?)(?:-|/|\.|$)'
         self.user_agent = common.IE_USER_AGENT
         self.net.set_user_agent(self.user_agent)
         self.headers = {'User-Agent': self.user_agent}
-
-    def get_media_url(self, host, media_id):
-        web_url = self.get_url(host, media_id)
-        self.headers['Referer'] = web_url
-        html = self.net.http_GET(web_url, headers=self.headers).content
-
-        r = re.search('<iframe\s+src\s*=\s*"([^"]+)', html, re.DOTALL)
-
-        if r:
-            web_url = r.group(1)
-            html = self.net.http_GET(web_url, headers=self.headers).content
-
-        for match in re.finditer('(eval\(function.*?)</script>', html, re.DOTALL):
-            js_data = jsunpack.unpack(match.group(1))
-            js_data = js_data.replace('\\\'', '\'')
-
-            r = re.search('sources\s*:\s*\[\s*\{\s*file\s*:\s*["\'](.+?)["\']', js_data)
-
-            if r:
-                return r.group(1)
-        else:
-            raise ResolverError('File not found')
 
     def get_url(self, host, media_id):
         return 'http://%s/embed-%s.html' % (host, media_id)
 
     def get_host_and_id(self, url):
         r = re.search(self.pattern, url)
+        if r: return r.groups()
+        else: return False
+
+    def valid_url(self, url, host):
+        if self.get_setting('enabled') == 'false': return False
+        return re.match(self.pattern, url) or host in self.domains
+
+    def get_media_url(self, host, media_id):
+        web_url = self.get_url(host, media_id)
+        self.headers['Referer'] = web_url
+        html = self.net.http_GET(web_url, headers=self.headers).content
+        r = re.search('sources\s*:\s*\[\s*\{\s*file\s*:\s*["\'](.+?)["\']', html)
         if r:
-            return r.groups()
+            return r.group(1)
         else:
-            return False
+            raise UrlResolver.ResolverError('File not found')

@@ -17,24 +17,37 @@
 """
 
 import re
-from lib import jsunpack
-from lib import helpers
+import urllib2
+from t0mm0.common.net import Net
+from urlresolver.plugnplay.interfaces import UrlResolver
+from urlresolver.plugnplay.interfaces import PluginSettings
+from urlresolver.plugnplay import Plugin
 from urlresolver import common
-from urlresolver.resolver import UrlResolver, ResolverError
+from lib import jsunpack
 
-class MovDivxResolver(UrlResolver):
+
+class MovDivxResolver(Plugin, UrlResolver, PluginSettings):
+    implements = [UrlResolver, PluginSettings]
     name = "movdivx"
     domains = ["movdivx.com"]
-    pattern = '(?://|\.)(movdivx\.com)/([0-9a-zA-Z]+)'
 
     def __init__(self):
-        self.net = common.Net()
+        p = self.get_setting('priority') or 100
+        self.priority = int(p)
+        self.net = Net()
+        #e.g. http://movdivx.com/trrrw4r6bjqu/American_Dad__s_1_e_3_p1-1.flv.html
+        self.pattern = 'http://(?:www.)?(movdivx.com)/(.+?).html'
 
     def get_media_url(self, host, media_id):
         web_url = self.get_url(host, media_id)
         html = self.net.http_GET(web_url).content
-        data = helpers.get_hidden(html)
+
+        data = {}
+        for match in re.finditer('type="hidden"\s*name="([^"]+)"\s*value="([^"]+)', html):
+            key, value = match.groups()
+            data[key] = value
         data['method_free'] = 'Continue to Stream >>'
+        
         html = self.net.http_POST(web_url, data).content
 
         # get url from packed javascript
@@ -50,10 +63,10 @@ class MovDivxResolver(UrlResolver):
                 if match:
                     return match.group(1)
 
-        raise ResolverError('failed to parse link')
+        raise UrlResolver.ResolverError('failed to parse link')
 
     def get_url(self, host, media_id):
-        return 'http://movdivx.com/%s.html' % (media_id)
+            return 'http://movdivx.com/%s.html' % (media_id)
 
     def get_host_and_id(self, url):
         r = re.search(self.pattern, url)
@@ -61,3 +74,8 @@ class MovDivxResolver(UrlResolver):
             return r.groups()
         else:
             return False
+
+
+    def valid_url(self, url, host):
+        if self.get_setting('enabled') == 'false': return False
+        return re.search(self.pattern, url) or self.name in host

@@ -16,18 +16,24 @@ You should have received a copy of the GNU General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>.
 '''
 
+from t0mm0.common.net import Net
+from urlresolver.plugnplay.interfaces import UrlResolver
+from urlresolver.plugnplay.interfaces import PluginSettings
+from urlresolver.plugnplay import Plugin
 import re
-from lib import jsunpack
 from urlresolver import common
-from urlresolver.resolver import UrlResolver, ResolverError
+from lib import jsunpack
 
-class VidAgResolver(UrlResolver):
+class VidAgResolver(Plugin, UrlResolver, PluginSettings):
+    implements = [UrlResolver, PluginSettings]
     name = "vid.ag"
     domains = ["vid.ag"]
-    pattern = '(?://|\.)(vid\.ag)/(?:embed-)?([0-9A-Za-z]+)'
+    pattern = '//((?:www\.)?vid\.ag)/(?:embed-)?([0-9A-Za-z]+)'
 
     def __init__(self):
-        self.net = common.Net()
+        p = self.get_setting('priority') or 100
+        self.priority = int(p)
+        self.net = Net()
 
     def get_media_url(self, host, media_id):
         web_url = self.get_url(host, media_id)
@@ -37,15 +43,15 @@ class VidAgResolver(UrlResolver):
             r = re.search('file\s*:\s*"([^"]+)', js_data)
             if r:
                 return r.group(1)
-
+        
         r = re.search('file\s*:\s*"([^"]+)', html)
         if r:
             return r.group(1)
 
-        raise ResolverError('File Not Found or removed')
+        raise UrlResolver.ResolverError('File Not Found or removed')
 
     def get_url(self, host, media_id):
-        return 'http://vid.ag/embed-%s.html' % media_id
+        return 'http://%s/embed-%s.html' % (host, media_id)
 
     def get_host_and_id(self, url):
         r = re.search(self.pattern, url)
@@ -53,3 +59,7 @@ class VidAgResolver(UrlResolver):
             return r.groups()
         else:
             return False
+
+    def valid_url(self, url, host):
+        if self.get_setting('enabled') == 'false': return False
+        return (re.search(self.pattern, url) or 'vid.ag' in host)

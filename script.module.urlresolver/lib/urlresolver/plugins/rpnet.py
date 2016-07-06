@@ -18,26 +18,37 @@
 
 import re
 import urllib
-import json
+from urlresolver.plugnplay.interfaces import UrlResolver
+from urlresolver.plugnplay.interfaces import SiteAuth
+from urlresolver.plugnplay.interfaces import PluginSettings
+from urlresolver.plugnplay import Plugin
 from urlresolver import common
-from urlresolver.resolver import UrlResolver, ResolverError
+from t0mm0.common.net import Net
 
-class RPnetResolver(UrlResolver):
+try:
+    import simplejson as json
+except ImportError:
+    import json
+
+class RPnetResolver(Plugin, UrlResolver, SiteAuth, PluginSettings):
+    implements = [UrlResolver, PluginSettings]
     name = "RPnet"
     domains = ["*"]
 
     def __init__(self):
-        self.net = common.Net()
+        p = self.get_setting('priority') or 100
+        self.priority = int(p)
+        self.net = Net()
         self.patterns = None
         self.hosts = None
 
-    # UrlResolver methods
+    #UrlResolver methods
     def get_media_url(self, host, media_id):
         username = self.get_setting('username')
         password = self.get_setting('password')
-        url = 'https://premium.rpnet.biz/client_api.php'
+        url = 'https://premium.rpnet.biz/client_api.php?'
         query = urllib.urlencode({'username': username, 'password': password, 'action': 'generate', 'links': media_id})
-        url = url + '?' + query
+        url = url + query
         response = self.net.http_GET(url).content
         response = json.loads(response)
         if 'links' in response and response['links']:
@@ -45,12 +56,9 @@ class RPnetResolver(UrlResolver):
             if 'generated' in link:
                 return link['generated']
             elif 'error' in link:
-                raise ResolverError(link['error'])
+                raise UrlResolver.ResolverError(link['error'])
         else:
-            msg = 'No Link Returned'
-            if 'error' in response and response['error']:
-                msg += ': %s' % (response['error'][0])
-            raise ResolverError(msg)
+            raise UrlResolver.ResolverError('No Link Returned')
 
     def get_url(self, host, media_id):
         return media_id
@@ -58,56 +66,49 @@ class RPnetResolver(UrlResolver):
     def get_host_and_id(self, url):
         return 'rpnet.biz', url
 
-    @common.cache.cache_method(cache_limit=8)
     def get_all_hosters(self):
-        try:
-            patterns = []
+        if self.patterns is None:
             url = 'http://premium.rpnet.biz/hoster.json'
             response = self.net.http_GET(url).content
             hosters = json.loads(response)
-            common.log_utils.log_debug('rpnet patterns: %s' % (hosters))
-            patterns = [re.compile(pattern) for pattern in hosters['supported']]
-        except Exception as e:
-            common.log_utils.log_error('Error getting RPNet patterns: %s' % (e))
-        return patterns
+            common.addon.log_debug('rpnet patterns: %s' % hosters)
+            self.patterns = [re.compile(pattern) for pattern in hosters['supported']]
+        return self.patterns
 
-    @common.cache.cache_method(cache_limit=8)
     def get_hosts(self):
-        try:
-            hosts = []
+        if self.hosts is None:
             url = 'http://premium.rpnet.biz/hoster2.json'
             response = self.net.http_GET(url).content
-            hosts = json.loads(response)['supported']
-            common.log_utils.log_debug('rpnet hosts: %s' % (hosts))
-        except Exception as e:
-            common.log_utils.log_error('Error getting RPNet hosts: %s' % (e))
-        return hosts
-
+            common.addon.log_debug('rpnet hosts: %s' % response)
+            self.hosts = json.loads(response)['supported']
+    
     def valid_url(self, url, host):
+        if self.get_setting('enabled') == 'false': return False
+        if self.get_setting('login') == 'false': return False
         if url:
-            if self.patterns is None:
-                self.patterns = self.get_all_hosters()
-                
-            if any(pattern.search(url) for pattern in self.patterns):
-                return True
+            self.get_all_hosters()
+            for pattern in self.patterns:
+                if pattern.search(url):
+                    return True
         elif host:
-            if self.hosts is None:
-                self.hosts = self.get_hosts()
-                
+            self.get_hosts()
             if host.startswith('www.'): host = host.replace('www.', '')
-            if any(host in item for item in self.hosts):
+            if host in self.hosts or any(host in item for item in self.hosts):
                 return True
-
+                 
         return False
 
-    @classmethod
-    def get_settings_xml(cls):
-        xml = super(cls, cls).get_settings_xml()
-        xml.append('<setting id="%s_login" type="bool" label="login" default="false"/>' % (cls.__name__))
-        xml.append('<setting id="%s_username" enable="eq(-1,true)" type="text" label="Username" default=""/>' % (cls.__name__))
-        xml.append('<setting id="%s_password" enable="eq(-2,true)" type="text" label="Password (API KEY)" option="hidden" default=""/>' % (cls.__name__))
+    #PluginSettings methods
+    def get_settings_xml(self):
+        xml = PluginSettings.get_settings_xml(self)
+        xml += '<setting id="%s_login" ' % (self.__class__.__name__)
+        xml += 'type="bool" label="Login" default="false"/>\n'
+        xml += '<setting id="%s_username" enable="eq(-1,true)" ' % (self.__class__.__name__)
+        xml += 'type="text" label="username" default=""/>\n'
+        xml += '<setting id="%s_password" enable="eq(-2,true)" ' % (self.__class__.__name__)
+        xml += 'type="text" label="password" option="hidden" default=""/>\n'
         return xml
-
-    @classmethod
+        
+    #to indicate if this is a universal resolver
     def isUniversal(self):
         return True

@@ -1,6 +1,6 @@
 """
-    urlresolver Kodi Addon
-    Copyright (C) 2016 Gujal
+    urlresolver XBMC Addon
+    Copyright (C) 2011 t0mm0
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -17,49 +17,108 @@
 """
 
 import re
-import urllib
+from t0mm0.common.net import Net
+import urllib2, os
 from urlresolver import common
-from urlresolver.resolver import UrlResolver, ResolverError
+from urlresolver.plugnplay.interfaces import UrlResolver
+from urlresolver.plugnplay.interfaces import PluginSettings
+from urlresolver.plugnplay import Plugin
+import xbmcgui
+from lib import unwise
+import urllib
 
-class VideoRajResolver(UrlResolver):
-    name = 'videoraj.to'
-    domains = ['videoraj.ec', 'videoraj.eu', 'videoraj.sx', 'videoraj.ch', 'videoraj.com', 'videoraj.to', 'videoraj.co']
-    pattern = '(?://|\.)(videoraj\.(?:ec|eu|sx|ch|com|co|to))/(?:v(?:ideo)*/|embed\.php\?id=)([0-9a-z]+)'
+class VideorajResolver(Plugin, UrlResolver, PluginSettings):
+    implements = [UrlResolver, PluginSettings]
+    name = "videoraj.ch"
+    domains = [ "videoraj.ec", "videoraj.eu", "videoraj.sx", "videoraj.ch", "videoraj.com" ]
 
     def __init__(self):
-        self.net = common.Net()
+        p = self.get_setting('priority') or 100
+        self.priority = int(p)
+        self.net = Net()
+
+    def __get_stream_url(self, media_id, filekey, error_num=0, error_url=None):
+        '''
+        Get stream url. 
+
+        If previously found stream url is a dead link, add error params and try again
+        '''
+
+        if error_num > 0 and error_url:
+            _error_params = '&numOfErrors={0}&errorCode=404&errorUrl={1}'.format(
+                                error_num, 
+                                urllib.quote_plus(error_url).replace('.', '%2E')
+                            )
+        else:
+            _error_params = ''
+
+        #use api to find stream address
+        api_call = 'http://www.videoraj.ch/api/player.api.php?{0}&file={1}&key={2}{3}'.format(
+                        'user=undefined&pass=undefined',
+                        media_id,
+                        urllib.quote_plus(filekey).replace('.', '%2E'),
+                        _error_params
+                    )
+
+        api_html = self.net.http_GET(api_call).content
+        rapi = re.search('url=(.+?)&title=', api_html)
+        if rapi:
+            return urllib.unquote(rapi.group(1))
+
+        return None
+
+    def __is_stream_url_active(self, web_url):
+        try:
+            header = self.net.http_HEAD(web_url)
+            if header.get_headers():
+                return True
+
+            return False
+        except:
+            return False
 
     def get_media_url(self, host, media_id):
         web_url = self.get_url(host, media_id)
-
+        #grab stream details
         html = self.net.http_GET(web_url).content
+        html = unwise.unwise_process(html)
+        filekey = unwise.resolve_var(html, "vars.key")
+        error_url = None
+        stream_url = None
+        # try to resolve 3 times then give up
+        for x in range(0, 2):
+            link = self.__get_stream_url(media_id, filekey, 
+                                    error_num=x,
+                                    error_url=error_url)
 
-        r = re.search('key: "(.+?)"', html)
-        if r:
-            r = r.group(1)
+            if link:
+                active = self.__is_stream_url_active(link)
 
-            try: filekey = re.compile('\s+%s="(.+?)"' % r).findall(html)[-1]
-            except: filekey = r
-
-            player_url = 'http://www.videoraj.to/api/player.api.php?pass=&numOfErrors=0&cid=1&cid3=&key=%s&user=&cid2=&file=%s' % (filekey, media_id)
-
-            html = self.net.http_GET(player_url).content
-
-            r = re.search('url=(.+?)&', html)
-
-            if r:
-                stream_url = r.group(1)
+                if active:
+                    stream_url = urllib.unquote(link)
+                    break
+                else:
+                    # link inactive
+                    error_url = link
             else:
-                raise ResolverError('File Not Found or removed')
+                # no link found
+                raise UrlResolver.ResolverError('File Not Found or removed')
 
-        return urllib.unquote(stream_url)
+        if stream_url:
+            return stream_url
+        else:
+            raise UrlResolver.ResolverError('File Not Found or removed')
 
     def get_url(self, host, media_id):
-        return 'http://www.videoraj.to/embed.php?id=%s' % media_id
+        return 'http://www.videoraj.ch/embed.php?id=%s' % media_id
 
     def get_host_and_id(self, url):
-        r = re.search(self.pattern, url)
+        r = re.search('(https?://(?:www\.|embed\.)videoraj\.(?:ec|eu|sx|ch|com))/(?:v(?:ideo)*/|embed\.php\?id=)([0-9a-z]+)', url)
         if r:
             return r.groups()
         else:
             return False
+
+    def valid_url(self, url, host):
+        if self.get_setting('enabled') == 'false': return False
+        return re.match('https?://(?:www\.|embed\.)videoraj\.(?:ec|eu|sx|ch|com)/(?:v(?:ideo)*/|embed\.php\?id=)([0-9a-z]+)', url) or 'videoraj' in host

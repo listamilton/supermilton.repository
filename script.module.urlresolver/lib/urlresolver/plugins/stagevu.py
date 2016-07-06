@@ -17,33 +17,44 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 '''
 
 import re
+from t0mm0.common.net import Net
+from urlresolver.plugnplay.interfaces import UrlResolver
+from urlresolver.plugnplay.interfaces import PluginSettings
+from urlresolver.plugnplay import Plugin
 from urlresolver import common
-from urlresolver.resolver import UrlResolver, ResolverError
 
-class StagevuResolver(UrlResolver):
+class StagevuResolver(Plugin, UrlResolver, PluginSettings):
+    implements = [UrlResolver, PluginSettings]
     name = "stagevu"
-    domains = ["stagevu.com"]
-    pattern = '(?://|\.)(stagevu\.com)/(?:video/|embed.+?uid=)?([A-Za-z0-9]+)'
+    domains = [ "stagevu.com" ]
 
     def __init__(self):
-        self.net = common.Net()
+        p = self.get_setting('priority') or 100
+        self.priority = int(p)
+        self.net = Net()
 
     def get_media_url(self, host, media_id):
         web_url = self.get_url(host, media_id)
         link = self.net.http_GET(web_url).content
-        p = re.compile('type="video/.+?"\s+src="(.+?)"')
+        p = re.compile('<embed type="video/divx" src="(.+?)"')
         match = p.findall(link)
         if match:
             return match[0]
         else:
-            raise ResolverError('File Not Found or removed')
+            raise UrlResolver.ResolverError('File Not Found or removed')
 
     def get_url(self, host, media_id):
-        return 'http://www.stagevu.com/video/%s' % media_id
+        return 'http://www.stagevu.com/video/%s' % media_id 
 
     def get_host_and_id(self, url):
-        r = re.search(self.pattern, url)
+        r = re.search('//(.+?)/video/([0-9a-zA-Z/]+)', url)
         if r:
             return r.groups()
         else:
             return False
+
+    def valid_url(self, url, host):
+        if self.get_setting('enabled') == 'false': return False
+        return (re.match('http://(www.)?stagevu.com/video/' +
+                         '[0-9A-Za-z]+', url) or
+                         'stagevu' in host)

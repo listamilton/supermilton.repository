@@ -17,42 +17,69 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 '''
 
 import re
-import urllib
-from lib import helpers
+from t0mm0.common.net import Net
+from urlresolver.plugnplay.interfaces import UrlResolver
+from urlresolver.plugnplay.interfaces import PluginSettings
+from urlresolver.plugnplay import Plugin
 from urlresolver import common
-from urlresolver.resolver import UrlResolver, ResolverError
 
-class SharedsxResolver(UrlResolver):
+class SharedsxResolver(Plugin, UrlResolver, PluginSettings):
+    implements = [UrlResolver, PluginSettings]
     name = "sharedsx"
     domains = ["shared.sx"]
-    pattern = '(?://|\.)(shared\.sx)/([0-9a-zA-Z]+)'
-
+    
     def __init__(self):
-        self.net = common.Net()
-
+        p = self.get_setting('priority') or 100
+        self.priority = int(p)
+        self.net = Net()
+    
     def get_media_url(self, host, media_id):
         web_url = self.get_url(host, media_id)
-
+        # get landing page
         html = self.net.http_GET(web_url, headers={'Referer': web_url}).content
-
-        data = helpers.get_hidden(html)
+        
+        # read POST variables into data
+        data = {}
+        r = re.findall(r'type="hidden" name="(.+?)"\s* value="?(.+?)"', html)
+        if not r: raise UrlResolver.ResolverError('page structure changed')
+        for name, value in r: data[name] = value
+        
+        # get delay from hoster; actually this is not needed, but we are polite
+        delay = 5
+        r = re.search(r'var RequestWaiting = (\d+);', html)
+        if r: delay = r.groups(1)[0]
+        
+        # run countdown and check whether it was canceld or not
+        cnt = common.addon.show_countdown(int(delay), title='shared.sx', text='Please wait for hoster...')
+        if not cnt: raise UrlResolver.ResolverError('countdown was canceld by user')
+        
+        # get video page using POST variables
         html = self.net.http_POST(web_url, data, headers=({'Referer': web_url, 'X-Requested-With': 'XMLHttpRequest'})).content
-
+        
+        # search for content tag
         r = re.search(r'class="stream-content" data-url', html)
-        if not r: raise ResolverError('page structure changed')
-
+        if not r: raise UrlResolver.ResolverError('page structure changed')
+        
+        # read the data-url
         r = re.findall(r'data-url="?(.+?)"', html)
-
-        stream_url = r[0] + '|' + urllib.urlencode({'User-Agent': common.IE_USER_AGENT})
-
-        return stream_url
-
+        if not r: raise UrlResolver.ResolverError('video not found')
+        
+        # return media URL
+        return r[0]
+    
     def get_url(self, host, media_id):
         return 'http://shared.sx/%s' % media_id
-
+    
     def get_host_and_id(self, url):
-        r = re.search(self.pattern, url)
+        r = re.search('//(.+?)/([0-9a-zA-Z]+)', url)
         if r:
             return r.groups()
         else:
             return False
+        return('host', 'media_id')
+    
+    def valid_url(self, url, host):
+        if self.get_setting('enabled') == 'false': return False
+        return (re.match('http://(www.)?shared.sx/' +
+                         '[0-9A-Za-z]+', url) or
+                         'shared.sx' in host)

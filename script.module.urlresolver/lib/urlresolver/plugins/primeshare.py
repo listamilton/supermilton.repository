@@ -17,50 +17,59 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 """
 
 import re
-import urllib2
+import os
+from t0mm0.common.net import Net
+from urlresolver.plugnplay.interfaces import UrlResolver
+from urlresolver.plugnplay.interfaces import PluginSettings
+from urlresolver.plugnplay import Plugin
 from urlresolver import common
-from urlresolver.resolver import UrlResolver, ResolverError
+from lib import jsunpack
 
-class PrimeshareResolver(UrlResolver):
+class PrimeshareResolver(Plugin, UrlResolver, PluginSettings):
+    implements = [UrlResolver, PluginSettings]
     name = "primeshare"
     domains = ["primeshare.tv"]
-    pattern = '(?://|\.)(primeshare\.tv)/download/([0-9a-zA-Z-_]+)'
+    profile_path = common.profile_path
+    cookie_file = os.path.join(profile_path, 'primeshare.cookies')
 
     def __init__(self):
-        self.net = common.Net()
+        p = self.get_setting('priority') or 100
+        self.priority = int(p)
+        self.net = Net()
 
     def get_media_url(self, host, media_id):
         web_url = self.get_url(host, media_id)
-
-        headers = {'User-Agent': common.IOS_USER_AGENT}
-
-        html = self.net.http_GET(web_url, headers=headers).content
-
-        r = re.search('<video (.+?)</video>', html, re.DOTALL)
+        html = self.net.http_GET(web_url).content
+        if re.search('>File not exist<', html):
+            raise UrlResolver.ResolverError('File Not Found or removed')
+        self.net.save_cookies(self.cookie_file)
+        headers = {'Referer': web_url}
+        # wait required
+        common.addon.show_countdown(8)
+        self.net.set_cookies(self.cookie_file)
+        html = self.net.http_POST(web_url, form_data={'hash': media_id}, headers=headers).content
+        r = re.compile("clip:.*?url: '([^']+)'", re.DOTALL).findall(html)
         if not r:
-            raise ResolverError('File Not Found or removed')
-
-        r = re.search('src\s*=\s*"(.+?)"', r.group(1), re.DOTALL)
+            r = re.compile("download\('([^']+)'", re.DOTALL).findall(html)
         if not r:
-            raise ResolverError('Unable to resolve Primeshare link. Filelink not found.')
-        else:
-            stream_url = r.group(1)
-
-        r = urllib2.Request(stream_url, headers=headers)
-        r = urllib2.urlopen(r, timeout=15)
-        r = int(r.headers['Content-Length'])
-
-        if r < 1024:
-            raise ResolverError('File removed.')
-        else:
-            return stream_url
+            raise UrlResolver.ResolverError('Unable to resolve Primeshare link. Filelink not found.')
+        return r[0]
 
     def get_url(self, host, media_id):
-        return 'http://primeshare.tv/download/%s' % (media_id)
+            return 'http://primeshare.tv/download/%s' % (media_id)
 
     def get_host_and_id(self, url):
-        r = re.search(self.pattern, url)
+        r = re.search('http://(?:www.)(.+?)/download/([0-9A-Za-z]+)', url)
         if r:
-            return r.groups()
+            return r.groups()       
         else:
-            return False
+            r = re.search('//(.+?)/download/([0-9A-Za-z]+)', url)
+            if r:
+                return r.groups()
+            else:
+                return False
+
+    def valid_url(self, url, host):
+        return re.match('http://(www.)?primeshare.tv/download/[0-9A-Za-z]+', url) or 'primeshare' in host
+
+
