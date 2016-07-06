@@ -9,7 +9,7 @@
     <import addon="script.module.simplejson" version="3.3.0"/>
   </requires>
   <extension point="xbmc.python.module" library="lib" />
-    <provides>video</provides>
+  <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
