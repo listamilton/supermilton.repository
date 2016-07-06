@@ -13,9 +13,10 @@
   <extension point="xbmc.python.module"
              library="lib" />
   <extension point="xbmc.addon.metadata">
+  <provides>video</provides>
     <summary>Standards-compliant library for parsing and serializing HTML documents and fragments in Python.</summary>
     <description>html5lib is a pure-python library for parsing HTML. It is designed to conform to the WHATWG HTML specification, as is implemented by all major web browsers.</description>
-    <platform>all</platform>
+    <platform>video</platform>
     <license>MIT</license>
     <source>https://github.com/html5lib/html5lib-python.git</source>
     <website>https://github.com/html5lib/html5lib-python</website>
