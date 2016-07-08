@@ -345,6 +345,24 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.lexdan" name="lexdan Wizard" version="0.0.2" provider-name="lexdan.co">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+		<summary lang="en">LEXDAN Wizard</summary>
+		<description lang="en">Lexdan wizard uma parceria de Sonaldynho e Alex</description>
+		<disclaimer lang="en">LEXDAN WIZARD.</disclaimer>
+		<forum>none</forum>
+		<source>http://lexdan.co/lexdan</source>
+		<website>https://lexdan.co</website>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="plugin.video.newcrackle" version="0.1.3" name="Crackle" provider-name="t0mm0">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
