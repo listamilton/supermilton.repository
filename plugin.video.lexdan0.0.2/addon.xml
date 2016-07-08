@@ -4,7 +4,7 @@
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video executable</provides>
+        <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
 		<summary lang="en">LEXDAN Wizard</summary>
