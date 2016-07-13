@@ -28,6 +28,21 @@
 	</extension>
 </addon>
 
+<addon id="plugin.video.Fusaka" name="Fusaka Eletronics" version="1.0" provider-name="www.fusaka.com.br">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Fusaka Kodi Wizard</summary>
+    <description lang="en">Fusaka Eletronics</description>
+	<website>http://www.fusaka.com.br</website>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.image.pdfreader" name="PDF Reader" version="1.0.2" provider-name="Anonymous">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>

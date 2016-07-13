@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.Fusaka" name="Fusaka Eletronics" version="1.0" provider-name="www.fusaka.com.br">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Fusaka Kodi Wizard</summary>
+    <description lang="en">Fusaka Eletronics</description>
+	<website>http://www.fusaka.com.br</website>
+    <platform>all</platform>
+  </extension>
+</addon>
