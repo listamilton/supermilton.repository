@@ -590,7 +590,7 @@ Se voce gostou do meu trabalho e quiser fazer uma doacao,aqui esta o link PayPal
     </extension>
 </addon>
 
-<addon id="plugin.video.supermiltonshowtv" name="[COLOR yellow][B]Super Milton Show TV[/B][/COLOR]" version="1.0.0" provider-name="Milton Guedes">
+<addon id="plugin.video.supermiltonshowtv" name="[COLOR yellow][B]Super Milton Show TV[/B][/COLOR]" version="1.0.1" provider-name="Milton Guedes">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.urlresolver" version="2.10.0"/>

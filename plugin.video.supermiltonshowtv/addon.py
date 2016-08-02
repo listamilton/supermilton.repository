@@ -21,9 +21,9 @@ addonfolder = selfAddon.getAddonInfo('path')
 icon    = addonfolder + '/icon.png'
 fanart  = addonfolder + '/fanart.jpg'
 
-base   = base64.b64decode('aHR0cDovL25vdmVsYXNncmF2YWRhcy5uZXQv')
-basex  = base64.b64decode('aHR0cDovL3Rhbm9hci50di8=')
-imgsrv = base64.b64decode('aHR0cDovL2FycXVpdm9icmFzaWwuYWRkb25icmFzaWwudGsvaW1ncy8=')
+base   = 'http://novelasgravadas.net/'
+basex  = 'http://tanoar.tv/'
+imgsrv = 'http://lista-milton2.esy.es/logo/'
 
 
 agent = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3'
@@ -57,7 +57,7 @@ def menuPrincipal():
 		addDir('Variedades'   , base,  10, imgsrv + 'variedades.jpg')
 		addDir('Esportes'     , base,  10, imgsrv + 'esportes.jpg')
 		#addDir('Extras'       , base,  30, imgsrv + 'extras.jpg')
-		addDir('Configurações', base, 999, imgsrv + 'config.jpg', False)
+		#addDir('Configurações', base, 999, imgsrv + 'config.jpg', False)
 
 		setViewMenu()
 		
