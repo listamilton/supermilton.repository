@@ -1,0 +1,4 @@
+[B]Version 1.0.0[/B]
+This is a template for a basic Youtube addon powered by playlists and channels..
+
+

@@ -1,0 +1,18 @@
+[COLOR FF00FFFF]NOTE: Visit [COLOR orange]http://ares-project.com[/COLOR] for support.[/COLOR]
+
+----------------------------
+Version 1.0.2.160704
+----------------------------
+- Fix empty stream list
+
+----------------------------
+Version 1.0.1.160130
+----------------------------
+- Fix list of stream in selection stream that not work
+- Fix video icon not display properly for Latest Highlight
+
+----------------------------
+Version 1.0.0.160129
+----------------------------
+- Initial release
+- License GPL Version 2

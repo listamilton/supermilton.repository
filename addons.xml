@@ -158,6 +158,45 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.AresFootBall"
+	   name="[COLOR blue]A[/COLOR][COLOR white]res FootBall[/COLOR]"
+	   version="1.0.2.160704"
+	   provider-name="2uk3y-Kodim-Ares-Streams">
+  <requires>
+    <import addon="script.module.requests" version="1.0.0" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+			 library="aresfootball.py">
+    	<provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Full Matches and Shows</summary>
+    <description>Full Matches and Shows Brings you the Latest Soccer Shows and Full Match Highlights Videos from top european soccer leagues</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.AresKungfu"
+	name="[COLOR blue]A[/COLOR][COLOR white]res Kung-Fu[/COLOR]"
+	version="1.0.0"
+	provider-name="Ares-Project">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="5.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">A massive mixed up selection of Kung-Fu movies and Content from everyones favourite sharing site.. Youtube</summary>
+    <description lang="en">Join us on the forum @ http://ares-project.uk</description>
+    <platform>all</platform>
+    <forum>n/a</forum>
+    <website>n/a</website>
+  </extension>
+</addon>
+
 <addon id="plugin.video.armagedomfilmes" name="ArmagedomFilmes" version="0.3.0" provider-name="gutoakashi">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
