@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.popeye" name="POPEYE TV" version="1.0.0" provider-name="GSF VIDEOS">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="5.0.0"/>
+  </requires>
+	
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+	
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">GSF VIDEOS</summary>
+    <description lang="en">Playlist de Videos dos desenhos do marinheiro mais conhecido do mundo.Popeye é um marinheiro que tenta proteger sua namorada das garras de seu grande inimigo Brutus. Quando come espinafre, Popeye ganha mais força e confiança e consegue vencer qualquer desafio.</description>
+    <platform>all</platform>
+    <forum></forum>
+    <website></website>
+  </extension>
+</addon>
