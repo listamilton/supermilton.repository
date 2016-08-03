@@ -248,6 +248,23 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.desenhosecia" name="[B]Desenhos e Cia[/B]" version="0.0.1" provider-name="Nirjan">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.urlresolver"/>
+	<import addon="script.module.beautifulsoup4"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Watch Internet Videos Online</summary>
+    <description lang="en">Assista Videos Online do site desenhosecia da Internet</description>
+	<disclaimer lang="en">O autor nÃ£o hospeda ou distribui qualquer conteÃºdo exibido por este addon</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.efilmes" name="[COLOR blue]e[/COLOR][B][COLOR blue]F[/COLOR][/B][COLOR blue]ilmes[/COLOR][COLOR green]na[/COLOR][B][COLOR green]R[/COLOR][/B][COLOR green]ede[/COLOR][COLOR yellow].com[/COLOR]" provider-name="[B]acamposxp[/B] | [B]Cleiton Leonel Creton[/B]" version="0.0.1">
 	<requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -551,6 +568,55 @@ http://www.hometheater.co.il</description>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Lista de canais IPTV by Rogger</summary>
     <description lang="en">Assista a vÃ¡rios canais transmitidos pela internet diretamente no Kodi</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.sembilhete.tv" name="SemBilhete.tv" provider-name="SemBilhete.tv" version="0.1.1">
+ <requires>
+  <import addon="xbmc.python" version="2.7.10"/>
+ </requires>
+ <extension library="addon.py" point="xbmc.python.pluginsource">
+  <provides>video</provides>
+ </extension>
+ <extension point="xbmc.addon.metadata">
+    <summary>SemBilhete.tv</summary>
+    <description>Addon oficial do SemBilhete.tv, os teus Filmes e SÃ©ries do Sem Bilhete agora no Kodi.</description>
+    <disclaimer>Addon oficial do Sem Bilhete, qualquer duvida ou questÃ£o contacte-nos pelo site ou pelo Facebook.</disclaimer>
+    <language>pt</language>
+    <platform>all</platform>
+    <license></license>
+    <forum></forum>
+    <website>https://sembilhete.tv</website>
+    <email></email>
+    <source></source>
+ </extension>
+</addon>
+
+<addon id="plugin.video.sonypictures"
+       name="SonyPictures"
+       version="1.0.0"
+       provider-name="Ali">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+     <import addon="script.module.livestreamer" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary></summary>
+    <description>
+     </description>
     <platform>all</platform>
   </extension>
 </addon>
