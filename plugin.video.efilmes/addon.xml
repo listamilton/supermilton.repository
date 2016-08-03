@@ -1,0 +1,20 @@
+<addon id="plugin.video.efilmes" name="[COLOR blue]e[/COLOR][B][COLOR blue]F[/COLOR][/B][COLOR blue]ilmes[/COLOR][COLOR green]na[/COLOR][B][COLOR green]R[/COLOR][/B][COLOR green]ede[/COLOR][COLOR yellow].com[/COLOR]" provider-name="[B]acamposxp[/B] | [B]Cleiton Leonel Creton[/B]" version="0.0.1">   
+	<requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.urlresolver" version="1.0.0"/>
+	<import addon="script.module.metahandler" optional="true"/>
+	<import addon="script.module.simplejson" optional="true"/>
+	<import addon="script.module.parsedom" optional="true"/>
+	<import addon="script.module.t0mm0.common" version="1.1.2"/>
+  </requires>
+ <extension library="addon.py" point="xbmc.python.pluginsource">   
+  <provides>video</provides>   
+ </extension>   
+ <extension point="xbmc.addon.metadata">   
+  <language>en</language>   
+  <platform>all</platform>   
+  <summary lang="en">eFILMES</summary>   
+  <description lang="en">Assistir aos filmes do site http://efilmesnarede.com/</description>   
+  <platform>all</platform>   
+ </extension>   
+</addon>

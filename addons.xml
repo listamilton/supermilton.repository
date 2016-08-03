@@ -140,6 +140,24 @@
     </extension>
 </addon>
 
+<addon id="plugin.video.aniflixhd.net" name="[COLOR red]ANIFlIX[/COLOR][B][COLOR white]HD[/B][/COLOR][COLOR red].NET[/COLOR]" version="1.0.0" provider-name="Nirjan">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.urlresolver"/>
+	<import addon="script.module.beautifulsoup4"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <language>en</language>
+    <platform>all</platform>
+    <summary lang="en">Animes HD</summary>
+	<description lang="en">Assistir os animes direto no kodi</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.armagedomfilmes" name="ArmagedomFilmes" version="0.3.0" provider-name="gutoakashi">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -228,6 +246,27 @@
     <description lang="en">Shows and Movies from Crackle.</description>
      <platform>all</platform>
   </extension>
+</addon>
+
+<addon id="plugin.video.efilmes" name="[COLOR blue]e[/COLOR][B][COLOR blue]F[/COLOR][/B][COLOR blue]ilmes[/COLOR][COLOR green]na[/COLOR][B][COLOR green]R[/COLOR][/B][COLOR green]ede[/COLOR][COLOR yellow].com[/COLOR]" provider-name="[B]acamposxp[/B] | [B]Cleiton Leonel Creton[/B]" version="0.0.1">
+	<requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.urlresolver" version="1.0.0"/>
+	<import addon="script.module.metahandler" optional="true"/>
+	<import addon="script.module.simplejson" optional="true"/>
+	<import addon="script.module.parsedom" optional="true"/>
+	<import addon="script.module.t0mm0.common" version="1.1.2"/>
+  </requires>
+ <extension library="addon.py" point="xbmc.python.pluginsource">
+  <provides>video</provides>
+ </extension>
+ <extension point="xbmc.addon.metadata">
+  <language>en</language>
+  <platform>all</platform>
+  <summary lang="en">eFILMES</summary>
+  <description lang="en">Assistir aos filmes do site http://efilmesnarede.com/</description>
+  <platform>all</platform>
+ </extension>
 </addon>
 
 <addon id="plugin.video.exodus" version="1.3.7" name="Exodus" provider-name="Exodus">
@@ -468,6 +507,24 @@ http://www.hometheater.co.il</description>
         <summary><![CDATA[Quasar: Torrent streaming]]></summary>
         <description><![CDATA[Stream torrent files]]></description>
     </extension>
+</addon>
+
+<addon id="plugin.video.redecanais" name="[B][COLOR blue]Rede[COLOR white] Canais[/B][/COLOR]" version="0.01" provider-name="Nirjan">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.urlresolver"/>
+	<import addon="script.module.beautifulsoup4"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <language>en</language>
+    <platform>all</platform>
+    <summary lang="en">Assista os filmes do site redecanais direto no kodi</summary>
+	<description lang="en">Assista os filmes do site Rede Canais direto no kodi  - CrÃ©dito: RedeCanais</description>
+    <platform>all</platform>
+  </extension>
 </addon>
 
 <addon id="plugin.video.roggerstream"

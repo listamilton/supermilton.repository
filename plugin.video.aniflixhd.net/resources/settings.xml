@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="Configurações">
+	    <setting label="[B][COLOR blue]Selecione abaixo o modo de Visualização do addon[/B][/COLOR]" type="lsep" /> 
+        <setting id="menuVisu" type="enum" label="Visualização de Menu" values="Lista|Lista Grande|Miniatura" default="0" />
+        <setting id="filmesVisu" type="enum" label="Visualização de Filmes" values="Lista|Lista Grande|Miniatura|Posters|Fanart|Media Info 1|Media Info 2|Media Info 3" default="2" />
+    </category>		
+</settings>
