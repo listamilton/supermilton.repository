@@ -289,23 +289,6 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.desenhosecia" name="[B]Desenhos e Cia[/B]" version="0.0.1" provider-name="Nirjan">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.urlresolver"/>
-	<import addon="script.module.beautifulsoup4"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Watch Internet Videos Online</summary>
-    <description lang="en">Assista Videos Online do site desenhosecia da Internet</description>
-	<disclaimer lang="en">O autor nÃ£o hospeda ou distribui qualquer conteÃºdo exibido por este addon</disclaimer>
-    <platform>all</platform>
-  </extension>
-</addon>
-
 <addon id="plugin.video.efilmes" name="[COLOR blue]e[/COLOR][B][COLOR blue]F[/COLOR][/B][COLOR blue]ilmes[/COLOR][COLOR green]na[/COLOR][B][COLOR green]R[/COLOR][/B][COLOR green]ede[/COLOR][COLOR yellow].com[/COLOR]" provider-name="[B]acamposxp[/B] | [B]Cleiton Leonel Creton[/B]" version="0.0.1">
 	<requires>
     <import addon="xbmc.python" version="2.1.0"/>
