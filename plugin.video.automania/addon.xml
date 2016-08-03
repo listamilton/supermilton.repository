@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.automania"
+	name="AUTO MANIA"
+	version="1.0.0"
+	provider-name="Perflix.TV">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="5.1.19"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">AUTO MANIA</summary>
+    <description lang="en">A collection of YouTube videos with the best Auto Racing, Mods and Much More for those everything Auto enthusiasts. Many thanks to all the YouTube video content providers that are compiled within this addon. If you like this addon, please support the YouTubers presented by visiting their channels to like and subscribe.</description>
+    <platform>all</platform>
+    <forum>n/a</forum>
+    <website>n/a</website>
+  </extension>
+</addon>

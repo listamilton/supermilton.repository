@@ -179,6 +179,27 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.automania"
+	name="AUTO MANIA"
+	version="1.0.0"
+	provider-name="Perflix.TV">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="5.1.19"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">AUTO MANIA</summary>
+    <description lang="en">A collection of YouTube videos with the best Auto Racing, Mods and Much More for those everything Auto enthusiasts. Many thanks to all the YouTube video content providers that are compiled within this addon. If you like this addon, please support the YouTubers presented by visiting their channels to like and subscribe.</description>
+    <platform>all</platform>
+    <forum>n/a</forum>
+    <website>n/a</website>
+  </extension>
+</addon>
+
 <addon id="plugin.video.Catoal"
        name="Catoal[COLOR blue] 5[/COLOR].[COLOR yellow]2[/COLOR].[COLOR red]5a[/COLOR]"
        version="5.2.5a"
@@ -226,25 +247,6 @@
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
 		<website>http://www.cinemainterativo.com/</website>
-  </extension>
-</addon>
-
-<addon id="plugin.video.crackle2fg"
-       name="Crackle 2"
-       version="0.1"
-       provider-name="foreverguest">
-  <requires>
-    <import addon="xbmc.python" version="2.13.0"/>
-	<import addon="script.common.plugin.cache" version="0.9.1"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Crackle</summary>
-    <description lang="en">Shows and Movies from Crackle.</description>
-     <platform>all</platform>
   </extension>
 </addon>
 
@@ -416,6 +418,37 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.joao"
+       name="cinetube"
+       version="1.0"
+       provider-name="joao">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">cinetube</summary>
+    <description lang="en">cinetube addon de filmes direto do youtube</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.lexdan" name="lexdan Wizard" version="0.0.2" provider-name="lexdan.co">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -572,6 +605,22 @@ http://www.hometheater.co.il</description>
   </extension>
 </addon>
 
+<addon id="plugin.video.ScienceNature" name="Science and Nature" version="1.0" provider-name="Perflix.TV">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="5.1.19"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Science and Nature</summary>
+    <description lang="en">A collection of YouTube documentary videos for Science and Nature enthusiasts. Many thanks to all the YouTube video providers that are compiled within this addon. If you like this addon, please support the YouTubers presented by visiting their channels to like and subscribe.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.sembilhete.tv" name="SemBilhete.tv" provider-name="SemBilhete.tv" version="0.1.1">
  <requires>
   <import addon="xbmc.python" version="2.7.10"/>
@@ -591,6 +640,42 @@ http://www.hometheater.co.il</description>
     <email></email>
     <source></source>
  </extension>
+</addon>
+
+<addon id="plugin.video.silvanochannels"
+       name="Silvano Channels"
+       version="1.0.0"
+       provider-name="Milton Guedes">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+	<import addon="script.module.livestreamer" optional="true"/>
+
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+   <summary>Lista de Canais</summary>
+    <description>CONTATOS ABAIXO:
+PHONE:    +12039428545
+E-MAIL:   silvanoferreira.sf@gmail.com
+Skype:    dj-silvano1
+FACEBOOK: https://www.facebook.com/silvano.ferreira.1650</description>
+	<platform>all</platform>
+  </extension>
 </addon>
 
 <addon id="plugin.video.sonypictures"

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.ScienceNature" name="Science and Nature" version="1.0" provider-name="Perflix.TV">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="5.1.19"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Science and Nature</summary>
+    <description lang="en">A collection of YouTube documentary videos for Science and Nature enthusiasts. Many thanks to all the YouTube video providers that are compiled within this addon. If you like this addon, please support the YouTubers presented by visiting their channels to like and subscribe.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
