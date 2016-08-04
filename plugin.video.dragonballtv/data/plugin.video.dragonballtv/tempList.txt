@@ -1,0 +1,22 @@
+[
+    {
+        "url": "http://server.crazzy.com/RedeCanais/RedeCanais/RCServer01/videos/1ceecbcb.flv", 
+        "image": "", 
+        "name": "EP1"
+    }, 
+    {
+        "url": "http://server.crazzy.com/RedeCanais/RedeCanais/RCServer01/videos/b42ecd18.flv", 
+        "image": "", 
+        "name": "EP2"
+    }, 
+    {
+        "url": "http://server.crazzy.com/RedeCanais/RedeCanais/RCServer01/videos/06364a46.flv", 
+        "image": "", 
+        "name": "EP3"
+    }, 
+    {
+        "url": "http://server.crazzy.com/RedeCanais/RedeCanais/RCServer01/videos/2f1f6a18.flv", 
+        "image": "", 
+        "name": "EP4"
+    }
+]

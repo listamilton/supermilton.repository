@@ -1,0 +1,37 @@
+[
+    {
+        "url": "http://206-217-212-88.webnow.net.br:80/dumont.aac", 
+        "image": "", 
+        "name": "Dummont FM"
+    }, 
+    {
+        "url": "http://evp.mm.uol.com.br:1935/bandfm_sp/bandfm_sp/playlist.m3u8", 
+        "image": "", 
+        "name": "Band Fm SP"
+    }, 
+    {
+        "url": "http://206-217-214-66.webnow.net.br/radiorockweb128.mp3", 
+        "image": "", 
+        "name": "89fm a radio rock"
+    }, 
+    {
+        "url": "rtmp://evp.mm.uol.com.br/metropolitana/_definst_/metropolitana_iphone.sdp playpath=metropolitana_site.sdp swfUrl=http://releases.flowplayer.org/swf/flowplayer-3.2.18.swf pageUrl=http://metropolitanafm.uol.com.br/ao-vivo/\r\n", 
+        "image": "", 
+        "name": "metropolitana fm"
+    }, 
+    {
+        "url": "rtmp://evp.mm.uol.com.br:1935/jovempan/_definst_/jovempan playpath=jpam.sdp swfUrl=http://jovempan.uol.com.br/static/flowplayer/flowplayer.swf pageUrl=http://jovempan.uol.com.br/radio/player?stream=jpam&url=&audioFile=&audioTitle=&shoutcast=&copa=true\r\n", 
+        "image": "", 
+        "name": "Jovem Pan FM "
+    }, 
+    {
+        "url": "http://11254q.ls.azioncdn.net/1254q/a/kissfm2.sdp/playlist.m3u8?wowzasessionid=1843265390\r", 
+        "image": "", 
+        "name": "Kiss FM "
+    }, 
+    {
+        "url": "http://104.131.180.116:1314/123/1/playlist.m3u8", 
+        "image": "", 
+        "name": "History"
+    }
+]

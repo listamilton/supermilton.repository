@@ -239,6 +239,41 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.batman" name="Batman Tv" version="1.0.0" provider-name="Kodish-MC">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="plugin.video.playlistLoader" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Addons para fans do Batman</summary>
+    <description lang="en">Addons para fans do Batman</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.canaldaharu" name="Canal da Haru" version="1.0.0" provider-name="HouseGeek">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="5.0.0"/>
+  </requires>
+
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Canal da Haru</summary>
+    <description lang="en">Addon do Canal da Haru</description>
+    <platform>all</platform>
+    <forum></forum>
+    <website></website>
+  </extension>
+</addon>
+
 <addon id="plugin.video.Catoal"
        name="Catoal[COLOR blue] 5[/COLOR].[COLOR yellow]2[/COLOR].[COLOR red]5a[/COLOR]"
        version="5.2.5a"
@@ -286,6 +321,61 @@
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
 		<website>http://www.cinemainterativo.com/</website>
+  </extension>
+</addon>
+
+<addon id="plugin.video.DocHistory" name="Addon da History" version="1.0.0" provider-name="HouseGeek">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="5.0.0"/>
+  </requires>
+
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Addon da History</summary>
+    <description lang="en">Addons de Documentarios Historicos</description>
+    <platform>all</platform>
+    <forum></forum>
+    <website></website>
+  </extension>
+</addon>
+
+<addon id="plugin.video.DocUfo" name="Addon DocUfo" version="1.0.0" provider-name="HouseGeek">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="5.0.0"/>
+  </requires>
+
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Addon de Documentarios Ufo</summary>
+    <description lang="en">Addons de Documentarios da Ufologia</description>
+    <platform>all</platform>
+    <forum></forum>
+    <website></website>
+  </extension>
+</addon>
+
+<addon id="plugin.video.dragonballtv" name="Dragon Ball TV" version="1.0.0" provider-name="House Geek">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	 <import addon="plugin.video.playlistLoader"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Addon do Dragon Ball </summary>
+    <description lang="en">Este addon tem series do dragonball</description>
+    <platform>all</platform>
   </extension>
 </addon>
 

@@ -1,0 +1,32 @@
+[
+    {
+        "url": "http://pastebin.com/raw/K88KP3Kc", 
+        "logos": "http://i.imgur.com/c2eKQh3.jpg/", 
+        "image": "http://i.imgur.com/c2eKQh3.jpg", 
+        "name": "Dragon Ball Classico"
+    }, 
+    {
+        "url": "http://pastebin.com/raw/HQjvp76f", 
+        "logos": "http://i.imgur.com/T69jouN.png/", 
+        "image": "http://i.imgur.com/T69jouN.png", 
+        "name": "Dragon ball Z"
+    }, 
+    {
+        "url": "http://pastebin.com/raw/Z4sRuHgM", 
+        "logos": "http://animesonlinetk.net/wp-content/uploads/2013/12/Dragon-Ball-GT-Dublado-Todos-os-Epis%C3%B3dios.jpg/", 
+        "image": "http://animesonlinetk.net/wp-content/uploads/2013/12/Dragon-Ball-GT-Dublado-Todos-os-Epis%C3%B3dios.jpg", 
+        "name": "Dragon Ball GT"
+    }, 
+    {
+        "url": "http://pastebin.com/raw/kE1vdEZJ", 
+        "logos": "http://1.bp.blogspot.com/-yz26pyDI50Q/VjlbMupooOI/AAAAAAAAe_s/0nJdbRYH36c/s1600/DragonBall_Absalon.jpg/", 
+        "image": "http://1.bp.blogspot.com/-yz26pyDI50Q/VjlbMupooOI/AAAAAAAAe_s/0nJdbRYH36c/s1600/DragonBall_Absalon.jpg", 
+        "name": "Dragon Ball Absalon"
+    }, 
+    {
+        "url": "http://pastebin.com/raw/Zm941Mnx", 
+        "logos": "", 
+        "image": "http://i.imgur.com/vQVu6HW.jpg", 
+        "name": "Dragon Ball ZKai"
+    }
+]

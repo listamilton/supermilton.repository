@@ -1,0 +1,26 @@
+[
+    {
+        "url": "http://pastebin.com/raw/kipNVxMW", 
+        "logos": "http://3.bp.blogspot.com/-GcfEhcWb4SE/UqX7ftLnlOI/AAAAAAAAALg/3nO6cwuvXRY/s640/BatmanTheAnimatedSeriesSekoboro.png/", 
+        "image": "http://3.bp.blogspot.com/-GcfEhcWb4SE/UqX7ftLnlOI/AAAAAAAAALg/3nO6cwuvXRY/s640/BatmanTheAnimatedSeriesSekoboro.png", 
+        "name": "Batman Serie Animada"
+    }, 
+    {
+        "url": "http://pastebin.com/raw/9S2LCcQB", 
+        "logos": "http://191.252.1.241/arquivos_loja/15342/Fotos/thumbs3/produto_Foto1_4015462.jpg/", 
+        "image": "http://191.252.1.241/arquivos_loja/15342/Fotos/thumbs3/produto_Foto1_4015462.jpg", 
+        "name": "Batman Bravos Destemidos"
+    }, 
+    {
+        "url": "http://pastebin.com/raw/2dYSxfZz", 
+        "logos": "", 
+        "image": "http://almanaquegeek.com.br/wp-content/uploads/2013/07/13507611.jpg", 
+        "name": "Batman do Futuro"
+    }, 
+    {
+        "url": "http://pastebin.com/raw/jXBFPtXX", 
+        "logos": "http://apontadl.com/wp-content/uploads/2016/01/apontadl_img_destacada5.png/", 
+        "image": "http://apontadl.com/wp-content/uploads/2016/01/apontadl_img_destacada5.png", 
+        "name": "As Novas do Batman"
+    }
+]
