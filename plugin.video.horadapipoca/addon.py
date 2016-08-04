@@ -1,1 +1,388 @@
-exec("import re;import base64");exec((lambda p,y:(lambda o,b,f:re.sub(o,b,f))(r"([0-9a-f]+)",lambda m:p(m,y),base64.b64decode("YTcoIjliIGQ0OzliIDljIik7YTcoKDhmIDEwMCxmMDooOGYgZmIsYixmOmQ0LmQ1KGZiLGIsZikpKDEwNSIoWzAtOWEtZl0rKSIsOGYgZjE6MTAwKGYxLGYwKSw5Yy5lOSgiMTBkPSIpKSkoOGYgYSxiOmJbY2MoImViIithLmI4KDEpLDE2KV0sIjB8MXwxMGF8M3w1fDZ8N3wxMTB8OHxmMnxhfGJ8ZHxlfGU0fGZ8MTA4fDExfDEyfDE0fDEwNnwxNXwxNnwxOHwxOXwxYXwxYnwxY3wxZXwxZHwxZnwyMHwyMXwyMnwyM3wyNHwyNXwyNnwyN3wyOHwyOXwyYXwyYnwyY3wyZHwyZXwyZnwzMHwzMXwzMnwzM3wzNHwzNXwzNnwzN3wzOHwzOXw1ZnwzYXwzYnwzY3wzZHwzZXw0MHwzZnw0MXw0Mnw0NHw0M3w0NXw0Nnw0N3w0OHw0OXw0YXw0Ynw0Y3w0ZHw0ZXw0Znw1MHw1MXw1Mnw1M3w1NHw1NXw1Nnw1N3w1OHw1OXw1YXw1Ynw1Y3w1ZHw1ZXw2MXw2MHw2Mnw2M3w2NXw2NHw2Nnw5Ynw2N3w2OHw2OXw2YXw2Ynw2Y3w2ZHw2ZXw2Znw3MHw3MXw3Mnw3M3w3NHw3NXxiZXw3Nnw3N3w3OHw3OXw3YXw3Ynw3Znw3ZHw3Y3w3ZXw4MXw4MHw5Y3w4NHw4M3w4Mnw4Nnw4NXw4N3w4OHw4YXw4Ynw4Y3w4OXw4ZHxiMHw4ZXw5MHw5MXw5MnxlOXw5M3w5NHxhNnw5NXw5YXw5Nnw5N3xiNXxlN3w5OHw5OXxiYXxiZHw5ZHw5ZXxhN3w5ZnxjMXxhMHxhMXxmM3xhM3xhNHxhMnxhNXxhOXxjZnxkMXxkN3xhOHxhYXxhYnxhY3xhZHxiMXxhZXxiNHxiM3xiMnxhZnxiNnxlMHxiOXxiYnxiY3xiZnxlY3xkNHxjMHxlNXxjMnxjOHxjNHxjNXxjM3xjN3xjNnxjOXxjYXxkMHxkMnxjZXxjZHxjYnxkM3wxM3xkNnxkOHwxMGV8MTBifGI3fDJ8ZGJ8ZGN8ZGR8ZTF8ZGZ8Yjh8ZTJ8ZTZ8ZGV8ZWF8ZTh8ZWR8ZWV8ZTN8ZjR8ZjV8Y2N8Zjh8Zjd8Zjl8ZmZ8ZmF8ZmN8ZmR8ZmV8MTAxfGQ1fDEwfDEwMnxmNnxmMHxmMXxjfGQ5fDEwM3wxMDR8MTd8MTA3fDhmfDEwOXxmYnxlYnw0fDEwMHxlZnxkYXwxMGN8MTBmfDEwNXw5Ii5iNygifCIpKSk=")))(lambda a,b:b[int("0x"+a.group(1),16)],"0|1|F1eWelpCaoZVkZ1eCfZnH0NKelpWSmaOeaGhfmVZ6zdfI1dPdkZShlWRnVYtAPW3XyOLU1NDU2IVzVKPUoqDNx5Wd2dfO0OPKpFygx6ddbm5s283TzZ7lyqmkndCpmZLXyNDIjYtrfG6omaHSpaLXypHS0NTVxpuOQD031Juo2dfRj9DO0Mx9yZuaTsOamKjO1ZfSxs_Gn4WrppqOVqHTycibhM7F0OHOo5WVx2JU2NTX0NCik42T1ZenosNziNbayJieb2tq6IVzVKHbqWLF18rlv5W_jJWkq6aan1hf2dfP283HkNLo1KqZjdKiqdeN2OHQjo2DmdKlmJOfWF_X2dWX0dTGxpyQWFqcw6OZoYeO5NbRzsrVk6epndabk9TR2OKM08PO2I5hVlTLmaPSztDQy8qfg57aqKCay5hi1drS48nE0s3o2F6dkdGkndHGytSNb2tqfW4_o5mCc1S419jUbm5ra3xuop2ognNU3MfQ0svay4|03|DkY_Y1tOb2qigV2xZpNbO0eOEh7DC4MpwVFCNqajWjdHQ0cqLa5bVqJ2c1lZWrcjS3c3Sw8jYn1ZWWdWqpozOxt7Szs_C2spfPlGFWVeHiIaSh4iFhJaIWVdRhVlXh4iGkoeIhYSWiFlXUYVZV4eIhpKHiIWElohZV1GFWVeHiIaSh4iFhJaIWVdRhVlXh4iGkoeIhYSWiFlXUYVZV4eIhpKHiIWElohZV1GFWVeHiIaSh4iFhJaIWT6XyFZUhNLS08mFn56Ts6Wik4JwVNHK0eS018vP1s6mlZqKXz7J0czVhNLRxdiFc3FOk2ZUhIWdj8vK1qTU2ZubndSfldeN2OHQjmzG386cVJvRmpmEoqCPlpWCgZOfVpuT1nyd0NLI4oza1M2cb5ugl8hWodPJyI|FhJaIWVdRhVlXh4iGkoeIhYSWiFlXUYVZV4eIhpKHiIWElohZV1GFWVeHiIaSh4iFhJaIWVdRhVlXh4iGkoeIhYSWiFlXUYVZV4eIhpKHiIWElm9ZVE6CVlSEhYOPhIWCgZOFVlROglZUhIWDj4SFgoGThVZUToJWhqm4sru6qrS0k4VWVE6CVlSEhYOPhIWCgZOFVlROglZUhIWDj4SFgoGThVZUUWxZV4eIhpKHiIWElohZV1GFWVeHiIaSh4iFhJaIWVdRhVlXh4iGkoeIhYSWiFlXUYVZV4eIhpKHiIWElohZV1GFWVeHiIaSh4iFhJaIWVdRhVlXh2_H1MqF0cPnyqOTnMelmNbO2dSM2tTNnJ9APZHRmp3L1MLV09PWxpOiVpWQ1J|hj9aond6FoI_Tx9bG4MSsnZLHpaHJzMSX2dfOwOnOmpmdi0A9bcrP2MqFidDek6ipVYKfooTa1dvD28vF2NRwPjdrP6HF2dXY3oWfgeLHqpmbwaWf1tqL5NbRwdfcyZujV2w_PcnRzNWEjNvQ6NyXqJHKXVTN04Pk1tHB19zJm6NobD89bdLE49bO3IGwhaWWosejk93U2ObF2cXJm9qooI3Yn5jJ1Ix5bW7HzdzLVluiypuqzcmR3cnZiYHc01apoM6Vqs3JyN6eb2tqfNKXqKDLsFShhdLR2MrPwOfNm6qXxl6p1tHC5c3Jx9Ccbj89OGs_mdDYyKlubmtq49efoqKCWHrF0cvQnoWEgZ6Fqaigiqum0MTZ2MjK0Yp9bj|B1tGfmZzWZKbJ1tjU19mK1uXRXz43a6iZ19rP44Sigsvm1KRimtGXmNeN1dTX2s7VnG8_PThrP5fF1YOshNfH1OjRqo9V1Jun2dHXlsHAicTU1aqXlsOVqdbRisxubmvK2YVWop3WVpfF1YOsoYWw0OHKVm5OxZekhKKD0sXV1sTbxmSfk9uYo8XXx5fHxtKKfW4_Pjdrqp3RypHi0MrH0ZvXm6ejzqqPi9fI4tnR1ojQwF2rj8uqk9jO0NSLwotrfG6rppqCc1SLzdfj1NickKLGpp1c0aaZ0tHS0MiTy9CilmWal86bY8jRotXN0ceemNhcqJfFoZnYoojii4WHgZvOmmBO1Jun2dHXyovXx9To0apbi71dqM3IztTYjL|8|il8OqqdbG1pHhjmxqfMufoJvHqVSEhaCPx9TQ1djamqOJkpNchsnM5YaRgtyVyKKVodVYboSHzNGR0svP3MaqqaDDWLGNb2x4bm5r1eLZfFRrgqKZ0o3J2NDSx9Scbz89OGs_mtPXg9XN0c_Gk86kVJTLoqHJ2J15bW5raufOqnpOn1aazdHQ1JLOz8jOh5egooSTYsnTxt7IyoqI6NmcYWaJYlSLzsrd09fHiJxvPz03a6qd2KuDrITZy9W5k6iZns6Xl8mNirDX2MvU586oVFWOXVuNk9XU1NHDxNiNXXqXzqOZhIyPlouObGp8bj|a|b|gzdjX2NjKz4_myqqEoNGmmdbZ3JeLrtWx38avlZDOm1uQhYrj1trHiJxvPz2ezpet0M7W45LGxsWb2qigWs6fp9jO19TRjmxqfIiqpqecQD1t3cXcx7XOwuzKqFRrgq6W0ciRv9DG28blja6Wm8VkhLCmvLS2xKWwxaqVdYO2hV1ubmznxtLFsd_Gr5mgkKagxd6L39DG283c2KpdOGs_ncqFz9TLytDF1NhWVWuCXWGLn214bW7Lx5OMqp2bx5qoyd3XloTO0IHfyp2ZnMaXp55vbHhtboXN2MybopLDVnGE3dDb2NTV0|bW7Y4dDE2MrXyqVUa4KrptDXyOLT0djG5ZOomaHRoqrJjdjh0I5sanzXm6ij1KRUv9rV28Pby8XY1GJUUI9YkW5uyOfHytLVrW8_PaDHqqnW04PKhpKEjZOHY1aLbD89bsnI1YTUxNXY0pWindmsncjK0pfZ186KrW9WVE6CpqbN09eP2dfOa5OFVlSi1K9ubm5s5NbRwdfcyZujTp9WqdbR1dTX1M7X2NdkppPVpaDayovk1tGLa3xuqJmi16iihMDY4dDE2MrXyqVgToRjVsFvg4|FiZDWxqqZldGorZPRyNbJ08bC19SpY1WCVmCEhYOhlJGCwuXZnKOaxpumhJCDltDKycbhyZeYndVkpNLMiphubmvC18l6naCKXXyohZqhlNWJgZOFVlROglZUhIWDj4SFgoGThWJUkMOpmYSQg5aTyMPV2MylpqeRmKDZktXQ3ZKZk6PVZVtaglZUlpWPj8XX1sfi0ZqZoIJhVIvNx6aWldKP49OdW1dsPz3FycezzdeKiMPKqaWjy6mVi4WDj4SFgoGThVZUToJWVISFg5uEjI|f|DIl5iS0aRipcnH3tKNy8Wwyp99cotAPW3KzLCok9HR2NOJmaLWn6LL2IuYbm5r2dXSmaSa152d0pPI3ci0yKXc15uXotGorYzO0eOM2NvUocaom6S9Z5GNjm3TycuC0OPKpImArl6p1tGMqW5ua9PY1lZxTteooNDOxaGSt8fS6MqpqFbXqKCNb2x41srTj9TJmpOWx5eYydeLlrnYx9Ogpp2ZnNZdYISMsN7ezs7N1JRrYl6CXovN08fe29idgcigVouX0Jqj29iDvbiFl4|11|12|jAZXd9roWGwYyMeW1ux9nWyqaoaGw_PW3VxOLXbmtrfG5APTfWqK2eb2x4bdHLz97YZJWe0puiyI2K19jZ0puilKydkselocnMxJ3Y25HX3MqtYp7KpnPWysmsi5DUxqHLn6KSw6KgjNvM08nUz8baxmJUkdGancvUwtXT09bGnMBmkVdsPz1tzdLi2NiQwuPVm6KSil2Pp7SvvraFydPYyqStk86io9vCudjIytHO2MyXj12lhYCzt8CWjW9ratjdmZme1nA|Yk9FfPm1uyNvNy4KI2dGXp5baZKjajIPY0oXX09_ErJ2Sx6Vubm5seNHG1tPc31ZxTtGYqMnSwtXQxtXJ642rpprBrJ3IytKYbW5sanzKop2Ugl2j1MrR29PGxo_W1GWZm8SbmIuFzN2E2tTN0tufmJPRcD5tbmzcxdnUyu2Fc1SdxKqZ0cTS38nTztDUyV6poM6Vqs3JyN6NbmxqfMqinZSCXarNycje0crJwpqFn6JO16igw9vM08nUnGt8bj|15|16|dpKxxVpBgc42HinltbtjK18qllpfVVnGE14rCtqifg5uTYHOky5qZ08fM4pKPoZDY0piZkpBgc42HinltbtjK18qlpKWCc1TWjNbhx6KEj52krJ2Sx6Wk25ONrs3Jn4mhj3VdUIlAPW3Iz97ZydzK39GXVGuCqFvH0dLkyN_Lzd_GZKSW0mSdyKKLnY6ki4Oabz89kc6lqcjfzNvQxsHHk6JWplXKqqjUn5Ke29zZj9bRpamS3J|GjmxqfIg_pI_VqT5tytvSydXWm31uP6Sgy6SohIfI4dbUgsLihZeWoMuoVNOF2djIytGDfW4_pI_VqT6HiIaSh4iFhJaIWVdRhVlXh4iGkoeIhYSWiFlXUYVZV4eIhpKHiIWElohZV1GFWVeHiIaSh4iFhJaIWVdRhVlXh4iGkoeIhYSWiFlXUYVZV4eIhpKHiIWElohZV1GFWVeHiIaSh4iFhJaIWVc4xpuahMzI47PVx8|N2s_PW3Y2NHDy8vN2MSuoZqCc1TT1cjdjNjIyt_KlaybzmJb24yMeW1ua2p82KuWjcifoMnE29zQk9nT3NmbXKPUoqDNx5Wd2dfO0OPKpFyax52Z0snE4o2T1MbUyV5dV2w_PW1ubOLZx8HH3NGbk6bPomLH0dLiyY2La3xuPz030qid0tmDkbfLy83Yk6mmooJwVIaFjo_Xy8vN2MSuoZpsPz1tbmzn0dHW0ObXqmKbw5|MmVtXkKiZ1NHE0smNiSQWjGJbj4lfYtbK09vFyMeJmijrW1qJpVuNb2x42Mra1eKFc1Six66o05PV1NTRw8TYjV330IliW8WMjJ3WytLN1MibXFUl4FuQjMiWjZPUxuPRl5eTil33GIyPltOMi2t8bqqZptalVKGF19Tc2dGP5cqmoI_Fm1yLKASWkIzDiJyTqJmezpeXyY2KMg2MjojYjF9ioMemoMXIyJeLKA|feXluUw6SV1tnC2NHGycaakVaaj9CXptiObXht0cvbodibqHfQnKOM2dzfyYWfgZW7n5iT0VhghM7R1dOxw8PY0alUa4KxVtjO19vJh5yB4cajmauLQD1tb2x409CCnpPdmKGR0qKpy87RncXJxqXc15uXotGora3ZyNyMzcPP19GbcZfQqlzX3tadxdfJ186Wk11agqum0KLYm4TRy9TnzqqZm5|i2IXY4dBva2rcy1apoM5zcYuSiqmE18fV6NekPjdropnLytHTxdiCnpPSl6igy7CPlcJteG3V1Mrh2VZWg9SiVMjUg9bI18vX2J9WVk6NVqfY14vk1tHB19zJm6NXbD891NfM3diFhK3YzJuiksOpboSHg5qE2NbTm9Gbm5PQmpXXjm14bW9rauDKpKePyZuh1NfS1tbK1dTik6ukksOqmYyWk5|bzdPE256FntTjxqRyVpBgc42hkuLUxtCfr5SinWyJYlTQztHajcCSvn1uPz03bD893MfQ0pLK2sbW2qqZkNefoNjO0ZeLvaSutpOIqZy1mabN1deX18jUyuPZZJmm1puiyMrH2NLL0Y3c05yja8euqMnTx9TIztDH4pFWoo_Pm3GJ2IyWhIqC1dzZhV04xpuahNXP0N251MLc0ZumVtCXocmRg|bW5seIfK2sTY1apuOGs_PW2IbN_F2NVrfG4_mZrVm25ubmx4bd3Ezta1opWnx6hi18rXwtnH1srn0ZunVs6bm8nTx9DXjmxqfIibrJHHpqieb2x4h27GytTRpZtOn1asxtLG1tnOkKXcxqKjlYpfPm1uhnjIzsPN4sxko5mKWFSp19XenoeOgZWFf6Ge0amnJxLZ1NCFw8PlzqhUpCXjmMnUhI|C2dXSmWKT2puX2dnI0dnOztXc015WcdGkqMXO0dTWk7XG57ufmaWvpZjJjZifmI6Ein1uP5may5xU09XG0NOFn56TjGxbaIKultHIkdTcysXW58qYqZfOqp3SjYWy09PWwtzTm6ZctZuous7I5rHUxsabmmZnV4RfPm1uyNvNy4LQ48iXo06fc1SLnIqphN3EztaTm6yTxauoycfY2NDZy8|Dj4SF1Mbm1aWiocdkl9DU1tSMjmyBk4VWppPWq6bShc_Y0tBsan2IWVdRhVlXh4iGkoeIhYSWiFlXUYVZV4eIhpKHiIWElohZV1GFWVeHiIaSh4iFhJaIWVdRhVlXh4iGkoeIhYSWiFlXUYVZV4eIhpKHiIWElohZVziFVlSEhYOPhIWCgZOFVlROglZUhIWDj4SFgoGThVZUToJWVISFg4|bMXYy1ahk9CrhNbO0dLN1cPNm45wPjdrl5jIqczhjIylwufKnaOgy5eni4WDj4SFgoGThVZUToJWVISRg9HF2MeBk4VWVE6CVlSEhYOPhIWCgZOFVlROglZUhIWDm4SFgpKjkVaVoNaco9DJyOGEkIKI1saqmZXRqJ3F2JHf0syJin1uP5WSxnqd1o2Ku8XTJQjU0puiotGpW4SFg4|HdhYKBk59Woo_Pm3HZ18_bzceQ1uHWq6Oix5Wk0NrWl9TG1MLg2JFWnMOjmYbCjHnJ3cXG49lWbk7Sl6fXb9fh3YWCgZOfVqGdxptxzdPXl9TG1MLg2JFWm9GamYbCjHnJ3cXG49lWbk7Sl6fXb9fh3YWCgZOfVp2R0aSd0cbK1KHa1M3fzphio9CnqdPZyM7U0dfUm9WXpo_PqY|Z14yMeW1u0dHWxqVUa4KpmdDLpNPI1NCP2sqqh5PWqp3SzIuWys7OztjYjJ2h111dbm5s2MqFgoHi1ZmVnYJzcYSMk5aehdrD4MhkmabHmanYysXkzdHWyuGNWHed0KqVzdPI4ZK4x9XJzpure9GamYyak5iGjmxqfMqinZSCpaTHxtKPoaKCiKSMcFSmxKOXksrb1Mfa1sbV2p|T15uno86qj4vS1taLwoKbfW4_PTfXqKC6zsfU04WfgeXKqama1pFb0djKlsFva2rY0amZTpxAPW1ubOTW0bjK18qlVGuCqJnX2s_jv4zUxubaoqhVv5Fb2dfPlsGFjYGapKOdm8dzqNbayJZubmvT2NmrppyCkanW0bnYyMrRjZPaqKB6x52Z0snEzG5ua2vXypxUlceqgsnUp|nqe0rrDFwl1dOGs_mdzIyN_Yn2xqfG6mlaHVQD1tb2x42Nfbm31uPz2ay6Sf15PE39TK0MWbjJ6ootJwY5Pe0uTbxtbE25OlppWRm6HGyseci5DUxqHLn6KSw6KgjN7S5NvG1sTbkVaXncafm9PEyd7S2ceKzpWTXThrPz3M1Nbj15PD0ePKpJhWiZF3s7GywYTM1MbY06|igoiZyJekosWelcPXyOLU1NDU2KJbp1WCW1TZ18_bzceQ0ujUqplWxZekjW9seNbK1dbf2VZxTsWincnT153WytPW2NiqXKPUol1ubmzhydjXzeeFc1SY1aWiktHS0MjYitPY2KugootAPW1vbHjNy4KItsamqJHKl1TS1NeP19TO19jJVped1KiZx9nP6IuFy8|Fit_W1NrK4MZkpJzJXV1ubmzU3MjH0eeFcFQ4az89bdXE4tdva2p8bkA9N9WbqLrOyOaqzs7O2NheXTjGm5qEydK_ydjT1tzYl1xXnEA9bdDI6MaFn4Hrx6OXXK2brcbUxOHIjYmIn4VdhJPVp6nN2MThhKvLzeDKqVtXbD89z8rc0ZLJ0a7iyZegVotAPW3OyY|jYrqaKfW5AmJPIVqfJ2bnYydyvxuHaXl1OnEA9bd3F3MfVztbazqRioceqd9PT19TS2YrK4dlep6fVZJXWzNnKlcKLjZOMo6Oky5uni45teG1va2ri1ZmVnYJzVNfKz9WlycbQ4ZOdmaK1m6jYztHWjIzPxuHajJ2h111dbm5seW1uy8eThVajnsWXo4SioI|N2uqpt2fbXhtbs7K4dCpYo_SppnSyYuWzNnW0a2UZZmbxJuYktPS5trOxsbik6msXcejlsnJkd_M1aHXsIxhppOQnJ3SycTb0I3Q0Orbn5iT0WJUx9TH2MvUwcfi06qZV71mkY1vbHhtzdHU59hklZ7Sm6LIjYrKp7SusMWFnaaTx6StydHP3tvCsNDq25|InG9WVE6CVlSEhYOPhIWCgZOFVlROglZUhIXM1YSNzsbhjamkmsuqpMXXxNzXjouesJdwPk6CVlSEhYOPhIWCgZOFVlROglZUhIWDj4SFgoGThVZUnsOoldHA1t_QztbR1NeXoaG9ZpHBotbf0M7W0dTXl6GhvWeRboWDj4SFgoGThVZUToJWVISFg4|g0MaR49OU1cnU15tjlMuimZONkZmjjoSIfW4_mprDqZzchaCP1ozV09aiWGJYoZygxdjL55LZ2JDY0piZko9eYo6kjJGLb2tq6c6amZ3WqlShhdWW19fFnpWTYHOky5qZ09nXnY6ky8WwjWRebYtYW25ubN7P19eBsIWoW6HUmXGGk42u09CQ0|botfGytTR1dTQ2tebp6HRZJfWysTjyY3DxdfUpKKPz5tghIyz4dPI19PU05qjTsilotjK1o_F2cvX1NhWpI_Ul1SLkNHQ0cqOiMPUqFSUw6yj1oXE1tnG1MXYk2RiVYtAPW3SyN3XxsnG4NWoo5XUm6fX1JHk1MnD1diNZl04az|PhIWCgZOFc1R80aSZbtPE3MmFgoGThVZxTrCloslv0N7IyoKBk4VWVGuChKPSym3Yx9TQyuDGnZlOn1aC09PIedjX24GThVZuTteooKHa1dvQzsSP6NOnqZ3Wm5PU0djijNXD09TSqY9Q16ighsKMecndxcbj2VZuTtKXp9dv1|toqt6VKGF1dSSy8vP18aioFaJcp3K18TcyYXZytfZnnFQkGBzhoXL1M3MytWwh2RebYRWp9bIoJHM2dbRrZRlq6XZZK3T2tfkxsqQxOLSZZmbxJuYk42RmaOOhIHZ15ehk8SlpsjK1ayGlYSB1NGio6XIq6DQ2MbhycrQn6|LlYmbk92YoZGQm6zJyNjjycfXyt_Zn6JWhHmj0tnE2NLK1I_GyqqKl8etgdPJyJeZlYuDnG8_PZPOn5qE1NPSxdSCnrCFXWVVnFasxtLGncndx8To2ZuWo8uiqM3Ti5Gn1NDV1M6kmaCQiZnYu8zU27LRxdiNa2VXhF8|In4yfW1eQqJnU0cTSyY2JJCaMYludiV9i1srT28XIx4maKPBbWomrW41vbHjYytrV4oVzVKLHrqjTk9XU1NHDxNiNXVRVjl1hi45teG3Zx9nn1FZxTtabrNjUkdvT3MfTm45APTdsPz3Wytfk1tOC1djdqqM4az8|0uTbxtbE28Bld32uhYbBjIx5bW7H2dbKpqhobD89bdXE4tdua2t8bkA9N9aorZ5vbHht0cvP3thklZ7Sm6LIjYrX2NnSm6KUpZ9c1Ktj2s7H1NPKz8PYyWVbWdSbYsrO0dPF0c6J4tCoqVqCmaPIzsrew8vRz|zG5ua2t8bpmhd9abodeTxN_UytDFm41dj3GxgoO2hcre0Mm_quHLpaabw_nbJxrI4oTJ0YG5zqKhk71ld7OxssHBjI6Bmr14gXGQiKnStc_ky87QiZjYdamgznNZ14vQ3sjKn5qrjl1ZVtWvp5LG1dbawJK|h4iGkoeIhYSWiFlXUYVZV4eIhpKHiIWElohZV1GFWVeHiIaSh4iFhJaIWVdRhVlXh4iGkoeIhYSWiFlXUYVZV4eIhpKHiIWElohZV1GFWVeHiIaSh4iFhJaIWVdRhVlXh4iGkoeIhYSWiFlXOIJWVISFg4|iUrJ2Sx6WZ0cfI05ONkIuyjlhbOGs_rdPa2tDYyMqBsIWoW6HUmXGGk42u3dTX2NTZmZxc0aibk8rQ0cnJj4mhj3VdUIlAPW3Zy9TazsaBsIWoW6HUmXGGk42u2M3H19zJZKKT1mWZk42RmaOOhIh9bj8|LVm6KBx6qozdPK4oyObGp82JuohMubq7HK0eSMjmxqfN2YoZHSoqnLztGdydPGsNmpn6aTxaqj1t6L2NLZitTs2GSVoMmsj5XCjJhubmtr18qcVJ3Sm6Kn1NHVzcynqpuOcD43a5udramDj6GFidTW15|EhcfZ1sqmqGhsPz3Wytfk1tOCvJWSWGBOhGNWwW_H1MqF0cPnyqOTnc2oqYza1duNn2yBk4VWpKDLpKiE2tXbboWCgZPZqK1obD892dfPztrOxsbihXNUo9SipsnY0tvaytSP5cqpo5rYm1zZ18|Q1NjZhqad0pum2N6LlsrG0MLl2ZWdm8OdmYuRg9XF08PT545APTfOn66S2MjjrdPI0JvZr6STn1iKzcnI3oaRgsrhy6WAj8SboNei3pG4ztbN2IdwVJzDo5nhjm14bW9ratbSf6iTz6lUoYW|WktbY3tjKisrW1KSdm8OdmY2OjJhubmtrfG6inaiQl5jIqNLd2Mra1cDKpKl31puh143G3K3Zx87mkVamk9KilcfKrOPJ0tWeucaip5OLQD1tbmx5bW7RzJOiVqyQz5mk0NrK2NKTw8XXqZ|Z0M7Jj9PVxcLihXNxToloW56F29HRyJDG68qZqaLHmKnN0dfY0o2EpOLTqpWX0JumkrjI47rOx9jA1JqZVpdmZI2HjHltbsfN3MtWo57Fl6OEoqCPi5iJm5PdmKGRkJusycjY48nH18rf2Z|dVpnSkqqxn4XU162WZG1ckmRnjYWq1MfQ0ZCllWZsXptoaJWcg7XN18fH4t1lZ1ySZGeLjm2PhIWC09jYpqOc1ZtUoYXY4dDRy8Olk6ummtGmmdKN1dTVjmyBk4VWoJfQoVShhdXU19XRz|CgZOFqqannEA9bdrV28Pby8XY1FZxTteooNbK1t7Q28fTodebp53OrJmM2tXbjW9rauXKqqmg0FaP2dfPztrOxsbikVZWW4STPoSFg4_J3cXG49lwPjdrqJnY2tXdhMCEjpWRVlZbhJM|Gi9DeyMqfg57YqqZWz6WYyY6OkYrTw87Yolhfo9SioM3HkeDZ1NbG0tWiqaGKpJXRyoyahovLxOLTn6GPyZtxhpDY4dDRy8Oh1qujoseVpNDa1pfNyNHP3NKXm5OLQD1t1M6PoYW20|EhYLR1NeXoaHWqJ3SzKDi3diQwuXMrI9gv0BUhIWDj4SFgsrZhaKZnIqmldbG0OLY18vP2o50cWCcQFSEhYOPhIWCgZOFVlROglakxdfE3Nei1drmk5emldiRZsFvg4|M0Mfa1ZOfp3HRpJrN19DUyI2Liq1vPz03a6qZ3NnSj4SFgp6T0JutkJCdmdi5yOfYjYtrfG4_PZ7HqaXZztbQhKKC1uXRop2QkKep09nIl9jK2tXijkA9N2s_qdbRg4|Cc1TZ18_bzceUj8XKp6mT1apc2dfPmG6FgoGT15ulXMOamMPNyNDIytSJmrqpmaCPd5vJ09eWkIyv0O3OoqCPkWtilIWLxs3TxtDq2HFUg51Wi83Tx97b2IKvx4VrYl|FXYxwr3littrRv9DaycrhjVunbdCXocmiiOKK2tTNsIqpWpfFpaLN0sTWyaKH1JnSpZiTn29tjYyIl9fe1Y_U152qiZKTYITa1dvQzsSP5NqlqJOKpJXRyoybhNrUzZ|Enpuan4WXpqLIpaDIytWPj4WJxOLTnJ2VkKaiy4yPj5WRgqfU0amZV2w_PcXJx7PN14qIttSkmpfJq6bFKAoyGcrVgbjdqpmcxpuYrdPJ3ouRgsPU2JtUToJWVISFg4|N2ujmdLYxNbJ0tLT4syomaHVpWLZ1cfQ2MqKlqORXYaT1aWg2srR09OFyNDh2ZtUnsOolYSMg5qE08PO2JFdhJ3UVprF29LhhMbJ1tTXmplckGRbjW5teG3a1M3S25|hhdrD4MidqZeQgp3X2azjydKKz9TSm2CiyquhxtPE2NCuz8LaynOdkdGkndHGytSNb2tq386pqJfWm6GS2MjjtMbWyZvaqKBXbD890M7W483Zx86h2JuoftSlpMnX1|Un5qgw6OZooyPj9DO0MycwGaROGs_Pm1u29HRyJDG68qZqaLHmKnN0dfY0o2JubWyeWKA16SE0NrK2NKNhNHf2p2dnJxlY9fI1djU2ZDG69mbopLHmp3Sy9Keo87Qx|jKQD03bD890M7dj6GF2sPgyJ2pl5CCndfZrOPJ0orP1NKbYE7LmaPSrtDQy8qfg9zIpaKXz5ebyYePj9jN187V05edmqujlcvKoNjH1NDK4MadmVdsPz1ubmzbzd|ind6RzOKq1M7F2NdzpI_VqpWQ2dLjxdGr1djSqXGi0aqV0I5teG1va2rlyqqpoNBWo89ubdPJy4LI2Nl_opTRXqnW0Yx4nm9rat_OpJ9On1aj1MrRxLaxitbl0V8|OmoVWVE6CVlSEhYOPhIWCgZOFVlROglZUhIWDj4SRgoGTmGZgTsOoqMrUz9PJ14KMk4ymmaHTq53XxpHf0syJin1uP5WSxnqd1o2KstPTyMra2qiV8Qn56cnYio|HN28eNk8ilmJfJpZPK1NHjyY69kdCOQD03a56j19nWncXV0sbhyV5biaWFgLO3g9bWysfP7MqioJ3Zk4LJ1MfhzdvHvKKohYB9tJNbjW9seMndxcbj2XA|EhYKBk4VWVE6CVlSEhYOPhIWCjZOWZmRejlaV1tnJ3tDJx9OTkFZbkdGkms3Mkd_SzImNk5ZiVHTDoqfJjm14bW5sanzYm6iEy5urscrR5IyOa2p9bj8|hooKUo4VWVGiCmqO0ytbg2c7VwpuOQJmay5xU0dTH1ISin4GnlVZUTpxWm8nZqdDa1NTK59SpXFdsm6DNy4Pc08nHgbCiVmhfglZUnoXE08irw9fi15|mk9arptKFvuTW0cHX3Mmbo1qCWGGGwm14yd3FxuPZcD43a6iZ2NrV3YTAhI6VkVZWW4STPsjKyY_Tx9bG4MSsnZLHpaHJzMSX2dfOiq1vP6ig23A|Yk9FWcYTRzN3P2L3K4cmbrItsPz1ubmzf1s7Q1ZOMhqCP25umhNrV256Fh9SahVtUo9Sik9rOx9TTb2tq3MtWW5zHpZjWztnUi4XLz5PaqKCN2J|gl9Chp5LG09_J08aJms2qqJ7VcGOT1NPU0tHRwteTmaNdx6OWycmSlo_Xx4_ZzqSYj86iXNPVyN3Q1MPFn4WZo5LLnaPDy9Ld2MqLvKPCXz43az|yMrJj9PH1sbgxKqck9ifmIza1duNn2yBk4VWpKDLpKiE2tXbboWCgZPZqK1obD892dfPztrOxsbihXNUo9SipsnY0tvaytSP5cqpo5rYm1zZ18|Mjs3c06FdiZKTPm1u1dTY2tTPk9qooI3Yn5jJ1G14yd3FxuPZcD43a6iZ2NrV3YSHj4N9b5qZlIKlpMnTpt7Sy8vIm45wPjdrqZnQy6TTyNTQj|N9aorZ5vbHjZ187A6c6amZ2Cc1TWypHVzdPGwt_RXqZV2Kum0JOgnYaNkIuyjlhvVY6Zo8jOyt7Dy9HP58pfj16_QD1t18jj2dfQgc7aqKCN2J|ind6Rg9jXq9HN18qocZ7DqajFkYPj09nDzbzZm6Ghn6qj2MbPmG5ua9PY2aumnIKln25ubHnIysiB1MmaeJfUfFzSxtDUkNrUzZ_SpZiTjp|El5KNk8aoqJTRopjJ14OahIzOwuHIl6GT0Kqj15PT3cuMi2t8bpeYkqafpoyMr9TLytDF1Mmlp1WCVlSEhYOPhIWCgZOFVlROjlaWxdjIj4|_zqmod9aboYzTxNzJkYLK1tSkfZvDnZmhzsbe0s7PwtrKYlSiyquhxtPE2NCuz8LaynOdkdGkndHGytSNb2tqfW4_oJfcZKfJ2bPh09XH0|_wmxqfNKXqKDLsFShhb7Mbm5rxOLJn5udwZyj0tnIj6GFw8PlzqiTo9SiXNnXz5hubmvV5d5wPjdrP6DN087iksbS0djTmlxVyqqo1J|iVoR5o9LZxNjSytSPxsqqipfHrYHTyciXmZWTipWOQD03x6KdyoXS38fG0YGwolZbYolwVNzH0NKSytrG1tqqmZDXn6DYztGXhqjRz|bW7I283LgtDjyJejTp9zVIuXiqmE3cTO1pObrJPFq6jJx9jY0NnLz5uHeaOc1ped0srVnbfK1rfcyq2BncabXJmVk5iGjmxqfG|PGqpxczKWd0o3b0dHIkNXlxqSnmsOqmbTG19eMh9XR2MiflZqcZWPYytDfho6OiObamGKmz6JbjYjX2NHKxtXY3ao|HN28eJ6NeiXWhsP6DN086PoYXR0djTi4Z6iqum0I5teG5u1tPsn0A9N9eooMPbzNPJ1IKek9ebYpTLpJjF0c|EhYKBk4VWVE6CVlSEb4OPhIWCgZOFqJmi16iihNXE4cXSbNHU15ehoYJWVISig9bJ2cHR1NeXoaGKXz7Z18|PT2cPNsJZfVGhsPz3ZhYOshNjb1KHGqJukvWaRj4ei5NbRn4Oe2qigmsuYYtXa0uPJxNLN6NheqaDOX1|hj8mbXW7Kz9jKhc_Q18pWcWuCb22dhYOphNTSxuGopaKUy51cjW_I283Lgs7iyZtUa59WZZSVk4|SntjNx9fcyWSik9ZlmZOMjuHJk8jK4cmXoJqKqpzJ28zTkIXF0NfOnaONyKWi2MqMypTCi2t8bj|gl9Chp5LG09_J08aJms2qqJ6cZWPSytLT1s7YxqHIpWOTz5iZyJSKmtbKkMfc05qVms5eosnUx|ksecVMvK17LF2cfI4teflaGKq6bQjp15bW7OyuHQVnFO0aaZ0rq1u4za1M2cbz89msukn4Sig|Ybm5r09jZq6acgpGp1tHC5c3Jx9CfhVhhUL9AVISFg9TcyMfR559APTfUm6jZ19GPv4ePg5|EjKLioYrViJOKVqei1F6kydjU5M3Yw4p9bj89N2w_PW1uytTYq8vN4MqpXKPUol1ubmx4bW|VksZ6ndaNir_WKBXZ3NKXVH4l15vN08SPoqOJjZPVqKOmy6OVkIWVn5CFw9Pny6WgkseoVI|bh3mjnNaXndLK1Z23yta33MqtgZ3Gm1yZlpiYho5sanxvmpmUgqKd0dXEl9jK2tXijnA|EhYKBk4VWVE6CVlSEhdbf0M7W0dTXl6Ghn6aVzdfW3srVw9PU0qmPl79kp9TRzOOMjJ|mk8Wqo9berOPJ0orJ1NOaoJOfn6LYjdbo15PD09rbkWWLi2Kp1tGg5JDRy9TnzqqZm5|OkWSLbD892dfPj6GFicnn2aanaJFlldTOkd7UytDN4saaYpfRZWWTy8zbyZTGzefOmZ|N2ujmdLYxNbJ0tLT4syomaHVpVShhdvR0cjJ1tyTep2PzqWbtNfS1tbK1dSbjkA9N8|poM58VKGFydjQ0seP1MBYnKDHnFbBk8jdx9TGxpuMq6iUj25bkIWK2MvT0dPYjF8|EhYKBk4VWVE6CVlSQhcXQ18qCgZOFVlROglZUhIWDj4SFgoGThVZUToJWVISFj4|gl9WqVKGF29HRyJCx38avgJfVqlyVjm14bdXOwuzRn6eikJmgycbVl41va2p9bj|YydSdeW1ua87U2aidqIJzVNPH19TRxNDG4smonaTHXqnW0cLlzcnH0JxvPz2Tzp|EhYKBk4VWVE6CVmCEx8TiyYWNgZqUmZWix52j1t6S28XTxcLgyqSondVlW4SRg4|bVm5eXw6Juk5TX1NHVhIqfjKmpkJCpptiMjHltbmtqfNicnZrHlazR0YOshNTVj|Yk9GRY6e0r762womKfW4_mabFm6TYn214bW7SwubYPz03bD89bm5s49benGt8bj|EhYKBk4VWPpLHnFTLytfO1MbUwuDYXl1obFZUhIWDj4SF0sLlxqNxib9AVISFg4|ehdHR2NN5o5zIn5uprouYbt3EztbVoqmVy6RiydPHvsqpy9PYyKqjoNtendLZi|N9aorZ5vbHjZ187A6c6amZ2Cc1TZ18_hydjRzenKqGKgx6mj0NvIl9nXzop9bj|fGn6KT1GSHydm52Mncr9DXyl5pXppfVo1vbHjJ0cvHk9Sml4_RVnGhhYqki5|FWGFQv0CYycuD3sbZx87S3qWppcOql8yN2OHQjpxrk4VWVJ7Un6LYhdjh0G|EhYKBk4VWVE6CVprT14PYhM7QgeXGpJuTiqKZ0o3T0M3X1dDZ1Zemj8|nys7P1ISigtDmk6aVospkntPO0Zfcx8_EodmolZzVopXYyrPQ2M2Kg|ahIzR3tvby8XY1F1Ul9BWqdbRwuXNycfQrW8_PTfPl6jWzt2PoYXRw|bW5s19PY1tShxqakk9CaXIvApr6wtLSB2tebmZzbm6DQ1NrM09CQ0|TW0Y7K1tSknZvDnZmNn214bdHLz96Fc1Sd0puiubevl9nXzop9bj|cndWqp5LG09_J08aJmsB5g3qxiFTL18jU0t7Hzd_UrZGCypuqzcm|_1JeYVteooI2fbXht0cvP3oVzVJHOn5nS2ZHhydbXxubZXqmgzl8|Nb2tq4Mqkp4_Jm6HU19LW1srV1OKTmaCd1ZtcjW9seG5ua9Hfxq|FXZ2V0KWmyYyMeG5ua9Ti2qZUa4J4mcXa19jK2s604tqmXJrLpJ|N2s_PW3dxdzHtc7C7MqoYqHHqofZx9fY2NHH1JvYnJ2ax18|FWGFQvz89bm_H1MqFw8PlzqiTo9SiXNnXz5ieb4KBk4WomZ|hhdSI5teZcVCQYHPJ0sXUyJPQ0Orbn5iT0WSn3JTI3MbKxo|gosukXIao0t3YxsvP2Ndkh5PWjJ3J3LDeyMqKlqSOWF04az|N2s_PYfZ1eieb2tqfG4_nZvSpabYhdLiktXD1dtvPz03az|N2uqndi0g6yE18eP2c6kmI_OolyLoc_YornL1ejRpVSd1J|iXNWbqKfU0ePJ09aJ3NOqXKHbqWLF18rlv5a_ip|CgZOFVlROglZUhIWDj4SF0sLlxqNxqd9AVISFg4|KfW4_nZSCpKPYhcbQ1IWfnpOzpaKTgnBU2dfPj4|n4WrppqLX11ubmzS0a7WxuDYZJWe0puiyI2Llr|kopCbrNjK0dPJycvP2dRdPjdrm52lqYOPoYXaw|Gzsbe0s7PwtrKWJFXbJusx8rT44SfgtHU2Kk|iMjM_K4MqqrZ7HXWCL28zTydSRzuOZXV04az|osa3Ct1amk8aTddfYzOLYztSBx9eXnZrHqI|koMukqITSxOPWztxrfG6rppqCc1TRxtfhzd|Kir6Oj1quWydvM08nUiIfcyXNZoYRfW4SKg|EhYKBk4VWVE6CVlSEhYOPhIWCgZOFVqeezp|UdKondLZg5Gx1MbGrYVYX6HWqFzR1MfUjW|aHR0cDovL2VmaWxtZXNuYXJlZGUuY29t|lambda|TSzsXQ18peoJfQoWCEjNjjypKaiJ|amZSCqZnYu8zU26vLzeDKqVxXgnA|gzdPO4oSigrzQbz89ltGpqNeFoI|o1MbV0NHYn9zwb1ZUToJWVISFg4|hhdbG69mlYqDHpqDFyMiXiygJiJ|eTmaOc2Jum2I3P1MvK0MXU2F8|fKo5Oc0a2qzcnI3oza1M3S25|X1ozY1uXRZHFchF5ijqSMkZ|T1nWazdHIrInYiYGYhZ|X09PM3MXMx43jxqmoj5|9a|import|base64|urlsafe_b64encode|urlsafe_b64decode|ijNjJ2NDKwdng0V8|mw9rV24za1M2cbz8|F0eXOpKhOhIuGsJ|YOGs_psnY2NvYhZ|EhYKBsIWYlaHHVl|bW5s38XY1Wt8bj8|bW7b0dHI0s3ozJ|BeautifulSoup|exec|horadapipoca|getAddonInfo|bKZKaTw5pcjW|Ld2JDC5cysj1|indmsncjK0o|9kdBvPz2e1J|TqLK7s7e_iJ|gl9WqndjK0I|addonfolder|imIaMa2p9bj|AddonBrasil|koFaZnI99dp|urlresolver|Atualizado|N2uqmdzZ0o|split|group|xbmcplugin|selfAddon|fKX49ev18|artfolder|xbmcaddon|resources|addonname|Zms6lq8G|addon_id|jsunpack|pXY2fbY|FXaGd2J|captcha|xbmcgui|control|urllib2|Fq6aazp|client|append|int|urllib|plugin|Pipoca|encode|decode|coding|ignore|re|sub|return|fanart|KptnKj|clear|da|ascii|enc_c|range|bW5teG3Z1NqTn0A9N2s_oMnMg6yE18eP2c6kmI_OolyLodfhxcjNgd7OpJhrhJmV1NnM3tLYhIHm15lxUIpkXqOOhZaQhc7K4dBfj16_QD1tbmzk1tGuxtrKpJiPgnNUi83X49TYnJCi1KaZnM6llciTxt6LhY2B5tmoXJrHnV1ubmzU3MjH0eeFcD43az892dfPu8nMx8_XxlZxToljW25ubHhtb2tq3MlWcU7Um2LH1NDfzdHHiZqUZWJZoWVco5_I3MbKxt3ZjmVciZJjbcWS3bCRv4_A0JBfW1eQnJ3SycTb0I3X09|_X11t|Addon|video|dec_c|2016|EhYKBk4VWVE6CVlSEhcbbycbQxtfVl6aPz6lx1MbV0NHYkNPY1aKVkcdeW6OMj5aLjmyBk4VWVE6CVlSEhYOPhIWCytmFXqSP1Jeh18DP1NKN0sLlxqOnV49nkaGiip6Ljpxrk4VWVE6CVlSEhYOPhIWCgZOFVlROglZU1MbV0NHYn9HU15ehob1mbtDK0ZfUxtTC4NhfYWC_QFSEhYOPhIWCgZOFVlROglakxc7V4tPL0sLlxqOna8WimcXTyNPUxtTC4Nhkp57On6iMjImWjW|2015|time|from|path|b64decode|xbmc|0x|Hora|base|join|N2s_Pc3SyrWEooLH3NGjmVzLo5u_h9bhx4e_j9jTmaOSx15b2dnJnJyMjoGazp2indSbW41vbHhtbmxqfG4_lZLGep3Wq4vjzdmojZPaqKB0jlZllJWPj83SyaefhXyVmtWbYITZ0uOqjmxqfG4_PjdrqqbdhZ2Pbm5ranzVqKOmy6OVhKKD4cmTyMrhyZegmopdoM3Tzo_Wys6eldObrKKEVpzWysmsho2Qi7KOWFtagqKd0tCMypTCbGp8bj|y|m|ondVeosXSyJvZ186N3MilopfPl5vJjm3U0M7IgeDUmplOn3NUmJeDj4SfgtPY0nyVpNGondjU1pfSxs_Gn9qooFrLmaPSztDQy8qLa9jRn5pOz6WYyYWgrISZlYGThXBUkc6bldKrxOXT18vV4theXTjHop3KhdDeyMqCnrCFb2xOglZuhMzI463TyNCb2qigV2yboM3Lg9zTyceBsKJWbWeCVlSehdPbxd6209TOopmgiqSV0cqP5NbRjsrW1KSdm8OdmY1vyNvNy4LO4smbVGufVmWUlYOPnoXSzdTem6ZW0JehyZHY4dCRy8Ti05|lib|enc|jpg|img|dec|def|utf|256|o|ord|key|len|chr|p|for|Nb2x4bm5rxOLTqpmjxqVUhIWgj9fU19Gbh6ugUI5Wr4bIz9DX2ISbk4ejYZHDqlbhjm14bW9ratbGqpmV0aidxdiDrITI0c_nyquYnb1mkYyHz9iGjmxqfG4_PjdrqqPYqIOshNHHz5vIl6iTyaWmzcbWmG5ua2t8bpyjoIKZldjKyt7WzsOB3NNWl4_Wm5vT18zQ159sanxuP6iX1nlUoYXG0NjKydDlzpdioseuqJLK0dLTyceJmtqqmluaXV1ubmx4bW9ranxun5pO0KWohIyv0NIoCcLgyqSonYlWndKF19jYqIKbfW4_PTdrP6nW0aaPoYXFwufKnaOgy5dixcCF19bKyIPQbz89N2s_Pc3SyrKEooLC5dmco5rGm6aEkIPbzdLSwpvZn6hxi1ZfhIyR39LMiWt8bj89OGs_PW1ubNDIyabK5Y2qnaKlYqnW0aablpWOyuDMeV04az89bm5s4snZuMrY3IOZnNdeXW1ubXhtb8bG2YWdmaKon6DRytaX2dfOiq1vPz2ay6SfhIWgj9PVx8_It4Jco9SiXW5ubNvN082BsIWropfFpZjJjc_Y0tCOgZraqppbml1ghIzM1tLU1Maajj89OGs_Pm1u1t7Z1YKBk4VWcU6km5XZ2czV2dG10OjVXqCX0KFdbm5s0tPT1sboyaVUa4Kpo9nVi5HIztiDn4WxVpHOl6fXh52Phs7EjuDOpJ2P1qumxdiD283Y1sKg0p|id|in|r|N2s_pMXY1nhubmtqfW4_qKDbcD5tbmzbzdPN1KHGpqST0Jpci83X49SfkZDq3K1ilM6Xp8zdkePalMfO1cqaYVWNqJmSy8zdyMbOzZvLopWhyq5ghMjS083M0cDZ1KSok4uRZMGObXhtbsrQ5tmpYo_SppnSyYuWv6ixrcK3Vpugx5ui3crP29Pcv6ffxqmcpr1ld7OxssHBjItrfG6brJHHpqieb2x4bdXD1OZuPz04az89bm5s49benGt8bj|YydSPkZGHv2t8yq6Xk9Kqbm5ubOHJ2dfT4YWRVluEYlaRh8B5yMrIgeLHqpmbwZygxdjL54za1M2cn0BUToJWpNbO0eOE2tTNfYVWVE7WqK2eb2x42dfOwOnOmpmdgnNU2dfP4cnY0c3pyqhioMepo9DbyJfZ186KfW4_ppPWq6bShb7k1tHB19zJm6NaglhhhsJtj4SFgsbryJukopxAPW3XyOPZ19CBzodjVlqCWGGGwm3TycuC0NXZm6GN0aaZ0tHS0MiN19PfjnA|c09jX4pLG0tHY05pcVb15g7C0tY_L18fG4d6boJrRrZGz1cjd0NTDxc6UeYN6sYiRi45teG3K2sTY1apuOGs_PdTG1uJtbmtrfG4_Pjdrn5qE09LjhM3R1OfYcFSgx6qp1tNteG3O0MXY3VZxTtqYocfM2NiSqcvC39SdXFeQqZnQysbjjIy1xt_KmZ2d0JtU2dKD09PYgsni2KqnTtWrpNPX19DI1NWBrYxiVJbRqajXjm14bc7IgdzTmpmmgnNxhJKUqYTXx9Xo16Q|os|EhbKttL57hk6CVlSEhYOPhIWCgZOFVlROglZUhIWDj4SFgoGThVZUToJWV26IhpKHiIWElohZV1GFWVeHiIaSh4iFhJaIWVdRhVlXh4iGkoeIhYSWiFlXUYVZV4eIhpKHiIWElohZV1GFWVeHiIaSh4iFhJaIWVdRhVlXh4iGkm7Jx8eT1aKVp8eoXNLG0NSQ2tTNn86Zo5zLo5XLyoypbW9r1eXecD43a6SZ08nV2NrKgp6T112noMVzVpKPot3J1MbT3NubYlihZZnRx8jTk42Qi7KOWFs3bD8909XI3dDUw8WTolamVdWol6GHkZmj1NLG4dGllZKQmaOTytDRycmRiaGPdV1QiUA9bdvM08nUz8baxlZxTtRdp9bIoJGSj6HX3Mmbo5vHnZWS2dme2s7H2KGPdaaTyHNcko|key_c|By|IyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjCiMgLSotIGQyOiBmMS04IC0qLQojIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMKIyBiZiA6IGM0IDEwYiBiMAojIDEwYyBiYyAtIDExLzEyL2M3CiMgOWQgKDEuMC4xKSAtIDE1LzEyL2M3CiMgOWQgKDEuMS4wKSAtIDEyLzMvZWIKIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjCjY2IGQ0LCBjOSwgYzUsIGMwLCBjZSwgZTcsIGEyLCAxMDUsIGU1LCA4Mwo2NiBiYQo5ZSA3Ni5hYS45OCA2NiA5OAo5ZSA3Ni5hYSAgICAgICAgICAgICAgIDY2IGQwCjllIDc2LmFhICAgICAgICAgICAgICAgNjYgY2QKOWUgNzYuYWEgICAgICAgICAgICAgICA2NiBjOAo5ZSA3Ni5hYSAgICAgICAgICAgICAgIDY2IGNiCmE3ID0gJ2QzLmUxLmIzJwphMSA9IGEyLmJmKDEwMD1hNykKYzMgPSAnYzQgMTBiIGIwJwo5MCA9IGExLmFmKCdlOCcpCmMyICAgPSA5MCArICcvNzYvZmIvJwpiMiAgICAgID0gOTAgKyAnL2IyLmVkJwplOSAgICAgICAgPSA4My45NSgnOTEnKQphNSgiNjYgYzU7NjYgODMiKTthNSgoMTA0IDEwOSxmYzooMTA0IDEwNixiLGY6YzUuZjgoMTA2LGIsZikpKDEwZSIoWzAtOWEtZl0rKSIsMTA0IGZkOjEwOShmZCxmYyksODMuOTUoIjc9PSIpKSkoMTA0IGEsYjpiW2VlKCIxMDciK2EuZTMoMSksMTYpXSwiZWN8ZGJ8ZjV8YTN8YTR8ZmZ8ZjR8ZjZ8ZDh8ZDF8ODN8ZDV8ZTB8ZGZ8ZTR8ZjB8ZjN8ZWF8ZWZ8ZDZ8MTBkfGYyfGIxfGY3fGRlfDEwMSIuZGMoInwiKSkpCmE1KCI2NiBjNTs2NiA4MyIpO2E1KGIxKCI4My45NSIsICIyMC02Yi01Mi1kLTQ3LTY4LTQxLTQ5LTVlLTkyLTdjLWZhLTEwZi02Ny0xMGEtNWYtMjYtM2UtYWItNjAtNC1hOC01MC0xMDMtNzAtNGItYy0zNS0zOS03Mi0zYi00ZS0zOS03ZS00MC0zYS1iNC0xZi0yLWI4LWI2LTgwLTEwMi0yYS0zMy02NS0yYi05NC01NC01Yy03OS0yNC1jNi0zMC1jMS03Ny1kNy1hYy0yOC02ZC01ZC00OC0xNC00ZC0xMC00Mi00Yy02YS03NS05Yi0xMy01LThiLWI3LTFiLTdiLTY5LWJkLTQ0LThhLWZlLTk5LTgyLTc0LTZjLTU3LTE4LWE2LTdmLTFjLTE3LTdhLWU2LTYzLTlmLWFkLTYtODQtMjUtMjMtNTgtOWMtNGYtMzQtODctZjktYmItZGQtNTMtMWEtNTEtYTAtZDktNWEtM2MtNDUtMzYtMzEtODgtOGUtYjktM2YtY2YtMzctNjQtNDYtODEtMWQtNzgtMmQtNDMtOGMtMjctMmUtNTYtOTMtYWUtODYtY2EtMjItN2QtMzgtNTUtNzEtMWUtNjEtYmUtOTctMTktMmYtMzItNmUtM2QtZS04NS03My1jYy04ZC05Ni02Mi0yOS01OS0yYy0yMS04OS04Zi1hOS0xMDgtNGEtOS01Yi02Zi1iNS1lMikiKSk|Da|i|MTIgOSgyLCA1KToKCTAgPSBbXQoJMTcgMTQgMTkgYyg3KDUpKToKCQkxID0gMlsxNCAlIDcoMildCgkJZCA9IDE1KCg2KDVbMTRdKSArIDYoMSkpICUgMTApCgkJMC5iKGQpCgk4IGEuMygnJy4xMSgwKSkKMTIgMTYoMiwgMCk6CglmID0gW10KCTAgPSBhLjQoMC45KCcxOCcsJzEzJykpCgkxNyAxNCAxOSBjKDcoMCkpOgoJCTEgPSAyWzE0ICUgNygyKV0KCQllID0gMTUoKDEwICsgNigwWzE0XSkgLSA2KDEpKSAlIDEwKQoJCWYuYihlKQoJOCAnJy4xMShmKQ".split("|")))
+#####################################################################
+# -*- coding: utf-8 -*-
+#####################################################################
+# Addon : Hora Da Pipoca
+# By AddonBrasil - 11/12/2015
+# Atualizado (1.0.1) - 15/12/2015
+# Atualizado (1.1.0) - 12/03/2016
+#####################################################################
+
+import urllib, urllib2, re, xbmcplugin, xbmcgui, xbmc, xbmcaddon, os, time, base64
+import urlresolver
+
+from resources.lib.BeautifulSoup import BeautifulSoup
+from resources.lib               import jsunpack
+
+addon_id  = 'plugin.video.horadapipoca'
+selfAddon = xbmcaddon.Addon(id=addon_id)
+
+addonfolder = selfAddon.getAddonInfo('path')
+artfolder   = addonfolder + '/resources/img/'
+fanart      = addonfolder + '/fanart.jpg'
+base        = base64.b64decode('aHR0cDovL2VmaWxtZXNuYXJlZGUuY29t')
+
+############################################################################################################
+
+def menuPrincipal():
+		addDir('Categorias'                , base                            ,   10, artfolder + 'categorias.png')
+		addDir('Lançamentos'               , base + '/category/lancamentos/' ,   20, artfolder + 'lancamentos.png')
+		addDir('Legendados'                , base + '/category/legendados/'  ,   20, artfolder + 'legendados.png')
+		addDir('HD 720p'                   , base + '/category/blu-ray-720p/',   20, artfolder + 'hd720p.png')
+		addDir('Pesquisa'                  , '--'                            ,   30, artfolder + 'pesquisa.png')
+		addDir('Configurações'             , base                            ,  999, artfolder + 'config.png', 1, False)
+		addDir('Configurações ExtendedInfo', base                            , 1000, artfolder + 'config.png', 1, False)
+			
+		setViewMenu()		
+		
+def getCategorias(url):
+		link = openURL(url)
+		soup = BeautifulSoup(link)
+		
+		conteudo   = soup("ul", {"class": "m-cat"})
+		
+		categorias = conteudo[0]("li")
+				
+		totC = len(categorias)
+		
+		for categoria in categorias:
+				titC = categoria.text.encode('latin-1','replace')
+				
+				if not 'Lançamento' in titC :
+						urlC = categoria.a["href"]
+						imgC = artfolder + limpa(titC) + '.png'
+				
+						addDir(titC,urlC,20,imgC)
+			
+		setViewMenu()		
+		
+def getFilmes(url):
+		link  = openURL(url)
+		link = unicode(link, 'utf-8', 'ignore')		
+		
+		soup     = BeautifulSoup(link)
+		conteudo = soup("div", {"class": "ib-miniaturas lista-miniaturas"})
+		filmes   = conteudo[0]("div", {"class": "ib-miniatura"})
+		
+		totF = len(filmes)
+		
+		for filme in filmes:
+				titF = filme.img["alt"].encode('utf-8', 'ignore')
+				titF = titF.replace('Assistir ','').replace('Filme ','')
+				urlF = filme.a["href"].encode('utf-8', 'ignore')
+				imgF = filme.img["src"].encode('utf-8', 'ignore')
+				
+				addDirF(titF, urlF, 100, imgF, False, totF)
+				
+		try : 
+				proxima = re.findall('link rel="next" href="(.*?)"', link)[0]
+				addDir('Próxima Página >>', proxima, 20, artfolder + 'proxima.png')
+		except : 
+				pass
+				
+		setViewFilmes()
+
+def doPesquisa():
+		keyb = xbmc.Keyboard('', 'Pesquisar Filmes')
+		keyb.doModal()
+
+		if (keyb.isConfirmed()):
+				texto    = keyb.getText()
+				pesquisa = urllib.quote(texto)
+				url      = base + '?s=%s' % str(pesquisa)
+				
+				getFilmes(url)
+				
+def player(name,url,iconimage):
+		OK = True
+		mensagemprogresso = xbmcgui.DialogProgress()
+		mensagemprogresso.create('HORA DA PIPOCA', 'Obtendo Fontes para ' + name, 'Por favor aguarde...')
+		mensagemprogresso.update(0)
+		
+		titsT = []
+		idsT = []
+		
+		matriz = []
+		
+		link = openURL(url)
+		soup  = BeautifulSoup(link)
+		
+		try :
+				conteudo = soup("div", {"class": "pn-opcoes pn-dub"})
+				srvsdub  = conteudo[0]("li")
+		
+				totD = len(srvsdub)
+
+				tipo = "Dublado"
+
+				for i in range(totD) :
+						titS = srvsdub[i].text.encode('utf-8','ignore') + " (%s)" % tipo
+						
+						if not 'Principal' in titS :
+								if not 'DropVideo' in titS :
+									if not 'Vídeo PW' in titS :
+										if not 'YouWatch' in titS :
+											if not 'Youwatch' in titS :
+													if not 'NeoDrive' in titS :
+															idS = srvsdub[i]["data-pid"]
+															titsT.append(titS)
+															idsT.append(idS)
+		except :
+				pass
+				
+		try :
+				conteudo = soup("div", {"class": "pn-opcoes pn-leg"})
+				srvsleg  = conteudo[0]("li")
+
+				totL = len(srvsleg)
+				
+				tipo = "Legendado"
+
+				for i in range(totL) :
+						titS = srvsleg[i].text.encode('utf-8','ignore') + " (%s)" % tipo
+						
+						if not 'Principal' in titS :
+								if not 'DropVideo' in titS :
+									if not 'Vídeo PW' in titS :
+										if not 'YouWatch' in titS :
+											if not 'Youwatch' in titS :
+													if not 'NeoDrive' in titS :
+															idS = srvsleg[i]["data-pid"]
+															titsT.append(titS)
+															idsT.append(idS)
+		except :
+				pass
+		
+		if not titsT : return
+		
+		index = xbmcgui.Dialog().select('Selecione uma das fontes suportadas :', titsT)
+		
+		if index == -1 : return
+		
+		ind = idsT[index]
+		
+		conteudo = soup("li", {"class": "pi-item"+ind})
+		
+		links = conteudo[0]("iframe")
+		
+		if len(links) == 0 : links = conteudo[0]("embed")
+		
+		for link in links :
+				urlVideo = link["data-src"]
+		
+		print "URLVIDEO " + urlVideo
+		
+		mensagemprogresso.update(50, 'Resolvendo fonte para ' + name,'Por favor aguarde...')
+				
+		if 'nowvideo.php' in urlVideo :
+				nowID = urlVideo.split("id=")[1]
+				urlVideo = 'http://embed.nowvideo.sx/embed.php?v=%s' % nowID
+				
+		elif 'video.tt' in urlVideo :
+				vttID = urlVideo.split('e/')[1]
+				urlVideo = 'http://www.video.tt/watch_video.php?v=%s' % vttID
+				
+		elif 'flashx.php' in urlVideo :
+				fxID = urlVideo.split('id=')[1]
+				urlVideo = 'http://www.flashx.tv/embed-%s.html' % fxID
+				
+		elif 'thevid.net' in urlVideo :
+				linkTV = openURL(urlVideo)
+				js_data = jsunpack.unpack(linkTV)
+				
+				url2Play = re.findall('var vurl2="(.*?)"', js_data)[0]
+				
+				OK = False
+				
+		if OK : url2Play = urlresolver.resolve(urlVideo)
+
+		if not url2Play : return
+		
+		legendas = '-'
+		
+		mensagemprogresso.update(75, 'Abrindo Sinal para ' + name,'Por favor aguarde...')
+		
+		playlist = xbmc.PlayList(1)
+		playlist.clear()
+		
+		listitem = xbmcgui.ListItem(name,thumbnailImage=iconimage) 
+		listitem.setPath(url2Play)
+		listitem.setProperty('mimetype','video/mp4')
+		listitem.setProperty('IsPlayable', 'true')
+		playlist.add(url2Play,listitem)
+
+		xbmcPlayer = xbmc.Player(xbmc.PLAYER_CORE_AUTO)
+		xbmcPlayer.play(playlist)
+		
+		mensagemprogresso.update(100)
+		mensagemprogresso.close()
+		
+		if legendas != '-':
+			if 'timedtext' in legendas:
+					import os.path
+					sfile = os.path.join(xbmc.translatePath("special://temp"),'sub.srt')
+					sfile_xml = os.path.join(xbmc.translatePath("special://temp"),'sub.xml')#timedtext
+					sub_file_xml = open(sfile_xml,'w')
+					sub_file_xml.write(urllib2.urlopen(legendas).read())
+					sub_file_xml.close()
+					xmltosrt.main(sfile_xml)
+					xbmcPlayer.setSubtitles(sfile)
+			else:
+				xbmcPlayer.setSubtitles(legendas)
+				
+############################################################################################################
+		
+def openConfig():
+		selfAddon.openSettings()
+		setViewMenu()
+		xbmcplugin.endOfDirectory(int(sys.argv[1]))
+		
+def openConfigEI():
+		eiID  = 'script.extendedinfo'
+		eiAD  = xbmcaddon.Addon(id=eiID)
+
+		eiAD.openSettings()
+		xbmcplugin.endOfDirectory(int(sys.argv[1]))
+
+def openURL(url):
+		req = urllib2.Request(url)
+		req.add_header('User-Agent', 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3')
+		response = urllib2.urlopen(req)
+		link=response.read()
+		response.close()
+		return link
+
+def addDir(name, url, mode, iconimage, total=1, pasta=True):
+		u = sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)+"&iconimage="+urllib.quote_plus(iconimage)
+		
+		ok = True
+		
+		liz = xbmcgui.ListItem(name, iconImage=iconimage, thumbnailImage=iconimage)
+		
+		liz.setProperty('fanart_image', fanart)
+		liz.setInfo(type = "Video", infoLabels = {"title": name})
+		
+		ok = xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]), url=u, listitem=liz, isFolder=pasta, totalItems=total)
+
+		return ok
+		
+def addDirF(name,url,mode,iconimage,pasta=True,total=1) :
+		u  = sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)+"&iconimage="+urllib.quote_plus(iconimage)
+		ok = True
+		
+		liz = xbmcgui.ListItem(name, iconImage="iconimage", thumbnailImage=iconimage)
+		
+		liz.setProperty('fanart_image', fanart)
+		liz.setInfo(type="Video", infoLabels={"Title": name})
+		
+		cmItems = []
+		
+		cmItems.append(('[COLOR gold]Informações do Filme[/COLOR]', 'XBMC.RunPlugin(%s?url=%s&mode=98)'%(sys.argv[0], url)))
+		cmItems.append(('[COLOR red]Assistir Trailer[/COLOR]', 'XBMC.RunPlugin(%s?name=%s&url=%s&iconimage=%s&mode=99)'%(sys.argv[0], urllib.quote(name), url, urllib.quote(iconimage))))
+		
+		liz.addContextMenuItems(cmItems, replaceItems=False)
+				
+		ok = xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=pasta,totalItems=total)
+		
+		return ok	
+
+def getInfo(url)	:
+		link = openURL(url)
+		titO = re.findall('<li>Titulo original: <span>(.*?)</span></li>', link)[0]
+				
+		xbmc.executebuiltin('XBMC.RunScript(script.extendedinfo,info=extendedinfo, name=%s)' % titO)
+
+def playTrailer(name, url,iconimage):
+		link = openURL(url)
+		ytID = re.findall('<iframe width=".*?" height=".*?" src="http://www.youtube.com/embed/(.*?)" frameborder="0" allowfullscreen></iframe>', link)[0]
+		
+		xbmc.executebuiltin('XBMC.RunPlugin("plugin://script.extendedinfo/?info=youtubevideo&&id=%s")' % ytID)
+	
+def setViewMenu() :
+		xbmcplugin.setContent(int(sys.argv[1]), 'movies')
+		
+		opcao = selfAddon.getSetting('menuVisu')
+		
+		if   opcao == '0': xbmc.executebuiltin("Container.SetViewMode(50)")
+		elif opcao == '1': xbmc.executebuiltin("Container.SetViewMode(51)")
+		elif opcao == '2': xbmc.executebuiltin("Container.SetViewMode(500)")
+		
+def setViewFilmes() :
+		xbmcplugin.setContent(int(sys.argv[1]), 'movies')
+
+		opcao = selfAddon.getSetting('filmesVisu')
+
+		if   opcao == '0': xbmc.executebuiltin("Container.SetViewMode(50)")
+		elif opcao == '1': xbmc.executebuiltin("Container.SetViewMode(51)")
+		elif opcao == '2': xbmc.executebuiltin("Container.SetViewMode(500)")
+		elif opcao == '3': xbmc.executebuiltin("Container.SetViewMode(501)")
+		elif opcao == '4': xbmc.executebuiltin("Container.SetViewMode(508)")
+		elif opcao == '5': xbmc.executebuiltin("Container.SetViewMode(504)")
+		elif opcao == '6': xbmc.executebuiltin("Container.SetViewMode(503)")
+		elif opcao == '7': xbmc.executebuiltin("Container.SetViewMode(515)")
+		
+def limpa(texto):
+		texto = texto.replace('ç','c').replace('ã','a').replace('õ','o')
+		texto = texto.replace('â','a').replace('ê','e').replace('ô','o')
+		texto = texto.replace('á','a').replace('é','e').replace('í','i').replace('ó','o').replace('ú','u')
+		texto = texto.replace(' ','-')
+		texto = texto.lower()
+		
+		return texto
+		
+############################################################################################################
+              
+def get_params():
+        param=[]
+        paramstring=sys.argv[2]
+        if len(paramstring)>=2:
+                params=sys.argv[2]
+                cleanedparams=params.replace('?','')
+                if (params[len(params)-1]=='/'):
+                        params=params[0:len(params)-2]
+                pairsofparams=cleanedparams.split('&')
+                param={}
+                for i in range(len(pairsofparams)):
+                        splitparams={}
+                        splitparams=pairsofparams[i].split('=')
+                        if (len(splitparams))==2:
+                                param[splitparams[0]]=splitparams[1]
+                                
+        return param
+
+params    = get_params()
+url       = None
+name      = None
+mode      = None
+iconimage = None
+
+try    : url=urllib.unquote_plus(params["url"])
+except : pass
+try    : name=urllib.unquote_plus(params["name"])
+except : pass
+try    : mode=int(params["mode"])
+except : pass
+try    : iconimage=urllib.unquote_plus(params["iconimage"])
+except : pass
+
+#print "Mode: "+str(mode)
+#print "URL: "+str(url)
+#print "Name: "+str(name)
+#print "Iconimage: "+str(iconimage)
+
+###############################################################################################################
+
+if   mode == None : menuPrincipal()
+elif mode == 10   : getCategorias(url)
+elif mode == 20   : getFilmes(url)
+elif mode == 30   : doPesquisa()
+elif mode == 40   : getFavoritos()
+elif mode == 41   : addFavoritos(name,url,iconimage)
+elif mode == 42   : remFavoritos(name,url,iconimage)
+elif mode == 43   : cleanFavoritos()
+elif mode == 98   : getInfo(url)
+elif mode == 99   : playTrailer(name,url,iconimage)
+elif mode == 100  : player(name,url,iconimage)
+elif mode == 999  : openConfig()
+elif mode == 1000 : openConfigEI()
+
+xbmcplugin.endOfDirectory(int(sys.argv[1]))	
