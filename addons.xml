@@ -593,6 +593,23 @@
     </extension>
 </addon>
 
+<addon id="plugin.video.OtarioAnonymous" name="OtarioAnonymous" version="1.0.0" provider-name="House Geek"><requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="5.0.0"/>
+  </requires>
+
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata"><summary lang="en">OtarioAnonymous</summary> <description lang="en">Addon para Canal do Youtube para o Kodi</description>
+    <platform>all</platform>
+    <forum></forum>
+    <website></website>
+  </extension>
+</addon>
+
 <addon id="plugin.video.playlistLoader" name="Playlist Loader" version="1.0.6" provider-name="Avigdor">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -810,6 +827,26 @@ FACEBOOK: https://www.facebook.com/silvano.ferreira.1650</description>
   </extension>
 </addon>
 
+<addon id="plugin.video.sobretube" name="SobreTube" version="1.0.0" provider-name="House Geek">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="5.0.0"/>
+  </requires>
+
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">SobreTube</summary>
+    <description lang="en">Uma seleÃ§Ã£o com canais indicados sobrenatural,Terro e Curiosidades Bizzarras</description>
+    <platform>all</platform>
+    <forum></forum>
+    <website></website>
+  </extension>
+</addon>
+
 <addon id="plugin.video.sonypictures"
        name="SonyPictures"
        version="1.0.0"
@@ -946,6 +983,26 @@ Se voce gostou do meu trabalho e quiser fazer uma doacao,aqui esta o link PayPal
     <summary lang="en">Variedades Videos da TV</summary>
     <description lang="en">Variedades Videos da TV como novelas, series, programas de variedades, programas jornalÃ­sticos e esportivos brasileiros.</description>
     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.TrapalhoesTV" name="Trapalhoes TV" version="1.0.1" provider-name="HouseGeek">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="5.0.0"/>
+  </requires>
+
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Addon dos Trapalhoes</summary>
+    <description lang="en">Addons de Filmes dos Trapalhoes</description>
+    <platform>all</platform>
+    <forum></forum>
+    <website></website>
   </extension>
 </addon>
 

@@ -1,0 +1,2 @@
+[B]22/03/2016 - Versão 1.0.0[/B]
+- Release incial do addon kodish media center
