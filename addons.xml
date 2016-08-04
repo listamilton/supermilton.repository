@@ -60,6 +60,37 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.Martunis"
+       name="Martunis"
+       version="1.1.1"
+       provider-name="Martunis">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Martunis TV</summary>
+    <description>
+        Lista de canais  desporto, , mÃºsica .
+
+.
+
+    </description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
     <addon id="plugin.program.addoninstaller" version="1.2.9"
     	name="Addon Installer" provider-name="tvaddons.ag, Blazetamer">
     <requires>
@@ -1058,6 +1089,33 @@ Se voce gostou do meu trabalho e quiser fazer uma doacao,aqui esta o link PayPal
   </extension>
 </addon>
 
+<addon id="repository.aresproject" name="AresProject" version="0.0.5" provider-name="Ares Team">
+	<extension point="xbmc.addon.repository" name="Simple Kodi">
+		<info compressed="false">http://repo.ares-project.com/plugins/addons.xml</info>
+		<checksum>http://repo.ares-project.com/plugins/addons.xml.md5</checksum>
+		<datadir zip="true">http://repo.ares-project.com/plugins/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>AresProject.</summary>
+		<description>Ares-Project Addons Source. Visit Us At https://ares-project.uk</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.catoal" name="Catoal repository" version="1.0.0" provider-name="Catoal">
+	<extension point="xbmc.addon.repository" name="Catoal Repository">
+		<info compressed="false">http://raw.github.com/catoalkodi/repository.catoal/master/addons.xml</info>
+		<checksum>http://raw.github.com/catoalkodi/repository.catoal/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/catoalkodi/repository.catoal/master/repo/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Catoal Addon</summary>
+		<description>Addon Description</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="repository.quasar" name="Quasar Repository" version="0.9.34" provider-name="scakemyer"><requires></requires><extension point="xbmc.addon.repository" name="Quasar Repository"><info compressed="false">http://localhost:65251/repository/scakemyer/plugin.video.quasar/addons.xml</info><checksum>http://localhost:65251/repository/scakemyer/plugin.video.quasar/addons.xml.md5</checksum><datadir zip="true">http://localhost:65251/repository/scakemyer/</datadir></extension><extension point="xbmc.addon.metadata"><platform>all</platform><summary lang="en">GitHub repository for Quasar Updates</summary></extension></addon>
 
 <addon id="repository.unofficialquasar" name="[COLOR red]Unofficial[/COLOR] [COLOR FF005de5]Quasar[/COLOR] Repo" version="1.0.4" provider-name="iCanuck">
@@ -1076,6 +1134,28 @@ Se voce gostou do meu trabalho e quiser fazer uma doacao,aqui esta o link PayPal
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
 	</extension>
 </addon>
+
+<addon id="script.areswizard" name="[COLOR black].[/COLOR] Ares Wizard" provider-name="AresTeam" version="0.0.45">
+ <requires>
+ </requires>
+ <extension library="default.py" point="xbmc.python.pluginsource">
+ <provides>executable</provides>
+ </extension>
+ <extension point="xbmc.service" library="resources/aresservice.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Ares Wizard - Your one stop for Kodi setup + maintenance</summary>
+    <description lang="en">Ares Wizard</description>
+    <platform>all</platform>
+  </extension>
+  <extension point="kodi.context.item">
+	  <menu id="kodi.core.main">
+		<item library="resources/uploadlog.py">
+		  <label>Upload Kodi Log</label>
+		  <visible>true</visible>
+		</item>
+	  </menu>
+	</extension>
+ </addon>
 
 <addon id="script.chatsupermilton"
        name="[COLOR green][B]Chat Super Milton[/B][/COLOR]"

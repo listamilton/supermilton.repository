@@ -1,0 +1,148 @@
+###########
+  v0.0.45:
+###########
+
+
+          fixed issue with some of the android games not installing
+
+          fixed startup issue effecting newer versions of android
+
+          fixed adult addons showing even when not set to show (oops)
+		  
+		  improved stats display
+		  
+          
+
+
+
+
+
+###########
+  v0.0.44:
+###########
+
+          MIGRATED TO NEW SERVERS - Database now back online! Yey!
+		  
+		  hopefully improved and speeded up installation
+		
+          improved log detection to avoid 'cannot find log'
+		  
+          fixed pin/code request in top20\new entries
+		  
+          added option to upload kodi log from context menu (Kodi 16+ only)
+
+
+		  
+
+
+###########
+     v0.0.43:
+###########
+
+
+          fixed log upload option
+
+          fixed issue where code prompt wasn't coming up on top20 builds
+
+          added error checking to some code which _may_ have been causing script errors
+		  
+		  resurrected offline mode for certain builds (will still be available when database unavailable)
+
+
+
+
+
+###########
+     v0.0.42:
+###########
+
+
+          NEW FEATURE: yup, as most of you will probably be aware\anticipating.. we are 
+                                   now bringing you Android App & Games!! 
+                                  
+                                    You'll find them in 'Browse Addons' - there's some cracking Android
+                                    games available and an introduction to Emulators in the form of 
+                                    SNES and MegaDrive/Genesis Games.. and every single one of
+                                    them runs on my m8s box.. just goes to show what these neat
+                                    little devices are capable of and that you don't need to spend
+                                    a fortune to play some cracking games. (although you might want
+                                    to invest in a compatible gamepad)
+
+                                   Ares will even show you for free space and warn you if installing
+                                   leaves you with less than 50Mb of free storage space. And you can
+                                   uninstall any of the apps through the wizard too.
+
+                                   When installing any of the Kodi forks\Modified versions, ares will                                    automatically install itself into the newly installed version ready to                                    install a build or apps in the new version too.
+                                   
+
+           added ability to login to achive.org if login is required (ie.. if the download has been 
+           restricted by archive.org)
+
+           fixed small bug in error handling for downloads
+
+
+          Builders can now request a code to access their respective 'sections'.. to enable this
+          simply add a line like this to the top of your wizard text\html\xml file:
+
+                                             code="something"
+
+          ..Ares will then only allow access should the user input the same code as what is set           in that line.. and with it being in your text file you can change it whenever you like.
+
+
+###########
+     v0.0.41:
+###########
+
+          change to auto-update routine
+
+###########
+     v0.0.40:
+###########
+	
+          changed update check source
+
+          added 2nd source for update check, incase of connection issues
+
+          tweaked build listings in preperation for major update
+
+          added addon scanner  [can be enabled\disabled at any time and will only be used when necessary]
+
+          fixed error handling during build selection
+
+
+###########
+     v0.0.39:
+###########
+
+          BIG NEWS: We have invested in another server\upgrade for the wizard, hopefully this will improve reliability & performance.
+
+          Tweaked logging to accomodate Kodi 16 default log level
+         
+
+
+
+###########
+     v0.0.38:
+###########
+
+          undone some of the previous efficiency tweaks do reduce loading\wait times when browsing builds
+
+          looked into download stats not counting properly
+
+          disabled rating builds\addons (hopefully temporary)
+
+          added a bit more to the error handling when trying to connect to pages\sites
+
+
+
+###########
+     v0.0.37:
+###########
+
+
+          more tweaks to lessen load on server
+
+          backup filename will now have date + time added to avoid conflicts
+
+          Ares will now warn if a ZIP is corrupt\invalid when selecting a restore ZIP
+
