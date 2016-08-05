@@ -19,11 +19,18 @@
 '''
 
 
-import sys,re,json,urllib,urlparse,datetime
-
+from resources.lib.modules import cleangenre
 from resources.lib.modules import control
 from resources.lib.modules import client
 from resources.lib.modules import workers
+
+import sys,re,json,urllib,urlparse,datetime
+
+params = dict(urlparse.parse_qsl(sys.argv[2].replace('?','')))
+
+action = params.get('action')
+
+control.moderator()
 
 
 class channels:
@@ -39,7 +46,24 @@ class channels:
 
 
     def get(self): 
-        channels = [('01', 'Sky Premiere', '4021'), ('02', 'Sky Premiere +1', '1823'), ('03', 'Sky Showcase', '4033'), ('04', 'Sky Greats', '1815'), ('05', 'Sky Disney', '4013'), ('06', 'Sky Family', '4018'), ('07', 'Sky Action', '4014'), ('08', 'Sky Comedy', '4019'), ('09', 'Sky Crime', '4062'), ('10', 'Sky Drama', '4016'), ('11', 'Sky Sci Fi', '4017'), ('12', 'Sky Select', '4020'), ('13', 'Film4', '4044'), ('14', 'Film4 +1', '1629'), ('15', 'TCM', '3811'), ('16', 'TCM +1', '5275')] 
+        channels = [
+        ('01', 'Sky Premiere', '4021'),
+        ('02', 'Sky Premiere +1', '1823'),
+        ('03', 'Sky Showcase', '4033'),
+        ('04', 'Sky Greats', '1815'),
+        ('05', 'Sky Disney', '4013'),
+        ('06', 'Sky Family', '4018'),
+        ('07', 'Sky Action', '4014'),
+        ('08', 'Sky Comedy', '4019'),
+        ('09', 'Sky Crime', '4062'),
+        ('10', 'Sky Drama', '4016'),
+        ('11', 'Sky Sci Fi', '4017'),
+        ('12', 'Sky Select', '4020'),
+        ('13', 'Film4', '4044'),
+        ('14', 'Film4 +1', '1629'),
+        ('15', 'TCM', '3811'),
+        ('16', 'TCM +1', '5275')
+        ]
 
         threads = []
         for i in channels: threads.append(workers.Thread(self.sky_list, i[0], i[1], i[2]))
@@ -167,7 +191,7 @@ class channels:
             plot = client.replaceHTMLCodes(plot)
             plot = plot.encode('utf-8')
 
-            self.list.append({'title': title, 'originaltitle': title, 'year': year, 'genre': genre, 'duration': duration, 'rating': rating, 'votes': votes, 'mpaa': mpaa, 'director': director, 'writer': writer, 'cast': cast, 'plot': plot, 'code': imdb, 'imdb': imdb, 'tmdb': '0', 'poster': poster, 'channel': i[2], 'num': i[3]})
+            self.list.append({'title': title, 'originaltitle': title, 'year': year, 'genre': genre, 'duration': '0', 'rating': rating, 'votes': votes, 'mpaa': mpaa, 'director': director, 'writer': writer, 'cast': cast, 'plot': plot, 'code': imdb, 'imdb': imdb, 'tmdb': '0', 'poster': poster, 'channel': i[2], 'num': i[3]})
         except:
             pass
 
@@ -185,13 +209,26 @@ class channels:
 
 
     def channelDirectory(self, items):
-        if items == None or len(items) == 0: return
+        if items == None or len(items) == 0: control.idle() ; sys.exit()
 
-        playbackMenu = control.lang(30292).encode('utf-8') if control.setting('autoplay') == 'true' else control.lang(30291).encode('utf-8')
+        sysaddon = sys.argv[0]
+
+        syshandle = int(sys.argv[1])
 
         addonPoster, addonBanner = control.addonPoster(), control.addonBanner()
+
         addonFanart = control.addonFanart()
-        sysaddon = sys.argv[0]
+
+        try: isOld = False ; control.item().getArt('type')
+        except: isOld = True
+
+        isPlayable = 'true' if not 'plugin' in control.infoLabel('Container.PluginName') else 'false'
+
+        playbackMenu = control.lang(32063).encode('utf-8') if control.setting('hosts.mode') == '2' else control.lang(32064).encode('utf-8')
+
+        queueMenu = control.lang(32065).encode('utf-8')
+
+        refreshMenu = control.lang(32072).encode('utf-8')
 
 
         for i in items:
@@ -201,47 +238,57 @@ class channels:
                 systitle = urllib.quote_plus(i['title'])
                 imdb, year = i['imdb'], i['year']
 
+
                 poster, banner = i['poster'], i['poster']
                 if poster == '0': poster = addonPoster
                 if banner == '0' and poster == '0': banner = addonBanner
                 elif banner == '0': banner = poster
 
+
                 meta = dict((k,v) for k, v in i.iteritems() if not v == '0')
-                meta.update({'trailer': '%s?action=trailer&name=%s' % (sysaddon, sysname)})
-                if i['duration'] == '0': meta.update({'duration': '120'})
-                try: meta.update({'duration': str(int(meta['duration']) * 60)})
+                meta.update({'mediatype': 'movie'})
+                #meta.update({'trailer': '%s?action=trailer&name=%s' % (sysaddon, sysname)})
+                meta.update({'trailer': 'plugin://script.extendedinfo/?info=playtrailer&&id=%s' % imdb})
+                meta.update({'playcount': 0, 'overlay': 6})
+                try: meta.update({'genre': cleangenre.lang(meta['genre'], self.lang)})
                 except: pass
+
                 sysmeta = urllib.quote_plus(json.dumps(meta))
+
 
                 url = '%s?action=play&title=%s&year=%s&imdb=%s&meta=%s&t=%s' % (sysaddon, systitle, year, imdb, sysmeta, self.systime)
                 sysurl = urllib.quote_plus(url)
 
+
                 cm = []
+
+                cm.append((queueMenu, 'RunPlugin(%s?action=queueItem)' % sysaddon))
+
+                cm.append((refreshMenu, 'RunPlugin(%s?action=refresh)' % sysaddon))
+
                 cm.append((playbackMenu, 'RunPlugin(%s?action=alterSources&url=%s&meta=%s)' % (sysaddon, sysurl, sysmeta)))
-                cm.append((control.lang(30297).encode('utf-8'), 'RunPlugin(%s?action=trailer&name=%s)' % (sysaddon, sysname)))
-                cm.append((control.lang(30293).encode('utf-8'), 'Action(Info)'))
-                cm.append((control.lang(30294).encode('utf-8'), 'RunPlugin(%s?action=refresh)' % (sysaddon)))
-                cm.append((control.lang(30295).encode('utf-8'), 'RunPlugin(%s?action=openSettings)' % (sysaddon)))
-                cm.append((control.lang(30296).encode('utf-8'), 'RunPlugin(%s?action=openPlaylist)' % (sysaddon)))
 
-                item = control.item(label=label, iconImage=poster, thumbnailImage=poster)
+                if isOld == True:
+                    cm.append((control.lang2(19033).encode('utf-8'), 'Action(Info)'))
 
-                try: item.setArt({'poster': poster, 'banner': banner})
-                except: pass
+
+                item = control.item(label=label)
+
+                item.setArt({'icon': poster, 'thumb': poster, 'poster': poster, 'banner': banner})
 
                 if not addonFanart == None:
                     item.setProperty('Fanart_Image', addonFanart)
 
+                item.addContextMenuItems(cm)
+                item.setProperty('IsPlayable', isPlayable)
                 item.setInfo(type='Video', infoLabels = meta)
-                item.setProperty('Video', 'true')
-                #item.setProperty('IsPlayable', 'true')
-                item.addContextMenuItems(cm, replaceItems=True)
-                control.addItem(handle=int(sys.argv[1]), url=url, listitem=item, isFolder=False)
+
+                control.addItem(handle=syshandle, url=url, listitem=item, isFolder=False)
             except:
                 pass
 
-        control.content(int(sys.argv[1]), 'movies')
+        control.content(syshandle, 'movies')
         #control.do_block_check(False)
-        control.directory(int(sys.argv[1]), cacheToDisc=True)
+        control.directory(syshandle, cacheToDisc=True)
 
 

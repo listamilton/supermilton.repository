@@ -1,3 +1,47 @@
+[B]2.0.5[/B]
+- Updated providers
+- Fixed issue with custom lists
+- Added Serbian (Cyrillic) translation
+- Added Hungarian translation
+
+[B]2.0.4[/B]
+- Updated providers
+- Fixed issue with networks
+- Added Croatian translation
+- Added Dutch translation
+- Added Hebrew translation
+- Added Slovenian translation
+- Code cosmetics
+
+[B]2.0.3[/B]
+- Fixed issue with movie listings
+- Fixed issue with tv show listings
+- Added French translation
+- Added German translation
+- Added Spanish translation
+- Updated existing providers
+- Removed dead providers
+- Added new providers
+
+[B]2.0.2[/B]
+- Code cosmetics
+
+[B]2.0.1[/B]
+- Code cosmetics
+
+[B]2.0.0[/B]
+- Tweaked all context menus
+- Tweaked all addon settings
+- Tweaked all translations
+- Tweaked resolvering
+- Re-work of addon for Krypton compatibility
+- Replaced My lists with My Movies and My TV shows
+- Added setting of viewtypes on tools section
+- Added languages movie section
+- Updated existing providers
+- Removed dead providers
+- Added new providers
+
 [B]1.3.7[/B]
 - Updated providers
 
