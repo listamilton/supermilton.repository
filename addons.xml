@@ -861,7 +861,7 @@ http://www.hometheater.co.il</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.sembilhete.tv" name="SemBilhete.tv" provider-name="SemBilhete.tv" version="0.5.3">
+<addon id="plugin.video.sembilhete.tv" name="SemBilhete.tv" provider-name="SemBilhete.tv" version="0.5.4">
  <requires>
   <import addon="xbmc.python" version="2.7.10"/>
  </requires>
@@ -1226,6 +1226,20 @@ Se voce gostou do meu trabalho e quiser fazer uma doacao,aqui esta o link PayPal
 </addon>
 
 <addon id="repository.quasar" name="Quasar Repository" version="0.9.34" provider-name="scakemyer"><requires></requires><extension point="xbmc.addon.repository" name="Quasar Repository"><info compressed="false">http://localhost:65251/repository/scakemyer/plugin.video.quasar/addons.xml</info><checksum>http://localhost:65251/repository/scakemyer/plugin.video.quasar/addons.xml.md5</checksum><datadir zip="true">http://localhost:65251/repository/scakemyer/</datadir></extension><extension point="xbmc.addon.metadata"><platform>all</platform><summary lang="en">GitHub repository for Quasar Updates</summary></extension></addon>
+
+<addon id="repository.sembilhete.tv" name="sembilhete.tv repository" version="0.0.1" provider-name="Sem Bilhete">
+	<extension point="xbmc.addon.repository" name="sembilhete.tv Repository">
+		<info compressed="false">https://sembilhete.tv/static/kodi/addons.xml</info>
+		<checksum>https://sembilhete.tv/static/kodi/addons.xml.md5</checksum>
+		<datadir zip="true">https://sembilhete.tv/static/kodi/repo/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Sem Bilhete Addon</summary>
+		<description>Addon Description</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
 
 <addon id="repository.unofficialquasar" name="[COLOR red]Unofficial[/COLOR] [COLOR FF005de5]Quasar[/COLOR] Repo" version="1.0.4" provider-name="iCanuck">
 	<extension point="xbmc.addon.repository" name="Unofficial Quasar Repository">
