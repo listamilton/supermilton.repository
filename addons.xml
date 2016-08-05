@@ -1146,7 +1146,7 @@ Se voce gostou do meu trabalho e quiser fazer uma doacao,aqui esta o link PayPal
     </extension>
 </addon>
 
-<addon id="plugin.video.supermiltonshowtv" name="[COLOR yellow][B]Super Milton Show TV[/B][/COLOR]" version="1.0.1" provider-name="Milton Guedes">
+<addon id="plugin.video.supermiltonshowtv" name="[COLOR yellow][B]Super Milton Show TV[/B][/COLOR]" version="1.0.2" provider-name="Milton Guedes">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.urlresolver" version="2.10.0"/>
@@ -1160,7 +1160,9 @@ Se voce gostou do meu trabalho e quiser fazer uma doacao,aqui esta o link PayPal
     <language>en</language>
     <platform>all</platform>
     <summary lang="en">Variedades Videos da TV</summary>
-    <description lang="en">Variedades Videos da TV como novelas, series, programas de variedades, programas jornalÃ­sticos e esportivos brasileiros.</description>
+       <description lang="en">Variedades Videos da TV como novelas, series, programas de variedades, programas jornalÃ­sticos e esportivos brasileiros.
+Este ADDON Ã© feito a busca pelo site do "http://NOVELASGRAVADAS.NET", sendo assim TODOS OS VIDEOS deles sao de origem DESSE site e nÃ£o sao de nenhum destinado ao ADDON BRASIL como eles se designam ser proprietario dos videos.
+Os videos sÃ£o retirados da internet e livres para serem compartilhados a TODOS.</description>
     <platform>all</platform>
   </extension>
 </addon>

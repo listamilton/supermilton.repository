@@ -52,7 +52,7 @@ else:
 
 def menuPrincipal():
 		addDir('Novelas'      , base,  10, imgsrv + 'novelas.jpg')
-		addDir('Series'       , base,  10, imgsrv + 'series.jpg')
+		addDir('Séries'       , base,  10, imgsrv + 'series.jpg')
 		addDir('Jornalismo'   , base,  10, imgsrv + 'jornalismo.jpg')
 		addDir('Variedades'   , base,  10, imgsrv + 'variedades.jpg')
 		addDir('Esportes'     , base,  10, imgsrv + 'esportes.jpg')
@@ -174,7 +174,7 @@ def doPlay(url, name):
 		pg = 0
 		msgDialog = xbmcgui.DialogProgress()
 
-		msgDialog.create('Super Milton Show TV', 'Abrindo Sinal', name, 'Por favor aguarde...')
+		msgDialog.create('Super Milton Showtv', 'Abrindo Sinal', name, 'Por favor aguarde...')
 		msgDialog.update(25)
 		
 		playlist = xbmc.PlayList(xbmc.PLAYLIST_VIDEO)
@@ -190,24 +190,36 @@ def doPlay(url, name):
 				url2Play = getURL2Play(url2Rslv)
 				needPlaylist = False
 		except :
-				try : 
-						url2Rslv = re.findall('<iframe width="645" height="355" src="(.*?)"', link)[0]
+				try :
+						url2Rslv = re.findall('<iframe width="645" height="355" scrolling="no" frameborder="0" src="(.*?)" allowFullScreen></iframe></p>', link)[0]
 						url2Play = urlresolver.resolve(url2Rslv)
 						url2Play = url2Play + ' |User-agent:' + agent
 						needPlaylist = False
 				except :
-						try :
-								url2Rslv = re.findall('flashvars="&#038;file=(.*?)&#038;skin', link)[0]
-								linkRslv = openURL(url2Rslv)
-								url2Play = re.findall('<location>(.*?)</location>', linkRslv)
-								totu2p = len(url2Play)
-								needPlaylist = True
+						try : 
+								url2Rslv = re.findall('<iframe width="645" height="355" src="(.*?)"', link)[0]
+								url2Play = urlresolver.resolve(url2Rslv)
+								url2Play = url2Play + ' |User-agent:' + agent
+								needPlaylist = False
 						except :
-								msgDialog.update(100)
-								dialog = xbmcgui.Dialog()
-								dialog.ok("Super Milton Show TV", "Servidor não Suportado", "Este vídeo não pode ser executado devido ao servidor não ser suportado...", "Desculpas pelo transtorno.")		
-								OK = False
-								
+								try :
+										url2Rslv = re.findall('flashvars="&#038;file=(.*?)&#038;skin', link)[0]
+										linkRslv = openURL(url2Rslv)
+										url2Play = re.findall('<location>(.*?)</location>', linkRslv)
+										totu2p = len(url2Play)
+										needPlaylist = True
+								except :
+										try :
+												url2Rslv = re.findall('<iframe src="(.*?)" scrolling="no" frameborder="0" width="100%" height="355" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe></p>', link)[0]
+												url2Play = urlresolver.resolve(url2Rslv)
+												url2Play = url2Play + ' |User-agent:' + agent
+												needPlaylist = False
+										except :
+												msgDialog.update(100)
+												dialog = xbmcgui.Dialog()
+												dialog.ok("Super Milton Showtv", "Servidor não Suportado", "Este vídeo não pode ser executado devido ao servidor não ser suportado...", "Pedimos desculpas pelo transtorno.")		
+												OK = False
+										
 		if OK :
 				msgDialog.update(75)
 
@@ -247,7 +259,7 @@ def doPlay(url, name):
 				else:
 						msgDialog.update(100)
 						dialog = xbmcgui.Dialog()
-						dialog.ok("Super Milton Show TV", "Vídeo Indisponível", "Este vídeo ainda não esta disponível...", "Tente novamente em breve.")		
+						dialog.ok("Super Milton Showtv", "Vídeo Indisponível", "Este vídeo ainda não esta disponível...", "Tente novamente em breve.")		
 				
 def doPlayExt(url, name):
 		link = openURL(url)
@@ -255,7 +267,7 @@ def doPlayExt(url, name):
 		pg = 0
 		msgDialog = xbmcgui.DialogProgress()
 
-		msgDialog.create('Super Milton Show TV', 'Abrindo Sinal', name, 'Por favor aguarde...')
+		msgDialog.create('Super Milton Showtv', 'Abrindo Sinal', name, 'Por favor aguarde...')
 		msgDialog.update(25)
 		
 		playlist = xbmc.PlayList(xbmc.PLAYLIST_VIDEO)
@@ -315,7 +327,7 @@ def doPlayExt(url, name):
 		else:
 				msgDialog.update(100)
 				dialog = xbmcgui.Dialog()
-				dialog.ok("ARQUIVO BRASIL", "Vídeo Indisponível", "Este vídeo ainda não esta disponível...", "Tente novamente em breve.")		
+				dialog.ok("Super Milton Showtv", "Vídeo Indisponível", "Este vídeo ainda não esta disponível...", "Tente novamente em breve.")		
 		
 def getURL2Play(url):
     try:
