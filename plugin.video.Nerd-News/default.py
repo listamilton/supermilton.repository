@@ -10,7 +10,7 @@ import xbmc, xbmcaddon, xbmcplugin, os, sys, plugintools
 
 from addon.common.addon import Addon
 
-addonID = 'plugin.video.Nerd News'
+addonID = 'plugin.video.Nerd-News'
 addon   = Addon(addonID, sys.argv)
 local   = xbmcaddon.Addon(id=addonID)
 icon    = local.getAddonInfo('icon')
@@ -18,7 +18,7 @@ base    = 'plugin://plugin.video.youtube/'
 
 
 def run():
-    plugintools.log("Nerd News.run")
+    plugintools.log("Nerd-News.run")
     
     params = plugintools.get_params()
     

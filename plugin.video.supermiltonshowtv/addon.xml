@@ -14,8 +14,8 @@
     <platform>all</platform>
     <summary lang="en">Variedades Videos da TV</summary>
        <description lang="en">Variedades Videos da TV como novelas, series, programas de variedades, programas jornalísticos e esportivos brasileiros.
-Este ADDON é feito a busca pelo site do "http://NOVELASGRAVADAS.NET", sendo assim TODOS OS VIDEOS deles sao de origem DESSE site e não sao de nenhum destinado ao ADDON BRASIL como eles se designam ser proprietario dos videos.
-Os videos são retirados da internet e livres para serem compartilhados a TODOS.</description>
+[B][COLOR lime]Este ADDON é feito a busca pelo site do "http://NOVELASGRAVADAS.NET", sendo assim TODOS OS VIDEOS deles sao de origem DESSE site e não sao de nenhum destinado ao ADDON BRASIL como eles se designam ser proprietario dos videos.
+Os videos são retirados da internet e livres para serem compartilhados a TODOS.[/COLOR][/B]</description>
     <platform>all</platform>
   </extension>
 </addon>
