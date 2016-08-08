@@ -12,8 +12,9 @@
     <category label="12000">
         <setting id="debug" type="bool" label="12001" default="false"/>
         <setting id="library_path" type="folder" label="12002"
-                 default="special://profile/addon_data/plugin.video.miltonflix/library"/>
+                 default="special://profile/addon_data/plugin.video.flix2kodi/library"/>
         <setting id="disable_lirc" type="bool" label="12101" default="false"/>
+        <setting id="alternate_remote" type="bool" label="12102" default="false"/>
         <setting id="superbrowse" type="bool" label="30112" default="false"/>
 
     </category>
@@ -29,8 +30,8 @@
         <setting id="view_id_activity" type="number" label="13104" enable="eq(-3,true)" default="504"/>
     </category>
     <category label="14000">
-        <setting label="14001" type="action" action="RunPlugin(plugin://plugin.video.miltonflix/?mode=delete_cache)"/>
-        <setting label="14002" type="action" action="RunPlugin(plugin://plugin.video.miltonflix/?mode=delete_cookies)"/>
-        <setting label="14003" type="action" action="RunPlugin(plugin://plugin.video.miltonflix/?mode=reset_addon)"/>
+        <setting label="14001" type="action" action="RunPlugin(plugin://plugin.video.flix2kodi/?mode=delete_cache)"/>
+        <setting label="14002" type="action" action="RunPlugin(plugin://plugin.video.flix2kodi/?mode=delete_cookies)"/>
+        <setting label="14003" type="action" action="RunPlugin(plugin://plugin.video.flix2kodi/?mode=reset_addon)"/>
     </category>
 </settings>

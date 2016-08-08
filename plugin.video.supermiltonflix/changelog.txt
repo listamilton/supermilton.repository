@@ -1,2 +1,4 @@
+
+version 2.0.0 - 08/08/2016
 version 1.0.0
 initial addon
