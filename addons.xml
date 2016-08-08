@@ -566,29 +566,6 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.horadapipoca" name="Hora Da Pipoca" version="1.2.0" provider-name="AddonBrasil">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-		<import addon="script.module.urlresolver" version="2.10.8"/>
-		<import addon="script.extendedinfo" version="3.0.0"/>
-  </requires>
-
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video</provides>
-  </extension>
-
-  <extension point="xbmc.addon.metadata">
-    <language>en</language>
-    <platform>all</platform>
-    <summary lang="en">Hora Da Pipoca</summary>
-    <description lang="en">
-			No addon Hora Da Pipoca vocÃª assiste filmes separados por categorias, lanÃ§amentos,filmes HD, etc.
-			VocÃªtambÃ©m pode ver as informaÃ§Ãµes ou assistir ao trailer do filme no submenu do addon (BotÃ£o direito do mouse ou tecla "C").
-			Atencao: Este addon necessita do script URLRESOLVER na versÃ£o 2.10.8 ou superior
-		</description>
-  </extension>
-</addon>
-
 <addon id="plugin.video.igorlista" name="Igor Lista" version="0.0.2" provider-name="Igor Rangel e Cleiton Leonel Creton">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
