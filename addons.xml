@@ -254,27 +254,6 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.armagedomfilmes" name="ArmagedomFilmes" version="0.3.0" provider-name="gutoakashi">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.urlresolver" version="1.0.0"/>
-	<import addon="script.module.metahandler" optional="true"/>
-	<import addon="script.module.simplejson" optional="true"/>
-	<import addon="script.module.parsedom" optional="true"/>
-  <import addon="script.module.html5lib" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <language>en</language>
-    <platform>all</platform>
-    <summary lang="en">visite o site http://www.armagedomfilmes.biz/ atraves do xbmc</summary>
-    <description lang="en">visite o site http://www.armagedomfilmes.biz/ atraves do xbmc</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
 <addon id="plugin.video.automania"
 	name="AUTO MANIA"
 	version="1.0.0"
@@ -970,42 +949,6 @@ http://www.hometheater.co.il</description>
  </extension>
 </addon>
 
-<addon id="plugin.video.silvanochannels"
-       name="Silvano Channels"
-       version="1.0.0"
-       provider-name="Milton Guedes">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.t0mm0.common" version="2.0.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
-    <import addon="script.common.plugin.cache" version="2.5.2"/>
-    <import addon="script.module.metahandler" version="2.5.1"/>
-	<import addon="script.module.livestreamer" optional="true"/>
-
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-   <summary>Lista de Canais</summary>
-    <description>CONTATOS ABAIXO:
-PHONE:    +12039428545
-E-MAIL:   silvanoferreira.sf@gmail.com
-Skype:    dj-silvano1
-FACEBOOK: https://www.facebook.com/silvano.ferreira.1650</description>
-	<platform>all</platform>
-  </extension>
-</addon>
-
 <addon id="plugin.video.sobretube" name="SobreTube" version="1.0.0" provider-name="House Geek">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -1144,27 +1087,6 @@ Se voce gostou do meu trabalho e quiser fazer uma doacao,aqui esta o link PayPal
         <email/>
         <source/>
     </extension>
-</addon>
-
-<addon id="plugin.video.supermiltonshowtv" name="[COLOR yellow][B]Super Milton Show TV[/B][/COLOR]" version="1.0.2" provider-name="Milton Guedes">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-		<import addon="script.module.urlresolver" version="2.10.0"/>
-  </requires>
-
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video</provides>
-  </extension>
-
-  <extension point="xbmc.addon.metadata">
-    <language>en</language>
-    <platform>all</platform>
-    <summary lang="en">Variedades Videos da TV</summary>
-       <description lang="en">Variedades Videos da TV como novelas, series, programas de variedades, programas jornalÃ­sticos e esportivos brasileiros.
-[B][COLOR lime]Este ADDON Ã© feito a busca pelo site do "http://NOVELASGRAVADAS.NET", sendo assim TODOS OS VIDEOS deles sao de origem DESSE site e nÃ£o sao de nenhum destinado ao ADDON BRASIL como eles se designam ser proprietario dos videos.
-Os videos sÃ£o retirados da internet e livres para serem compartilhados a TODOS.[/COLOR][/B]</description>
-    <platform>all</platform>
-  </extension>
 </addon>
 
 <addon id="plugin.video.TrapalhoesTV" name="Trapalhoes TV" version="1.0.1" provider-name="HouseGeek">

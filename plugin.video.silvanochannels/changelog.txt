@@ -1,5 +1,0 @@
-V1.0.0
-Initial Release - 08/06/2016 - versao inical criada do Addon Silvano Channels
-
-
-
